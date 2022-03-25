@@ -8,7 +8,7 @@ import LoadingBar from "react-top-loading-bar";
 // add infinity scroll
 
 function App() {
-  const apiKey = process.env.REACT_APP_NEWS;
+  const apiKey = "3e19ce7b891447459477f5ef54207823";
 
   const [progress, setProgress] = useState(0);
   return (
