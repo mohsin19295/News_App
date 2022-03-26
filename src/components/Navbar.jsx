@@ -6,7 +6,7 @@ function Navbar() {
   return (
       <>
       <ul>
-          <li><Link to="/">News_App</Link></li>
+          <li><Link to="top">News_App</Link></li>
           <li><Link to="business">Business</Link></li>
           <li><Link to="entertainment">Entertainment</Link></li>
           <li><Link to="health">Health</Link></li>

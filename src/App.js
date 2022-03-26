@@ -8,7 +8,7 @@ import LoadingBar from "react-top-loading-bar";
 // add infinity scroll
 
 function App() {
-  const apiKey = "3e19ce7b891447459477f5ef54207823";
+  const apiKey = process.env.REACT_APP_NEWS;
 
   const [progress, setProgress] = useState(0);
   return (
@@ -21,8 +21,8 @@ function App() {
           onLoaderFinished={() => setProgress(100)}
         />
         <Switch>
-          <Route exact path="/">
-            <News setProgress={setProgress} apiKey={apiKey} key="general" category="general" />
+          <Route exact path="/top">
+            <News setProgress={setProgress} apiKey={apiKey} key="top" category="top" />
           </Route>
           <Route exact path="/business">
             <News setProgress={setProgress} apiKey={apiKey} key="business" category="business" />
