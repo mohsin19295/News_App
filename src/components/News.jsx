@@ -36,7 +36,6 @@ function News(props) {
   const handleNext =()=>{
     console.log("next")
     setPage(page+1)
-    // console.log(total)
   }
 
    return (
