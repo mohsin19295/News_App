@@ -11,13 +11,14 @@ function News(props) {
   const [total, setTotal] = useState(null)
   const [loading, setLoading]= useState(false)
 
-  useEffect(()=>{
+  useEffect(() => {
+    const apiKey = "3e19ce7b891447459477f5ef54207823";
     props.setProgress(0)
     setLoading(true)
-    axios.get(`https://newsdata.io/api/1/news?country=in&category=${props.category}&apiKey=${props.apiKey}&page=${page}`)
+    axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${apiKey}&page=${page}`)
     .then(res=>{
-      // console.log(res.data.results)
-      setPost(res.data.results)
+      console.log(res?.data?.articles);
+      setPost(res?.data?.articles)
       setTotal(Math.ceil(res.data.totalResults/limit))
       props.setProgress(100)
     })
@@ -44,13 +45,13 @@ function News(props) {
      {loading && <img id="snipper" src={Snipper} alt="" /> }
     
      <div id="grid">
-    {post.map(e=>(
+    {post?.map(e=>(
       <div key={e.id == null ? e.id=Math.random(1,100): e.id}>
-          <img src={e.image_url == null ? e.image_url = "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930" : e.image_url} alt="" />
+        <img src={e.urlToImage == null ? e.urlToImage = "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930" : e.urlToImage} alt="urlToImage" />
           <p id="title">{e.title}</p>
-          <p id="author">{e.source_id == null ? e.source_id = "Unknown" : e.source_id}</p> 
-          <p id="date">{new Date(e.pubDate).toGMTString()}</p>
-          <a id="readMore" href={e.link} target="_blank" rel="noreferrer" >Read more</a>
+          <p id="author">{e.source.name == null ? e.source.name = "Unknown" : e.source.name}</p> 
+          <p id="date">{new Date(e.publishedAt).toGMTString()}</p>
+          <a id="readMore" href={e.url} target="_blank" rel="noreferrer" >Read more</a>
       </div>
     ))}
     </div>

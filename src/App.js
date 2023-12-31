@@ -4,13 +4,7 @@ import News from "./components/News";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
-// more css needed for navbar (responsive)
-// add infinity scroll
-
 function App() {
-  const apiKey = "pub_5809c71a2deb248f6aaf701caee8e2f3fda6";
-  // const apiKey = process.env.REACT_APP_NEWS;
-
   const [progress, setProgress] = useState(0);
   return (
     <div className="App">
@@ -23,25 +17,25 @@ function App() {
         />
         <Switch>
           <Route exact path="/top">
-            <News setProgress={setProgress} apiKey={apiKey} key="top" category="top" />
+            <News setProgress={setProgress} key="top" category="general" />
           </Route>
           <Route exact path="/business">
-            <News setProgress={setProgress} apiKey={apiKey} key="business" category="business" />
+            <News setProgress={setProgress} key="business" category="business" />
           </Route>
           <Route exact path="/entertainment">
-            <News setProgress={setProgress} apiKey={apiKey} key="entertainment" category="entertainment" />
+            <News setProgress={setProgress} key="entertainment" category="entertainment" />
           </Route>
           <Route exact path="/health">
-            <News setProgress={setProgress} apiKey={apiKey} key="health" category="health" />
+            <News setProgress={setProgress} key="health" category="health" />
           </Route>
           <Route exact path="/science">
-            <News setProgress={setProgress} apiKey={apiKey} key="science" category="science" />
+            <News setProgress={setProgress} key="science" category="science" />
           </Route>
           <Route exact path="/sports">
-            <News setProgress={setProgress} apiKey={apiKey} key="sports" category="sports" />
+            <News setProgress={setProgress} key="sports" category="sports" />
           </Route>
           <Route exact path="/technology">
-            <News setProgress={setProgress} apiKey={apiKey} key="technology" category="technology" />
+            <News setProgress={setProgress} key="technology" category="technology" />
           </Route>
         </Switch>
       </Router>
