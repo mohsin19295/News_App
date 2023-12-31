@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 function Navbar() {
   return (
       <ul>
-          <li><Link to="top">News_App</Link></li>
+          <li><Link to="general">News_App</Link></li>
           <li><Link to="business">Business</Link></li>
           <li><Link to="entertainment">Entertainment</Link></li>
           <li><Link to="health">Health</Link></li>

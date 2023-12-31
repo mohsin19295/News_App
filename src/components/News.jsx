@@ -15,7 +15,7 @@ function News(props) {
     const apiKey = "3e19ce7b891447459477f5ef54207823";
     props.setProgress(0)
     setLoading(true)
-    axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${apiKey}&page=${page}`)
+    axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${props.category || 'general'}&apiKey=${apiKey}&page=${page}`)
     .then(res=>{
       console.log(res?.data?.articles);
       setPost(res?.data?.articles)

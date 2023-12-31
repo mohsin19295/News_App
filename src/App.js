@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
 function App() {
@@ -16,8 +16,11 @@ function App() {
           onLoaderFinished={() => setProgress(100)}
         />
         <Switch>
-          <Route exact path="/top">
-            <News setProgress={setProgress} key="top" category="general" />
+         <Route exact path="/">
+            <Redirect to="/general" />
+          </Route>
+          <Route exact path="/general">
+            <News setProgress={setProgress} key="general" category="general" />
           </Route>
           <Route exact path="/business">
             <News setProgress={setProgress} key="business" category="business" />
