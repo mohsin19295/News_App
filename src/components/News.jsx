@@ -3,6 +3,7 @@ import Axios from "axios"
 import "./news.css"
 import { ScaleLoader } from "react-spinners";
 import { PrimaryColor } from '../views/utitls';
+import { ButtonBox, ContainerBox, PostContainer } from '../views/styles';
 
 function News(props) {
   const [post, setPost] = useState([])
@@ -70,7 +71,7 @@ function News(props) {
       aria-label="Loading Spinner"
       data-testid="loader"
     /> :
-      <div id="container">
+      <ContainerBox>
         <div id="grid">
           {post?.map(post => {
             const defaultImage = "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
@@ -80,23 +81,23 @@ function News(props) {
               : defaultImage
 
             return (
-              <div key={post.id == null ? post.id = Math.random(1, 100) : post.id}>
+              <PostContainer key={post.id == null ? post.id = Math.random(1, 100) : post.id}>
                 <img src={imageUrl} alt={urlToImage ? "urlToImage" : "No Image Available"} />
-                <p id="title">{title}</p>
-                <p id="author">{source.name == null ? source.name = "Unknown" : source.name}</p>
-                <p id="date">{formatDate(publishedAt)}</p>
+                <p className='title'>{title}</p>
+                <p className='post-source'>{source.name == null ? source.name = "Unknown" : source.name}</p>
+                <p className='post-date'>{formatDate(publishedAt)}</p>
                 <a id="readMore" href={url} target="_blank" rel="noreferrer" >Read more</a>
-              </div>
+              </PostContainer>
             )
           })}
         </div>
-        {!loading && <div id="btn-box">
+        {!loading && <ButtonBox>
           <button className={`preNextBtn ${page <= 1 && 'disabledButton'}`}
             disabled={page <= 1} onClick={handlePrevious}>Previous</button>
           <button className={`preNextBtn ${page >= total && 'disabledButton'}`}
             disabled={page >= total} onClick={handleNext}>Next</button>
-        </div>}
-      </div>
+        </ButtonBox>}
+      </ContainerBox>
   );
 }
 export default News

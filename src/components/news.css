@@ -1,33 +1,3 @@
-#container {
-  padding: 0 4%;
-  padding-top: 100px;
-}
-
-#snipper {
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  padding: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-input {
-  width: 20%;
-  display: block;
-  margin: auto;
-  outline: none;
-}
-
-#clickBtn {
-  display: block;
-  margin: auto;
-  border: 0;
-  font-weight: bold;
-  margin-bottom: 2%;
-}
-
 #grid {
   display: grid;
   grid-template-columns: repeat(4, 22%);
@@ -47,54 +17,39 @@ img {
   border-radius: 5px;
 }
 
-#author {
-  margin-bottom: 45px;
-  line-height: 0;
-  margin-top: 20px;
+.post-source {
+  margin: 1px 0 3px 0;
   font-weight: bold;
   color: #000000bd;
-}
-
-#title,
-#author {
   font-size: 14px;
-  padding: 0 3%;
 }
 
 #readMore {
   position: absolute;
   bottom: 0;
-  left: 3%;
+  right: 0;
   border: 0;
   padding: 5px 10px;
   background-color: #000000de;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 400;
 }
 
-#date {
-  margin-bottom: 50px;
-  margin-top: -20px;
-  line-height: 0;
+.post-date {
   font-size: 12px;
-  padding: 0 3%;
   color: #151549a1
 }
 
-#title {
+.title {
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-}
-
-#btn-box {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5%;
+  color: #151515e7;
+  font-size: 14px;
 }
 
 .preNextBtn {

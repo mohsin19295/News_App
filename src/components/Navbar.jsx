@@ -1,11 +1,10 @@
 import React from 'react'
-import "./navbar.css"
 import { Link } from "react-router-dom"
-import { ParentList } from '../views/styles'
+import { NavList } from '../views/styles'
 
 function Navbar() {
   return (
-    <ParentList>
+    <NavList>
       <ul>
         <li><Link to="general">Home</Link></li>
       </ul>
@@ -17,7 +16,7 @@ function Navbar() {
         <li><Link to="sports">Sports</Link></li>
         <li><Link to="technology">Technology</Link></li>
       </ul>
-    </ParentList>
+    </NavList>
   )
 }
 
