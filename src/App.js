@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
+import "./App.css"
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -16,7 +17,7 @@ function App() {
           onLoaderFinished={() => setProgress(100)}
         />
         <Switch>
-         <Route exact path="/">
+          <Route exact path="/">
             <Redirect to="/general" />
           </Route>
           <Route exact path="/general">
