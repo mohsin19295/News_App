@@ -24,7 +24,7 @@ function News(props) {
       try {
         props.setProgress(0);
         setLoading(true);
-        const res = await Axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${apiKey}&page=${page}`);
+        const res = await Axios.get(`/api/v2/top-headlines?country=in&category=${props.category}&apiKey=${apiKey}&page=${page}`);
         console.log('data', res?.data?.articles);
         setPost(res?.data?.articles);
         setTotal(Math.ceil(res.data?.totalResults / limit));
