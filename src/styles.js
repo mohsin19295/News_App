@@ -40,7 +40,7 @@ export const PostContainer = styled(Box)(() => ({
 export const ButtonBox = styled(Box)(() => ({
     display: 'flex',
     justifyContent: 'space-between',
-    marginBottom: '1rem'
+    marginBottom: '1rem',
 }))
 
 export const CustomButton = styled(Button)(() => ({

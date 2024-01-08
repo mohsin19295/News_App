@@ -53,11 +53,14 @@ img {
 }
 
 .preNextBtn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
   border: 0;
   padding: 10px 20px;
   background-color: #000000de;
   color: #ffffff;
-  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -67,8 +70,8 @@ img {
 }
 
 .disabledButton {
-  background-color: gray;
-  color: #000000de;
+  background-color: #d3caca;
+  color: gray;
   cursor: auto;
 }
 

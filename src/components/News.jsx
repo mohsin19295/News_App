@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react'
 import Axios from "axios"
 import "./news.css"
 import { ScaleLoader } from "react-spinners";
-import { PrimaryColor } from '../views/utitls';
-import { ButtonBox, ContainerBox, PostContainer } from '../views/styles';
+import { PrimaryColor } from '../utitls';
+import { ButtonBox, ContainerBox, PostContainer } from '../styles';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 function News(props) {
   const [post, setPost] = useState([])
@@ -93,9 +95,9 @@ function News(props) {
         </div>
         {!loading && <ButtonBox>
           <button className={`preNextBtn ${page <= 1 && 'disabledButton'}`}
-            disabled={page <= 1} onClick={handlePrevious}>Previous</button>
+            disabled={page <= 1} onClick={handlePrevious}><ArrowBackIcon fontSize="small" />Prev</button>
           <button className={`preNextBtn ${page >= total && 'disabledButton'}`}
-            disabled={page >= total} onClick={handleNext}>Next</button>
+            disabled={page >= total} onClick={handleNext}>Next <ArrowForwardIcon fontSize="small" /></button>
         </ButtonBox>}
       </ContainerBox>
   );
