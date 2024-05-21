@@ -3,9 +3,10 @@ import Axios from "axios"
 import "./news.css"
 import { ScaleLoader } from "react-spinners";
 import { PrimaryColor } from '../utitls';
-import { ButtonBox, ContainerBox, CustomGrid, PostContainer } from '../assets/styles';
+import { ButtonBox, PostContainer, PreNextButton, ReadMore } from '../assets/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Box, Grid, Typography } from '@mui/material';
 
 function News(props) {
   const [post, setPost] = useState([])
@@ -73,13 +74,23 @@ function News(props) {
       aria-label="Loading Spinner"
       data-testid="loader"
     /> :
-      <ContainerBox>
-        <CustomGrid sx={{
+      <Box sx={{
+        padding: {
+          xs: '4rem 1rem 0',
+          sm: '4.5rem 1.5rem 0',
+          md: '5rem 2rem 0',
+          lg: '5rem 2.5rem 0',
+        }
+      }}>
+        <Grid sx={{
+          display: 'grid',
+          justifyContent: 'space-between',
           gridTemplateColumns: {
             xs: 'repeat(1, 100%)',
-            sm: 'repeat(2, 48%)', 
-            md: 'repeat(4, 22%)',
-            },
+            sm: 'repeat(2, 48%)',
+            md: 'repeat(3, 32%)',
+            lg: 'repeat(4, 24%)',
+          },
           rowGap: 4,
           columnGap: 2
         }}>
@@ -94,25 +105,33 @@ function News(props) {
               <PostContainer
                 key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                 sx={{
-                 
+
                 }}
               >
                 <img src={imageUrl} alt={urlToImage ? "urlToImage" : "No Image Available"} />
                 <p className='title'>{title}</p>
                 <p className='post-source'>{source.name == null ? source.name = "Unknown" : source.name}</p>
-                <p className='post-date'>{formatDate(publishedAt)}</p>
-                <a id="readMore" href={url} target="_blank" rel="noreferrer" >Read more</a>
+                <Typography variant='body2' sx={{ color: '#151549a1' }}>{formatDate(publishedAt)}</Typography>
+                <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore>
               </PostContainer>
             )
           })}
-        </CustomGrid>
+        </Grid>
         {!loading && <ButtonBox>
-          <button className={`preNextBtn ${page <= 1 && 'disabledButton'}`}
-            disabled={page <= 1} onClick={handlePrevious}><ArrowBackIcon fontSize="small" />Prev</button>
-          <button className={`preNextBtn ${page >= total && 'disabledButton'}`}
-            disabled={page >= total} onClick={handleNext}>Next <ArrowForwardIcon fontSize="small" /></button>
-        </ButtonBox>}
-      </ContainerBox>
+          <PreNextButton
+            disabled={page <= 1}
+            onClick={handlePrevious}
+          >
+            <ArrowBackIcon fontSize="small" /> Prev</PreNextButton>
+
+          <PreNextButton
+            disabled={page >= total}
+            onClick={handleNext}
+          >
+            Next <ArrowForwardIcon fontSize="small" /></PreNextButton>
+        </ButtonBox>
+        }
+      </Box>
   );
 }
 export default News

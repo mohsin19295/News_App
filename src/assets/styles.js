@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { PrimaryDark, PrimaryLight } from '../utitls'
-import { Box, Button, Grid } from '@mui/material'
+import { Box, Button } from '@mui/material'
 
 export const NavList = styled('nav')(() => ({
     display: 'flex',
@@ -23,17 +23,15 @@ export const NavList = styled('nav')(() => ({
     }
 }))
 
-export const ContainerBox = styled(Box)(() => ({
-    padding: '6rem 3rem 0',
-}))
-
 export const PostContainer = styled(Box)(() => ({
     position: 'relative',
-    backgroundColor: 'whitesmoke',
     display: 'flex',
     flexDirection: 'column',
     gap: '5px',
     paddingBottom: '10px',
+    backgroundColor: 'whitesmoke',
+    borderRadius: '5px',
+    flex: 1,
     '& >*:not(img)': {
         padding: '0 10px'
     }
@@ -46,17 +44,30 @@ export const ButtonBox = styled(Box)(() => ({
     marginTop: '2rem'
 }))
 
-export const CustomButton = styled(Button)(() => ({
+export const PreNextButton = styled(Button)(({ disabled }) => ({
     border: '0',
     padding: '8px 15px',
-    backgroundColor: PrimaryDark,
-    color: PrimaryLight,
-    cursor: 'pointer',
+    backgroundColor: disabled ? '#d3caca' : PrimaryDark,
+    color: disabled ? '#000' : PrimaryLight,
+    cursor: disabled ? 'not-allowed' : 'pointer',
     fontSize: '14px',
-    borderRadius: '5px'
-}))
+    fontWeight: '600',
+    borderRadius: '5px',
+    opacity: disabled ? 0.5 : 1,
+    '&:hover': {
+        backgroundColor: disabled ? '#d3caca' : '#666',
+    },
+}));
 
-export const CustomGrid = styled(Grid)(() => ({
-    display: 'grid',
-    justifyContent: 'space-between',
-  }));
+export const ReadMore = styled('a')(() => ({
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    height: '16px',
+    backgroundColor: '#000000de',
+    color: '#ffffff',
+    fontSize: '13px',
+    borderRadius: '5px',
+    fontWeight: '400',
+    textDecoration: 'none',
+}))
