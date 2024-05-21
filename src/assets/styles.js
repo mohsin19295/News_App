@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
-import { PrimaryDark, PrimaryLight } from './utitls'
-import { Box, Button } from '@mui/material'
+import { PrimaryDark, PrimaryLight } from '../utitls'
+import { Box, Button, Grid } from '@mui/material'
 
 export const NavList = styled('nav')(() => ({
     display: 'flex',
@@ -28,6 +28,8 @@ export const ContainerBox = styled(Box)(() => ({
 }))
 
 export const PostContainer = styled(Box)(() => ({
+    position: 'relative',
+    backgroundColor: 'whitesmoke',
     display: 'flex',
     flexDirection: 'column',
     gap: '5px',
@@ -41,6 +43,7 @@ export const ButtonBox = styled(Box)(() => ({
     display: 'flex',
     justifyContent: 'space-between',
     marginBottom: '1rem',
+    marginTop: '2rem'
 }))
 
 export const CustomButton = styled(Button)(() => ({
@@ -52,3 +55,8 @@ export const CustomButton = styled(Button)(() => ({
     fontSize: '14px',
     borderRadius: '5px'
 }))
+
+export const CustomGrid = styled(Grid)(() => ({
+    display: 'grid',
+    justifyContent: 'space-between',
+  }));

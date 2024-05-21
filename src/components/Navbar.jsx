@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import { NavList } from '../styles'
+import { NavList } from '../assets/styles'
 
 function Navbar() {
   return (

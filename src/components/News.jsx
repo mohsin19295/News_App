@@ -3,7 +3,7 @@ import Axios from "axios"
 import "./news.css"
 import { ScaleLoader } from "react-spinners";
 import { PrimaryColor } from '../utitls';
-import { ButtonBox, ContainerBox, PostContainer } from '../styles';
+import { ButtonBox, ContainerBox, CustomGrid, PostContainer } from '../assets/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
@@ -74,16 +74,29 @@ function News(props) {
       data-testid="loader"
     /> :
       <ContainerBox>
-        <div id="grid">
+        <CustomGrid sx={{
+          gridTemplateColumns: {
+            xs: 'repeat(1, 100%)',
+            sm: 'repeat(2, 48%)', 
+            md: 'repeat(4, 22%)',
+            },
+          rowGap: 4,
+          columnGap: 2
+        }}>
           {post?.map(post => {
             const defaultImage = "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
             const { urlToImage, publishedAt, url, title, source } = post;
-            const imageUrl = post.urlToImage && !post.urlToImage.includes('cdn.videocardz.com')
-              ? post.urlToImage
+            const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
+              ? post?.urlToImage
               : defaultImage
 
             return (
-              <PostContainer key={post.id == null ? post.id = Math.random(1, 100) : post.id}>
+              <PostContainer
+                key={post.id == null ? post.id = Math.random(1, 100) : post.id}
+                sx={{
+                 
+                }}
+              >
                 <img src={imageUrl} alt={urlToImage ? "urlToImage" : "No Image Available"} />
                 <p className='title'>{title}</p>
                 <p className='post-source'>{source.name == null ? source.name = "Unknown" : source.name}</p>
@@ -92,7 +105,7 @@ function News(props) {
               </PostContainer>
             )
           })}
-        </div>
+        </CustomGrid>
         {!loading && <ButtonBox>
           <button className={`preNextBtn ${page <= 1 && 'disabledButton'}`}
             disabled={page <= 1} onClick={handlePrevious}><ArrowBackIcon fontSize="small" />Prev</button>
