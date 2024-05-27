@@ -23,6 +23,13 @@ export const NavList = styled('nav')(() => ({
     }
 }))
 
+export const ButtonBox = styled(Box)(() => ({
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginBottom: '1rem',
+    marginTop: '2rem'
+}))
+
 export const PostContainer = styled(Box)(() => ({
     position: 'relative',
     display: 'flex',
@@ -37,11 +44,21 @@ export const PostContainer = styled(Box)(() => ({
     }
 }))
 
-export const ButtonBox = styled(Box)(() => ({
+
+export const ReadMore = styled('a')(() => ({
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    height: '20px',
+    backgroundColor: '#000000de',
+    color: '#ffffff',
+    fontSize: '12px',
+    borderRadius: '5px',
+    fontWeight: '400',
+    textDecoration: 'none',
     display: 'flex',
-    justifyContent: 'space-between',
-    marginBottom: '1rem',
-    marginTop: '2rem'
+    alignItems: 'center',
+    justifyContent: 'center'
 }))
 
 export const PreNextButton = styled(Button)(({ disabled }) => ({
@@ -58,16 +75,3 @@ export const PreNextButton = styled(Button)(({ disabled }) => ({
         backgroundColor: disabled ? '#d3caca' : '#666',
     },
 }));
-
-export const ReadMore = styled('a')(() => ({
-    position: 'absolute',
-    bottom: 0,
-    right: 0,
-    height: '16px',
-    backgroundColor: '#000000de',
-    color: '#ffffff',
-    fontSize: '13px',
-    borderRadius: '5px',
-    fontWeight: '400',
-    textDecoration: 'none',
-}))

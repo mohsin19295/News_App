@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Axios from "axios"
-import "./news.css"
 import { ScaleLoader } from "react-spinners";
-import { PrimaryColor } from '../utitls';
+import { PrimaryColor, SecondaryDark } from '../utitls';
 import { ButtonBox, PostContainer, PreNextButton, ReadMore } from '../assets/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -108,30 +107,63 @@ function News(props) {
 
                 }}
               >
-                <img src={imageUrl} alt={urlToImage ? "urlToImage" : "No Image Available"} />
-                <p className='title'>{title}</p>
-                <p className='post-source'>{source.name == null ? source.name = "Unknown" : source.name}</p>
-                <Typography variant='body2' sx={{ color: '#151549a1' }}>{formatDate(publishedAt)}</Typography>
+                <img
+                  src={imageUrl}
+                  alt={urlToImage ? "urlToImage" : "No Image Available"}
+                  style={{
+                    width: '100%',
+                    height: '30vh',
+                    borderRadius: '5px'
+                  }}
+                />
+                <Typography
+                  sx={{
+                    display: '-webkit-box',
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden',
+                    color: PrimaryColor,
+                    fontSize: '14px',
+                  }}
+                >{title}</Typography>
+                <Typography
+                  sx={{
+                    margin: '1px 0 3px 0',
+                    fontWeight: 'bold',
+                    fontSize: '14px',
+                    color: SecondaryDark
+                  }}
+                >
+                  {source.name == null ? source.name = "Unknown" : source.name}
+                </Typography>
+                <Typography
+                  variant='body2'
+                  sx={{
+                    color: '#151549a1',
+                    fontSize: '12px'
+                  }}
+                >{formatDate(publishedAt)}</Typography>
                 <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore>
               </PostContainer>
             )
           })}
         </Grid>
-        {!loading && <ButtonBox>
-          <PreNextButton
-            disabled={page <= 1}
-            onClick={handlePrevious}
-          >
-            <ArrowBackIcon fontSize="small" /> Prev</PreNextButton>
+        {
+          !loading && <ButtonBox>
+            <PreNextButton
+              disabled={page <= 1}
+              onClick={handlePrevious}
+            >
+              <ArrowBackIcon fontSize="small" /> Prev</PreNextButton>
 
-          <PreNextButton
-            disabled={page >= total}
-            onClick={handleNext}
-          >
-            Next <ArrowForwardIcon fontSize="small" /></PreNextButton>
-        </ButtonBox>
+            <PreNextButton
+              disabled={page >= total}
+              onClick={handleNext}
+            >
+              Next <ArrowForwardIcon fontSize="small" /></PreNextButton>
+          </ButtonBox>
         }
-      </Box>
+      </Box >
   );
 }
 export default News
