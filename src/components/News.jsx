@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Axios from "axios"
 import { ScaleLoader } from "react-spinners";
-import { PrimaryColor, SecondaryDark } from '../utitls';
+import { DefaultImage, PrimaryColor, SecondaryDark } from '../utitls';
 import { ButtonBox, PostContainer, PreNextButton, ReadMore } from '../assets/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -41,15 +41,8 @@ function News(props) {
     fetchData();
   }, [page]);
 
-  const handlePrevious = () => {
-    console.log('previous', total, page, limit)
-    setPage(page - 1)
-  }
-
-  const handleNext = () => {
-    console.log('next', total, page, limit)
-    setPage(page + 1)
-  }
+  const handlePrevious = () => setPage(page - 1);
+  const handleNext = () => setPage(page + 1);
 
   const formatDate = (dateString) => {
     const options = {
@@ -74,12 +67,7 @@ function News(props) {
       data-testid="loader"
     /> :
       <Box sx={{
-        padding: {
-          xs: '4rem 1rem 0',
-          sm: '4.5rem 1.5rem 0',
-          md: '5rem 2rem 0',
-          lg: '5rem 2.5rem 0',
-        }
+        padding: '4rem .6rem 0'
       }}>
         <Grid sx={{
           display: 'grid',
@@ -94,11 +82,10 @@ function News(props) {
           columnGap: 2
         }}>
           {post?.map(post => {
-            const defaultImage = "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
             const { urlToImage, publishedAt, url, title, source } = post;
             const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
               ? post?.urlToImage
-              : defaultImage
+              : DefaultImage
 
             return (
               <PostContainer

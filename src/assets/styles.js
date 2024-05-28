@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
-import { PrimaryDark, PrimaryLight } from '../utitls'
+import { PrimaryDark, PrimaryLight, ProgressColor } from '../utitls'
 import { Box, Button } from '@mui/material'
+import { hover } from '@testing-library/user-event/dist/hover'
 
 export const NavList = styled('nav')(() => ({
     display: 'flex',
@@ -11,14 +12,20 @@ export const NavList = styled('nav')(() => ({
     position: 'fixed',
     width: '100%',
     zIndex: '999',
-    padding: '1rem 3rem',
+    padding: '1.2rem 2rem',
     '& ul': {
         display: 'flex',
         listStyleType: 'none',
-        gap: '2rem',
+        gap: '1.5rem',
         '& a': {
             color: PrimaryLight,
             textDecoration: 'none',
+            padding: '0 2px 3px',
+            borderRadius: '10px',
+            '&:hover': {
+                borderBottom: `1px solid ${ProgressColor}`,
+                transition: 'border 0.5s ease-in-out'
+            },
         }
     }
 }))

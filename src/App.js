@@ -4,6 +4,7 @@ import News from "./components/News";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 import "./App.css"
+import { ProgressColor } from './utitls';
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -12,7 +13,7 @@ function App() {
       <Router>
         <Navbar />
         <LoadingBar
-          color="#f11946"
+          color={ProgressColor}
           progress={progress}
           onLoaderFinished={() => setProgress(100)}
         />
