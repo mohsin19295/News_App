@@ -1,22 +1,22 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import { NavList } from '../assets/styles'
+import { Nav, Ul } from '../assets/styles'
 
 function Navbar() {
   return (
-    <NavList>
-      <ul>
-        <li><Link to="general">Home</Link></li>
-      </ul>
-      <ul>
-        <li><Link to="business">Business</Link></li>
-        <li><Link to="entertainment">Entertainment</Link></li>
-        <li><Link to="health">Health</Link></li>
-        <li><Link to="science">Science</Link></li>
-        <li><Link to="sports">Sports</Link></li>
-        <li><Link to="technology">Technology</Link></li>
-      </ul>
-    </NavList>
+    <Nav>
+      <Ul>
+        <Link to="general">Home</Link>
+      </Ul>
+      <Ul>
+        <Link to="business">Business</Link>
+        <Link to="entertainment">Entertainment</Link>
+        <Link to="health">Health</Link>
+        <Link to="science">Science</Link>
+        <Link to="sports">Sports</Link>
+        <Link to="technology">Technology</Link>
+      </Ul>
+    </Nav>
   )
 }
 

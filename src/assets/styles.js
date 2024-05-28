@@ -1,9 +1,8 @@
 import styled from '@emotion/styled'
-import { PrimaryDark, PrimaryLight, ProgressColor } from '../utitls'
+import { PrimaryColor, PrimaryDark, PrimaryLight, ProgressColor } from '../utitls'
 import { Box, Button } from '@mui/material'
-import { hover } from '@testing-library/user-event/dist/hover'
 
-export const NavList = styled('nav')(() => ({
+export const Nav = styled('nav')(() => ({
     display: 'flex',
     gap: '5%',
     alignItems: 'center',
@@ -12,23 +11,27 @@ export const NavList = styled('nav')(() => ({
     position: 'fixed',
     width: '100%',
     zIndex: '999',
-    padding: '1.2rem 2rem',
-    '& ul': {
-        display: 'flex',
-        listStyleType: 'none',
-        gap: '1.5rem',
-        '& a': {
-            color: PrimaryLight,
-            textDecoration: 'none',
-            padding: '0 2px 3px',
-            borderRadius: '10px',
-            '&:hover': {
-                borderBottom: `1px solid ${ProgressColor}`,
-                transition: 'border 0.5s ease-in-out'
-            },
-        }
+    padding: '1rem 2rem',
+}))
+
+export const Ul = styled('ul')(() => ({
+    display: 'flex',
+    listStyleType: 'none',
+    gap: '0.5rem',
+    '&>*': {
+        color: PrimaryLight,
+        textDecoration: 'none',
+        padding: '5px 10px',
+        borderRadius: '10px',
+        '&:hover': {
+            boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.55) 0px 2px 16px 0px',
+            // boxShadow: 'rgba(255, 255, 255, 0.4) 0px 2px 4px 0px, rgba(255, 255, 255, 0.55) 0px 2px 16px 0px',
+            transition: 'box-shadow 0.2s ease-in-out',
+        },
     }
 }))
+
+
 
 export const ButtonBox = styled(Box)(() => ({
     display: 'flex',
