@@ -70,18 +70,24 @@ function News(props) {
       data-testid="loader"
     /> :
       <Box sx={{
-        padding: '4rem .6rem 0'
+        padding: '4rem .6rem 0',
+        
       }}>
         {/* Top Section */}
         <Box
           sx={{
             display: 'flex',
             gap: '2rem',
-            paddingTop: '2rem'
+            paddingTop: '2rem',
+            width: '100%',
+            // border: '1px solid red'
           }}
         >
           <Box
-            sx={{ width: '70%' }}
+            sx={{
+              width: '70%',
+              // border: '1px solid blue'
+            }}
           >
             <Typography
               variant='h5'
@@ -101,7 +107,7 @@ function News(props) {
 
                 return (
                   <PostContainer
-                    sx={{maxWidth: '48%'}}
+                    latest
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                   >
                     <img
@@ -109,11 +115,26 @@ function News(props) {
                       alt={urlToImage ? "urlToImage" : "No Image Available"}
                       style={{
                         width: '100%',
-                        height: '30vh',
-                        borderRadius: '5px'
+                        height: '100%',
+                        borderRadius: '5px',
                       }}
                     />
-                    <Typography
+                    <div
+                      style={{
+                        position: 'absolute',
+                        bottom: '0',
+                        backgroundColor: 'black',
+                        opacity: 0.7,
+                        width: '100%',
+                        height: '6rem',
+                        borderRadius: '0 0 5px 5px'
+                    }}
+                    >
+                      <p style={{color: 'white'}}>fmekfmekmf</p>
+                      <p style={{color: 'white'}}>fmekfm  jenf e enfje few fjew fewnmf wej feekmf</p>
+                      <p style={{color: 'white'}}>fmekf fmekf emfew fjebfhjew fne fuhefer guhr fef rehu ee emekmf</p>
+                    </div>
+                    {/* <Typography
                       sx={{
                         display: '-webkit-box',
                         WebkitLineClamp: 2,
@@ -139,8 +160,8 @@ function News(props) {
                         color: '#151549a1',
                         fontSize: '12px'
                       }}
-                    >{formatDate(publishedAt)}</Typography>
-                    <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore>
+                    >{formatDate(publishedAt)}</Typography> */}
+                    {/* <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore> */}
                   </PostContainer>
                 )
               })}
@@ -163,7 +184,6 @@ function News(props) {
             <Flex
               gap
               sx={{
-                height: '80vh',
                 overflow: 'scroll',
               }}
             >
@@ -200,7 +220,7 @@ function News(props) {
                         fontSize: '12px'
                       }}
                     >{formatDate(publishedAt)}</Typography>
-                    <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore>
+                    {/* <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore> */}
                   </PostContainer>
                 )
               })}

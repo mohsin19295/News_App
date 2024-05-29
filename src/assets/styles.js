@@ -11,7 +11,7 @@ export const Nav = styled('nav')(() => ({
     position: 'fixed',
     width: '100%',
     zIndex: '999',
-    padding: '1rem 2rem',
+    height: '8vh'
 }))
 
 export const Ul = styled('ul')(() => ({
@@ -40,21 +40,23 @@ export const ButtonBox = styled(Box)(() => ({
     marginTop: '2rem'
 }))
 
-export const PostContainer = styled(Box)(() => ({
-    position: 'relative',
+export const PostContainer = styled(Box)(({latest}) => ({
     display: 'flex',
     flexDirection: 'column',
-    paddingBottom: '10px',
     backgroundColor: 'whitesmoke',
     borderRadius: '5px',
     '& >*:not(img)': {
         padding: '0 10px'
-    }
+    },
+    minWidth: latest ? '48%' : '',
+    flex: latest ? 1 : '',
+    position: latest ? 'relative' : '',
+    // border: '1px solid green',
 }))
 
 
 export const ReadMore = styled('a')(() => ({
-    position: 'absolute',
+    // position: 'absolute',
     bottom: 0,
     right: 0,
     height: '20px',
@@ -85,7 +87,9 @@ export const PreNextButton = styled(Button)(({ disabled }) => ({
 }));
 
 export const Flex = styled(Box)(({ gap }) => ({
+    height: '80vh',
     display: 'flex',
     flexWrap: 'wrap',
-    gap: gap || '2rem'
+    gap: gap || '1rem',
+    justifyContent: 'space-between'
 }))
