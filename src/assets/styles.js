@@ -44,11 +44,9 @@ export const PostContainer = styled(Box)(() => ({
     position: 'relative',
     display: 'flex',
     flexDirection: 'column',
-    gap: '5px',
     paddingBottom: '10px',
     backgroundColor: 'whitesmoke',
     borderRadius: '5px',
-    flex: 1,
     '& >*:not(img)': {
         padding: '0 10px'
     }
@@ -85,3 +83,9 @@ export const PreNextButton = styled(Button)(({ disabled }) => ({
         backgroundColor: disabled ? '#d3caca' : '#666',
     },
 }));
+
+export const Flex = styled(Box)(({ gap }) => ({
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: gap || '2rem'
+}))

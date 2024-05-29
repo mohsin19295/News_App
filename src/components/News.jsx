@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from 'react'
-import Axios from "axios"
+import React, { useState, useEffect } from 'react';
+import Axios from "axios";
 import { ScaleLoader } from "react-spinners";
 import { DefaultImage, PrimaryColor, SecondaryDark } from '../utitls';
-import { ButtonBox, PostContainer, PreNextButton, ReadMore } from '../assets/styles';
+import { ButtonBox, Flex, PostContainer, PreNextButton, ReadMore } from '../assets/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Box, Grid, Typography } from '@mui/material';
+import staticData from '../staticData.json';
 
 function News(props) {
-  const [post, setPost] = useState([])
-  const [page, setPage] = useState(1)
-  const [total, setTotal] = useState(0)
+  const [post, setPost] = useState([]);
+  const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(false);
-  let limit = 20;
+  const limit = 20;
   const override = {
     display: 'flex',
     justifyContent: 'center',
@@ -26,10 +27,12 @@ function News(props) {
       try {
         props.setProgress(0);
         setLoading(true);
-        const res = await Axios.get(`/api/v2/top-headlines?country=in&category=${props.category}&apiKey=${apiKey}&page=${page}`);
-        console.log('data', res?.data?.articles);
-        setPost(res?.data?.articles);
-        setTotal(Math.ceil(res.data?.totalResults / limit));
+        // const res = await Axios.get(`/api/v2/top-headlines?country=in&category=${props.category}&apiKey=${apiKey}&page=${page}`);
+        // console.log('data', res?.data?.articles);
+        // setPost(res?.data?.articles);
+        // setTotal(Math.ceil(res.data?.totalResults / limit));
+        setPost(staticData.articles);
+        setTotal(Math.ceil(staticData.totalResults / limit))
         props.setProgress(100);
       } catch (error) {
         console.log('An error occurs while fetching', error);
@@ -69,7 +72,144 @@ function News(props) {
       <Box sx={{
         padding: '4rem .6rem 0'
       }}>
-        <Grid sx={{
+        {/* Top Section */}
+        <Box
+          sx={{
+            display: 'flex',
+            gap: '2rem',
+            paddingTop: '2rem'
+          }}
+        >
+          <Box
+            sx={{ width: '70%' }}
+          >
+            <Typography
+              variant='h5'
+              px={1}
+              borderLeft={3}
+              borderColor='red'
+              mb={2}
+            >
+              Latest News</Typography>
+
+            <Flex>
+              {post?.slice(0, 4).map(post => {
+                const { urlToImage, publishedAt, url, title, source } = post;
+                const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
+                  ? post?.urlToImage
+                  : DefaultImage
+
+                return (
+                  <PostContainer
+                    sx={{maxWidth: '48%'}}
+                    key={post.id == null ? post.id = Math.random(1, 100) : post.id}
+                  >
+                    <img
+                      src={imageUrl}
+                      alt={urlToImage ? "urlToImage" : "No Image Available"}
+                      style={{
+                        width: '100%',
+                        height: '30vh',
+                        borderRadius: '5px'
+                      }}
+                    />
+                    <Typography
+                      sx={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                        color: PrimaryColor,
+                        fontSize: '14px',
+                      }}
+                    >{title}</Typography>
+                    <Typography
+                      sx={{
+                        margin: '1px 0 3px 0',
+                        fontWeight: 'bold',
+                        fontSize: '14px',
+                        color: SecondaryDark
+                      }}
+                    >
+                      {source.name == null ? source.name = "Unknown" : source.name}
+                    </Typography>
+                    <Typography
+                      variant='body2'
+                      sx={{
+                        color: '#151549a1',
+                        fontSize: '12px'
+                      }}
+                    >{formatDate(publishedAt)}</Typography>
+                    <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore>
+                  </PostContainer>
+                )
+              })}
+            </Flex>
+          </Box>
+
+
+          <Box
+          sx={{width: '30%'}}
+          >
+            <Typography
+              variant='h5'
+              px={1}
+              borderLeft={3}
+              borderColor='red'
+              mb={2}
+            >
+              Recent Updates</Typography>
+
+            <Flex
+              gap
+              sx={{
+                height: '80vh',
+                overflow: 'scroll',
+              }}
+            >
+              {post?.slice(4).map(post => {
+                const { publishedAt, url, title, source } = post;
+                return (
+                  <PostContainer
+                    key={post.id == null ? post.id = Math.random(1, 100) : post.id}
+                  >
+                    <Typography
+                      sx={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                        color: PrimaryColor,
+                        fontSize: '14px',
+                      }}
+                    >{title}</Typography>
+                    <Typography
+                      sx={{
+                        margin: '1px 0 3px 0',
+                        fontWeight: 'bold',
+                        fontSize: '14px',
+                        color: SecondaryDark
+                      }}
+                    >
+                      {source.name == null ? source.name = "Unknown" : source.name}
+                    </Typography>
+                    <Typography
+                      variant='body2'
+                      sx={{
+                        color: '#151549a1',
+                        fontSize: '12px'
+                      }}
+                    >{formatDate(publishedAt)}</Typography>
+                    <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore>
+                  </PostContainer>
+                )
+              })}
+            </Flex>
+          </Box>
+        </Box>
+
+
+        {/* <Grid sx={{
           display: 'grid',
           justifyContent: 'space-between',
           gridTemplateColumns: {
@@ -134,7 +274,11 @@ function News(props) {
               </PostContainer>
             )
           })}
-        </Grid>
+        </Grid> */}
+
+
+
+        {/* Pagination */}
         {
           !loading && <ButtonBox>
             <PreNextButton
@@ -153,4 +297,5 @@ function News(props) {
       </Box >
   );
 }
-export default News
+
+export default News;
