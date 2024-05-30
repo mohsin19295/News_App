@@ -40,32 +40,17 @@ export const ButtonBox = styled(Box)(() => ({
     marginTop: '2rem'
 }))
 
-export const PostContainer = styled(Box)(({latest}) => ({
-    display: 'flex',
-    flexDirection: 'column',
+export const PostContainer = styled(Box)(({ latest }) => ({
     borderRadius: '5px',
+    cursor: 'pointer',
+    display: 'flex',
+    flexDirection: latest ? 'column' : 'row',
+    gap: latest ? '' : '.8rem',
     minWidth: latest ? '48%' : '',
     flex: latest ? 1 : '',
     position: latest ? 'relative' : '',
     // border: '1px solid green',
 }))
-
-
-// export const ReadMore = styled('a')(() => ({
-//     // position: 'absolute',
-//     bottom: 0,
-//     right: 0,
-//     height: '20px',
-//     backgroundColor: '#000000de',
-//     color: '#ffffff',
-//     fontSize: '12px',
-//     borderRadius: '5px',
-//     fontWeight: '400',
-//     textDecoration: 'none',
-//     display: 'flex',
-//     alignItems: 'center',
-//     justifyContent: 'center'
-// }))
 
 export const PreNextButton = styled(Button)(({ disabled }) => ({
     border: '0',

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Axios from "axios";
 import { ScaleLoader } from "react-spinners";
-import { DefaultImage, PrimaryColor, SecondaryDark } from '../utitls';
+import { DefaultImage, HeadingColor, PrimaryColor, SecondaryDark } from '../utitls';
 import { ButtonBox, Flex, PostContainer, PreNextButton, ReadMore } from '../assets/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -100,13 +100,14 @@ function News(props) {
 
             <Flex>
               {post?.slice(0, 4).map(post => {
-                const { urlToImage, publishedAt, url, title, source } = post;
+                const { urlToImage, url, title, source } = post;
                 const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
                   ? post?.urlToImage
                   : DefaultImage
 
                 return (
                   <PostContainer
+                    onClick={() => window.open(url, 'noreferrer')}
                     latest
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                   >
@@ -125,39 +126,38 @@ function News(props) {
                         bottom: '0',
                         width: '100%',
                         padding: '5px 10px',
-                        color:'white',
+                        color: 'white',
                         borderRadius: '0 0 5px 5px',
-                        background: 'rgba(0, 0, 0, 0.208)',
-                        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                        backdropFilter: 'blur(20px)',
+                        background: 'rgba(23, 23, 23, 0.335)',
+                        backdropFilter: 'blur(10px)',
                       }}
                     >
                       <Typography
-                        fontSize={14}
-                        overflow='hidden'
+                        fontSize={16}
                         sx={{
                           display: '-webkit-box',
                           WebkitLineClamp: 2,
                           WebkitBoxOrient: 'vertical',
+                          overflow:'hidden',
+                          letterSpacing: '1px'
                         }}
                       >
                         {title}
                       </Typography>
                       <Typography
                         fontWeight='bold'
-                        fontSize={14}
+                        fontSize={15}
                         mt={1}
+                        color={HeadingColor}
                       >
                         {source.name == null ? source.name = "Unknown" : source.name}
                       </Typography>
                     </div>
-                    {/* <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore> */}
                   </PostContainer>
                 )
               })}
             </Flex>
           </Box>
-
 
           <Box
             sx={{ width: '30%' }}
@@ -178,39 +178,40 @@ function News(props) {
               }}
             >
               {post?.slice(4).map(post => {
-                const { publishedAt, url, title, source } = post;
+                const { urlToImage, url, title } = post;
+                const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
+                  ? post?.urlToImage
+                  : DefaultImage
                 return (
                   <PostContainer
+                    sx={{
+                      height: '10vh',
+                    }}
+                    onClick={()=> window.open(url, 'noreferrer')}
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                   >
+                    <img
+                      src={imageUrl}
+                      alt={urlToImage ? "urlToImage" : "No Image Available"}
+                      style={{
+                        borderRadius: '5px',
+                        width: '120px',
+                        minWidth: '120px'
+                      }}
+                    />
                     <Typography
+                      fontSize={16}
                       sx={{
                         display: '-webkit-box',
                         WebkitLineClamp: 2,
                         WebkitBoxOrient: 'vertical',
                         overflow: 'hidden',
-                        color: PrimaryColor,
-                        fontSize: '14px',
-                      }}
-                    >{title}</Typography>
-                    <Typography
-                      sx={{
-                        margin: '1px 0 3px 0',
-                        fontWeight: 'bold',
-                        fontSize: '14px',
-                        color: SecondaryDark
+                        maxHeight: '3em',
+                        letterSpacing: '1px'
                       }}
                     >
-                      {source.name == null ? source.name = "Unknown" : source.name}
+                      {title}
                     </Typography>
-                    <Typography
-                      variant='body2'
-                      sx={{
-                        color: '#151549a1',
-                        fontSize: '12px'
-                      }}
-                    >{formatDate(publishedAt)}</Typography>
-                    {/* <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore> */}
                   </PostContainer>
                 )
               })}
