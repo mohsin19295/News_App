@@ -75,3 +75,8 @@ export const Flex = styled(Box)(({ gap }) => ({
     gap: gap || '1rem',
     justifyContent: 'space-between'
 }))
+
+
+export const SectionContainer = styled(Box)(({recent, latest}) => ({
+    width: recent ? '30%' : latest ? '70%' : '100%'
+}))

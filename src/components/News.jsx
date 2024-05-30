@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Axios from "axios";
 import { ScaleLoader } from "react-spinners";
 import { DefaultImage, HeadingColor, PrimaryColor, SecondaryDark } from '../utitls';
-import { ButtonBox, Flex, PostContainer, PreNextButton, ReadMore } from '../assets/styles';
+import { ButtonBox, Flex, PostContainer, PreNextButton, ReadMore, SectionContainer } from '../assets/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Box, Grid, Typography } from '@mui/material';
@@ -80,15 +80,9 @@ function News(props) {
             gap: '2rem',
             padding: '2rem',
             width: '100%',
-            // border: '1px solid red'
           }}
         >
-          <Box
-            sx={{
-              width: '70%',
-              // border: '1px solid blue'
-            }}
-          >
+          <SectionContainer latest>
             <Typography
               variant='h5'
               px={1}
@@ -157,11 +151,9 @@ function News(props) {
                 )
               })}
             </Flex>
-          </Box>
+          </SectionContainer>
 
-          <Box
-            sx={{ width: '30%' }}
-          >
+          <SectionContainer recent>
             <Typography
               variant='h5'
               px={1}
@@ -183,7 +175,7 @@ function News(props) {
                 return (
                   <PostContainer
                     sx={{
-                      height: '10vh',
+                      height: '12vh',
                     }}
                     onClick={()=> window.open(url, 'noreferrer')}
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
@@ -193,19 +185,20 @@ function News(props) {
                       alt={urlToImage ? "urlToImage" : "No Image Available"}
                       style={{
                         borderRadius: '5px',
-                        width: '120px',
-                        minWidth: '120px'
+                        width: '150px',
+                        minWidth: '150px'
                       }}
                     />
                     <Typography
                       fontSize={16}
                       sx={{
                         display: '-webkit-box',
-                        WebkitLineClamp: 2,
+                        WebkitLineClamp: 3,
                         WebkitBoxOrient: 'vertical',
                         overflow: 'hidden',
-                        maxHeight: '3em',
-                        letterSpacing: '1px'
+                        maxHeight: '4.5em',
+                        letterSpacing: '1px',
+                        marginRight: '5px'
                       }}
                     >
                       {title}
@@ -214,8 +207,10 @@ function News(props) {
                 )
               })}
             </Flex>
-          </Box>
+          </SectionContainer>
+
         </Box>
+          <SectionContainer>New One</SectionContainer>
 
 
         {/* <Grid sx={{
