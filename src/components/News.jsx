@@ -71,7 +71,7 @@ function News(props) {
     /> :
       <Box sx={{
         padding: '4rem .6rem 0',
-        
+
       }}>
         {/* Top Section */}
         <Box
@@ -123,44 +123,34 @@ function News(props) {
                       style={{
                         position: 'absolute',
                         bottom: '0',
-                        backgroundColor: 'black',
-                        opacity: 0.7,
                         width: '100%',
-                        height: '6rem',
-                        borderRadius: '0 0 5px 5px'
-                    }}
+                        padding: '5px 10px',
+                        color:'white',
+                        borderRadius: '0 0 5px 5px',
+                        background: 'rgba(0, 0, 0, 0.208)',
+                        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                        backdropFilter: 'blur(20px)',
+                      }}
                     >
-                      <p style={{color: 'white'}}>fmekfmekmf</p>
-                      <p style={{color: 'white'}}>fmekfm  jenf e enfje few fjew fewnmf wej feekmf</p>
-                      <p style={{color: 'white'}}>fmekf fmekf emfew fjebfhjew fne fuhefer guhr fef rehu ee emekmf</p>
+                      <Typography
+                        fontSize={14}
+                        overflow='hidden'
+                        sx={{
+                          display: '-webkit-box',
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: 'vertical',
+                        }}
+                      >
+                        {title}
+                      </Typography>
+                      <Typography
+                        fontWeight='bold'
+                        fontSize={14}
+                        mt={1}
+                      >
+                        {source.name == null ? source.name = "Unknown" : source.name}
+                      </Typography>
                     </div>
-                    {/* <Typography
-                      sx={{
-                        display: '-webkit-box',
-                        WebkitLineClamp: 2,
-                        WebkitBoxOrient: 'vertical',
-                        overflow: 'hidden',
-                        color: PrimaryColor,
-                        fontSize: '14px',
-                      }}
-                    >{title}</Typography>
-                    <Typography
-                      sx={{
-                        margin: '1px 0 3px 0',
-                        fontWeight: 'bold',
-                        fontSize: '14px',
-                        color: SecondaryDark
-                      }}
-                    >
-                      {source.name == null ? source.name = "Unknown" : source.name}
-                    </Typography>
-                    <Typography
-                      variant='body2'
-                      sx={{
-                        color: '#151549a1',
-                        fontSize: '12px'
-                      }}
-                    >{formatDate(publishedAt)}</Typography> */}
                     {/* <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore> */}
                   </PostContainer>
                 )
@@ -170,7 +160,7 @@ function News(props) {
 
 
           <Box
-          sx={{width: '30%'}}
+            sx={{ width: '30%' }}
           >
             <Typography
               variant='h5'
