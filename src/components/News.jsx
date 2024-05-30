@@ -78,7 +78,7 @@ function News(props) {
           sx={{
             display: 'flex',
             gap: '2rem',
-            paddingTop: '2rem',
+            padding: '2rem',
             width: '100%',
             // border: '1px solid red'
           }}
@@ -172,10 +172,8 @@ function News(props) {
               Recent Updates</Typography>
 
             <Flex
+              className='items'
               gap
-              sx={{
-                overflow: 'scroll',
-              }}
             >
               {post?.slice(4).map(post => {
                 const { urlToImage, url, title } = post;

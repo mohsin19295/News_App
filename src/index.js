@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { HeadingColor as ScrollColor } from './utitls';
+
+// Injecting the Color into a CSS Variable
+
+document.documentElement.style.setProperty('--ScrollColor', ScrollColor);
+
 
 ReactDOM.render(
   <React.StrictMode>

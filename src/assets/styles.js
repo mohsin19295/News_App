@@ -11,7 +11,8 @@ export const Nav = styled('nav')(() => ({
     position: 'fixed',
     width: '100%',
     zIndex: '999',
-    height: '8vh'
+    height: '8vh',
+    padding: '0 2rem'
 }))
 
 export const Ul = styled('ul')(() => ({
