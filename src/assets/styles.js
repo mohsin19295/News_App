@@ -37,8 +37,9 @@ export const Ul = styled('ul')(() => ({
 export const ButtonBox = styled(Box)(() => ({
     display: 'flex',
     justifyContent: 'space-between',
-    marginBottom: '1rem',
-    marginTop: '2rem'
+    // marginBottom: '1rem',
+    // marginTop: '2rem'
+    padding: '0 8rem 2rem'
 }))
 
 export const PostContainer = styled(Box)(({ latest }) => ({

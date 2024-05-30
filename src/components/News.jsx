@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Axios from "axios";
 import { ScaleLoader } from "react-spinners";
-import { DefaultImage, HeadingColor, PrimaryColor, SecondaryDark } from '../utitls';
+import { DefaultImage, PrimaryColor, SecondaryColor } from '../utitls';
 import { ButtonBox, Flex, PostContainer, PreNextButton, ReadMore, SectionContainer } from '../assets/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -13,7 +13,7 @@ function News(props) {
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(false);
-  const limit = 20;
+  const limit = 16;
   const override = {
     display: 'flex',
     justifyContent: 'center',
@@ -27,8 +27,8 @@ function News(props) {
       try {
         props.setProgress(0);
         setLoading(true);
-        // const res = await Axios.get(`/api/v2/top-headlines?country=in&category=${props.category}&apiKey=${apiKey}&page=${page}`);
-        // console.log('data', res?.data?.articles);
+        const res = await Axios.get(`/api/v2/top-headlines?country=in&category=${props?.category}&apiKey=${apiKey}&page=${page}`);
+        console.log('data', res?.data?.articles);
         // setPost(res?.data?.articles);
         // setTotal(Math.ceil(res.data?.totalResults / limit));
         setPost(staticData.articles);
@@ -46,19 +46,6 @@ function News(props) {
 
   const handlePrevious = () => setPage(page - 1);
   const handleNext = () => setPage(page + 1);
-
-  const formatDate = (dateString) => {
-    const options = {
-      weekday: 'short',
-      day: '2-digit',
-      month: 'short',
-      year: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit',
-      timeZone: 'UTC',
-    };
-    return new Date(dateString).toLocaleString('en-US', options);
-  };
 
   return (
     loading ? <ScaleLoader
@@ -79,7 +66,6 @@ function News(props) {
             display: 'flex',
             gap: '2rem',
             padding: '2rem',
-            width: '100%',
           }}
         >
           <SectionContainer latest>
@@ -93,7 +79,7 @@ function News(props) {
               Latest News</Typography>
 
             <Flex>
-              {post?.slice(0, 4).map(post => {
+              {post?.slice(0, 4)?.map(post => {
                 const { urlToImage, url, title, source } = post;
                 const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
                   ? post?.urlToImage
@@ -132,7 +118,7 @@ function News(props) {
                           display: '-webkit-box',
                           WebkitLineClamp: 2,
                           WebkitBoxOrient: 'vertical',
-                          overflow:'hidden',
+                          overflow: 'hidden',
                           letterSpacing: '1px'
                         }}
                       >
@@ -142,7 +128,7 @@ function News(props) {
                         fontWeight='bold'
                         fontSize={15}
                         mt={1}
-                        color={HeadingColor}
+                        color={SecondaryColor}
                       >
                         {source.name == null ? source.name = "Unknown" : source.name}
                       </Typography>
@@ -167,7 +153,7 @@ function News(props) {
               className='items'
               gap
             >
-              {post?.slice(4).map(post => {
+              {post?.slice(4)?.map(post => {
                 const { urlToImage, url, title } = post;
                 const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
                   ? post?.urlToImage
@@ -177,7 +163,7 @@ function News(props) {
                     sx={{
                       height: '12vh',
                     }}
-                    onClick={()=> window.open(url, 'noreferrer')}
+                    onClick={() => window.open(url, 'noreferrer')}
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                   >
                     <img
@@ -210,77 +196,86 @@ function News(props) {
           </SectionContainer>
 
         </Box>
-          <SectionContainer>New One</SectionContainer>
 
 
-        {/* <Grid sx={{
-          display: 'grid',
-          justifyContent: 'space-between',
-          gridTemplateColumns: {
-            xs: 'repeat(1, 100%)',
-            sm: 'repeat(2, 48%)',
-            md: 'repeat(3, 32%)',
-            lg: 'repeat(4, 24%)',
-          },
-          rowGap: 4,
-          columnGap: 2
-        }}>
-          {post?.map(post => {
-            const { urlToImage, publishedAt, url, title, source } = post;
-            const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
-              ? post?.urlToImage
-              : DefaultImage
+        {/* Mid Section */}
+        <Box sx={{ padding: '2rem' }}>
 
-            return (
-              <PostContainer
-                key={post.id == null ? post.id = Math.random(1, 100) : post.id}
-                sx={{
+          <SectionContainer>
+            <Typography
+              variant='h5'
+              px={1}
+              borderLeft={3}
+              borderColor='red'
+              mb={2}
+            >
+              More Stories</Typography>
 
-                }}
-              >
-                <img
-                  src={imageUrl}
-                  alt={urlToImage ? "urlToImage" : "No Image Available"}
-                  style={{
-                    width: '100%',
-                    height: '30vh',
-                    borderRadius: '5px'
-                  }}
-                />
-                <Typography
-                  sx={{
-                    display: '-webkit-box',
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: 'vertical',
-                    overflow: 'hidden',
-                    color: PrimaryColor,
-                    fontSize: '14px',
-                  }}
-                >{title}</Typography>
-                <Typography
-                  sx={{
-                    margin: '1px 0 3px 0',
-                    fontWeight: 'bold',
-                    fontSize: '14px',
-                    color: SecondaryDark
-                  }}
-                >
-                  {source.name == null ? source.name = "Unknown" : source.name}
-                </Typography>
-                <Typography
-                  variant='body2'
-                  sx={{
-                    color: '#151549a1',
-                    fontSize: '12px'
-                  }}
-                >{formatDate(publishedAt)}</Typography>
-                <ReadMore href={url} target="_blank" rel="noreferrer" >Read more</ReadMore>
-              </PostContainer>
-            )
-          })}
-        </Grid> */}
-
-
+            <div
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '1rem'
+              }}
+            >
+              {post?.map(post => {
+                const { urlToImage, url, title, description } = post;
+                const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
+                  ? post?.urlToImage
+                  : DefaultImage
+                return (
+                  <Box
+                    key={post.id == null ? post.id = Math.random(1, 100) : post.id}
+                    onClick={() => window.open(url, 'noreferrer')}
+                    sx={{
+                      flex: 1,
+                      minWidth: '300px',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <img
+                      src={imageUrl}
+                      alt={urlToImage ? "urlToImage" : "No Image Available"}
+                      style={{
+                        borderRadius: '5px',
+                        width: '100%',
+                        height: '200px'
+                      }}
+                    />
+                    <Typography
+                      fontSize={18}
+                      sx={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                        maxHeight: '3em',
+                        margin: '5px 0',
+                        fontWeight: '800',
+                        color: PrimaryColor
+                      }}
+                    >
+                      {title}
+                    </Typography>
+                    <Typography
+                      fontSize={15}
+                      sx={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: 3,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                        maxHeight: '4.5em',
+                        color: '#908e8e'
+                      }}
+                    >
+                      {description}
+                    </Typography>
+                  </Box>
+                )
+              })}
+            </div>
+          </SectionContainer>
+        </Box>
 
         {/* Pagination */}
         {
