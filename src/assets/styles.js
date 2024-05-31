@@ -42,7 +42,7 @@ export const ButtonBox = styled(Box)(() => ({
     padding: '0 8rem 2rem'
 }))
 
-export const PostContainer = styled(Box)(({ latest }) => ({
+export const PostContainer = styled(Box)(({ latest, recent }) => ({
     borderRadius: '5px',
     cursor: 'pointer',
     display: 'flex',
@@ -51,6 +51,7 @@ export const PostContainer = styled(Box)(({ latest }) => ({
     minWidth: latest ? '48%' : '',
     flex: latest ? 1 : '',
     position: latest ? 'relative' : '',
+    height: latest ? '39vh' : recent ? '12vh' : '',
     // border: '1px solid green',
 }))
 
@@ -74,10 +75,11 @@ export const Flex = styled(Box)(({ gap }) => ({
     display: 'flex',
     flexWrap: 'wrap',
     gap: gap || '1rem',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    // border: '1px solid red'
 }))
 
 
-export const SectionContainer = styled(Box)(({recent, latest}) => ({
+export const SectionContainer = styled(Box)(({ recent, latest }) => ({
     width: recent ? '30%' : latest ? '70%' : '100%'
 }))

@@ -13,7 +13,7 @@ function News(props) {
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(false);
-  const limit = 16;
+  const limit = 20;
   const override = {
     display: 'flex',
     justifyContent: 'center',
@@ -29,10 +29,10 @@ function News(props) {
         setLoading(true);
         const res = await Axios.get(`/api/v2/top-headlines?country=in&category=${props?.category}&apiKey=${apiKey}&page=${page}`);
         console.log('data', res?.data?.articles);
-        // setPost(res?.data?.articles);
-        // setTotal(Math.ceil(res.data?.totalResults / limit));
-        setPost(staticData.articles);
-        setTotal(Math.ceil(staticData.totalResults / limit))
+        setPost(res?.data?.articles);
+        setTotal(Math.ceil(res.data?.totalResults / limit));
+        // setPost(staticData.articles);
+        // setTotal(Math.ceil(staticData.totalResults / limit))
         props.setProgress(100);
       } catch (error) {
         console.log('An error occurs while fetching', error);
@@ -87,8 +87,8 @@ function News(props) {
 
                 return (
                   <PostContainer
-                    onClick={() => window.open(url, 'noreferrer')}
                     latest
+                    onClick={() => window.open(url, 'noreferrer')}
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                   >
                     <img
@@ -151,7 +151,7 @@ function News(props) {
 
             <Flex
               className='items'
-              gap
+              gap='1.2rem'
             >
               {post?.slice(4)?.map(post => {
                 const { urlToImage, url, title } = post;
@@ -160,9 +160,7 @@ function News(props) {
                   : DefaultImage
                 return (
                   <PostContainer
-                    sx={{
-                      height: '12vh',
-                    }}
+                    recent
                     onClick={() => window.open(url, 'noreferrer')}
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                   >
@@ -194,13 +192,11 @@ function News(props) {
               })}
             </Flex>
           </SectionContainer>
-
         </Box>
 
 
         {/* Mid Section */}
         <Box sx={{ padding: '2rem' }}>
-
           <SectionContainer>
             <Typography
               variant='h5'
@@ -211,8 +207,8 @@ function News(props) {
             >
               More Stories</Typography>
 
-            <div
-              style={{
+            <Box
+              sx={{
                 display: 'flex',
                 flexWrap: 'wrap',
                 gap: '1rem'
@@ -273,7 +269,7 @@ function News(props) {
                   </Box>
                 )
               })}
-            </div>
+            </Box>
           </SectionContainer>
         </Box>
 
