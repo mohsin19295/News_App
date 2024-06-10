@@ -10,9 +10,12 @@ import staticData from '../staticData.json';
 
 function News(props) {
   const [post, setPost] = useState([]);
-  const [page, setPage] = useState(1);
+  const [initialPost, setInitialPost] = useState([]);
+  const [page, setPage] = useState(2);
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(false);
+
+  const apiKey = "3e19ce7b891447459477f5ef54207823";
   const limit = 20;
   const override = {
     display: 'flex',
@@ -22,15 +25,34 @@ function News(props) {
   };
 
   useEffect(() => {
+    const initialFetchData = async () => {
+      try {
+        setLoading(true);
+        const res = await Axios.get(`/api/v2/top-headlines?country=in&category=${props?.category}&apiKey=${apiKey}&page=1`);
+        setInitialPost(res?.data?.articles);
+      } catch (error) {
+        console.log('An error occurs while fetching', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    initialFetchData();
+  }, []);
+
+  useEffect(() => {
     const fetchData = async () => {
-      const apiKey = "3e19ce7b891447459477f5ef54207823";
       try {
         props.setProgress(0);
         setLoading(true);
+
+        const initialRes = await Axios.get(`/api/v2/top-headlines?country=in&category=${props?.category}&apiKey=${apiKey}&page=1`);
         const res = await Axios.get(`/api/v2/top-headlines?country=in&category=${props?.category}&apiKey=${apiKey}&page=${page}`);
-        console.log('data', res?.data?.articles);
+
         setPost(res?.data?.articles);
-        setTotal(Math.ceil(res.data?.totalResults / limit));
+        setInitialPost(initialRes?.data?.articles);
+
+        setTotal(Math.ceil(res?.data?.totalResults / limit));
         // setPost(staticData.articles);
         // setTotal(Math.ceil(staticData.totalResults / limit))
         props.setProgress(100);
@@ -79,7 +101,7 @@ function News(props) {
               Latest News</Typography>
 
             <Flex>
-              {post?.slice(0, 4)?.map(post => {
+              {initialPost?.slice(0, 4)?.map(post => {
                 const { urlToImage, url, title, source } = post;
                 const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
                   ? post?.urlToImage
@@ -153,7 +175,7 @@ function News(props) {
               className='items'
               gap='1.2rem'
             >
-              {post?.slice(4)?.map(post => {
+              {initialPost?.slice(4)?.map(post => {
                 const { urlToImage, url, title } = post;
                 const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
                   ? post?.urlToImage
@@ -225,6 +247,9 @@ function News(props) {
                     onClick={() => window.open(url, 'noreferrer')}
                     sx={{
                       flex: 1,
+                      flexGrow: 1,
+                      flexShrink: 1,
+                      flexBasis: '0',
                       minWidth: '300px',
                       cursor: 'pointer',
                     }}
