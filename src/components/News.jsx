@@ -246,11 +246,9 @@ function News(props) {
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                     onClick={() => window.open(url, 'noreferrer')}
                     sx={{
-                      flex: 1,
-                      flexGrow: 1,
-                      flexShrink: 1,
-                      flexBasis: '0',
+                      flex: '1 1 300px',
                       minWidth: '300px',
+                      maxWidth: '25%',
                       cursor: 'pointer',
                     }}
                   >
