@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Axios from "axios";
 import { ScaleLoader } from "react-spinners";
 import { DefaultImage, PrimaryColor, SecondaryColor } from '../utitls';
-import { ButtonBox, Flex, PostContainer, PreNextButton, ReadMore, SectionContainer } from '../assets/styles';
+import { ButtonBox, Flex, PostContainer, PreNextButton, SectionContainer } from '../assets/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Box, Grid, Typography } from '@mui/material';
@@ -17,6 +17,7 @@ function News(props) {
 
   const apiKey = "3e19ce7b891447459477f5ef54207823";
   const limit = 20;
+  const country = 'us'
   const override = {
     display: 'flex',
     justifyContent: 'center',
@@ -28,7 +29,7 @@ function News(props) {
     const initialFetchData = async () => {
       try {
         setLoading(true);
-        const res = await Axios.get(`/api/v2/top-headlines?country=in&category=${props?.category}&apiKey=${apiKey}&page=1`);
+        const res = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${props?.category}&apiKey=${apiKey}&page=1`);
         setInitialPost(res?.data?.articles);
       } catch (error) {
         console.log('An error occurs while fetching', error);
@@ -39,32 +40,31 @@ function News(props) {
 
     initialFetchData();
   }, []);
+  console.log('res', initialPost)
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        props.setProgress(0);
-        setLoading(true);
 
-        const initialRes = await Axios.get(`/api/v2/top-headlines?country=in&category=${props?.category}&apiKey=${apiKey}&page=1`);
-        const res = await Axios.get(`/api/v2/top-headlines?country=in&category=${props?.category}&apiKey=${apiKey}&page=${page}`);
-
-        setPost(res?.data?.articles);
-        setInitialPost(initialRes?.data?.articles);
-
-        setTotal(Math.ceil(res?.data?.totalResults / limit));
-        // setPost(staticData.articles);
-        // setTotal(Math.ceil(staticData.totalResults / limit))
-        props.setProgress(100);
-      } catch (error) {
-        console.log('An error occurs while fetching', error);
-      } finally {
-        setLoading(false);
-      }
-    };
 
     fetchData();
   }, [page]);
+
+  const fetchData = async () => {
+    try {
+      props.setProgress(0);
+      setLoading(true);
+
+      const initialRes = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${props?.category}&apiKey=${apiKey}&page=1`);
+      const res = await Axios.get(`/api/v2/top-headlines?country=${country}&category=${props?.category}&apiKey=${apiKey}&page=${page}`);
+      setPost(res?.data?.articles);
+      setInitialPost(initialRes?.data?.articles);
+      setTotal(Math.ceil(res?.data?.totalResults / limit));
+      props.setProgress(100);
+    } catch (error) {
+      console.log('An error occurs while fetching', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handlePrevious = () => setPage(page - 1);
   const handleNext = () => setPage(page + 1);
@@ -246,10 +246,11 @@ function News(props) {
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                     onClick={() => window.open(url, 'noreferrer')}
                     sx={{
-                      flex: '1 1 300px',
-                      minWidth: '300px',
-                      maxWidth: '25%',
+                      flex: '1 1 calc(25% - 1rem)',
+                      minWidth: '250px',
+                      maxWidth: '100%',
                       cursor: 'pointer',
+                      marginBottom: '1rem',
                     }}
                   >
                     <img
@@ -258,7 +259,8 @@ function News(props) {
                       style={{
                         borderRadius: '5px',
                         width: '100%',
-                        height: '200px'
+                        height: '200px',
+                        objectFit: 'cover'
                       }}
                     />
                     <Typography
@@ -300,7 +302,7 @@ function News(props) {
         {
           !loading && <ButtonBox>
             <PreNextButton
-              disabled={page <= 1}
+              disabled={page <= 2}
               onClick={handlePrevious}
             >
               <ArrowBackIcon fontSize="small" /> Prev</PreNextButton>
