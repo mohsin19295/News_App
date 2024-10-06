@@ -119,7 +119,7 @@ function News(props) {
 
             <Flex className='items'>
               {/* {initialPost?.slice(0, 4)?.map(post => { */}
-              {initialPost?.slice(0, 4)?.map(post => {
+                {initialPost?.slice(0, 4)?.map(post => {
                 const { urlToImage, url, title, source } = post;
                 const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
                   ? post?.urlToImage
@@ -138,6 +138,7 @@ function News(props) {
                         width: '100%',
                         height: '100%',
                         borderRadius: '5px',
+                        objectFit: 'cover'
                       }}
                     />
                     <div
@@ -209,7 +210,7 @@ function News(props) {
                       style={{
                         borderRadius: '5px',
                         width: '150px',
-                        minWidth: '150px'
+                        minWidth: '150px',
                       }}
                     />
                     <Typography

@@ -53,13 +53,16 @@ export const PostContainer = styled(Box)`
   display: flex;
   flex-direction: ${({ type }) => (type === 'latest' ? 'column' : 'row')};
   gap: ${({ type }) => (type === 'latest' ? '0' : '.8rem')};
-  min-width: ${({ type }) => (type === 'latest' ? '48%' : 'auto')};
+  min-width: ${({ type }) => (type === 'latest' ? '48%' : '70%')};
   flex: ${({ type }) => (type === 'latest' ? 1 : 'initial')};
   position: ${({ type }) => (type === 'latest' ? 'relative' : 'static')};
   height: ${({ type }) => (type === 'latest' ? '37.5vh' : 'recent' ? '12vh' : '100%')};
 
   @media (max-width: 1024px){
-    height: ${({ type }) => (type === 'latest' ? '28vh' : 'recent' ? '8vh' : '100%')};
+    height: ${({ type }) => (type === 'latest' ? '28vh' : 'recent' ? '10vh' : '100%')};
+  }
+  @media (max-width: 320px){
+    height: ${({ type }) => (type === 'latest' ? '40vh' : 'recent' ? '15vh' : '100%')};
   }
 `;
 
@@ -98,15 +101,3 @@ border: '1px solid red';
     width: 100%;
   }
 `;
-
-export const StyledImage = styled('img')(({ theme }) => ({
-    borderRadius: '5px',
-    width: '100%', // Ensures responsiveness
-    height: 'auto', // Maintain aspect ratio
-    [theme.breakpoints.down('sm')]: {
-        width: '200px', // Fixed width for mobile and tablet
-    },
-    [theme.breakpoints.up('md')]: {
-        width: '150px', // Fixed width for laptop and above
-    },
-}));
