@@ -30,6 +30,7 @@ function News(props) {
       try {
         setLoading(true);
         const res = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${props?.category}&apiKey=${apiKey}&page=1`);
+        // setInitialPost(staticData.articles);
         setInitialPost(res?.data?.articles);
       } catch (error) {
         console.log('An error occurs while fetching', error);
@@ -51,8 +52,11 @@ function News(props) {
     try {
       const initialRes = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${props?.category}&apiKey=${apiKey}&page=1`);
       const res = await Axios.get(`/api/v2/top-headlines?country=${country}&category=${props?.category}&apiKey=${apiKey}&page=${page}`);
+      // setPost(staticData.articles);
+      // setInitialPost(staticData.articles);
       setPost(res?.data?.articles);
       setInitialPost(initialRes?.data?.articles);
+      // setTotal(Math.ceil(staticData.totalResults / limit));
       setTotal(Math.ceil(res?.data?.totalResults / limit));
     } catch (error) {
       console.log('An error occurs while fetching', error);
@@ -75,17 +79,25 @@ function News(props) {
       data-testid="loader"
     /> :
       <Box sx={{
-        padding: '4rem .6rem 0',
+        padding: {
+          xs: '4rem 0',
+          sm: '3rem 0',
+          md: '4rem 0',
+        },
 
       }}>
         {/* Top Section */}
         <Box
           sx={{
             display: 'flex',
-            padding: '2rem',
+            padding: {
+              xs: '1rem',
+              sm: '2rem',
+              md: '2rem'
+            },
             gap: {
-              xs: '4rem',
-              sm: '4rem',
+              xs: '3rem',
+              sm: '3rem',
               md: '2rem'
             },
             flexDirection: {
@@ -105,7 +117,8 @@ function News(props) {
             >
               Latest News</Typography>
 
-            <Flex>
+            <Flex className='items'>
+              {/* {initialPost?.slice(0, 4)?.map(post => { */}
               {initialPost?.slice(0, 4)?.map(post => {
                 const { urlToImage, url, title, source } = post;
                 const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
@@ -134,7 +147,7 @@ function News(props) {
                         width: '100%',
                         padding: '5px 10px',
                         color: 'white',
-                        borderRadius: '0 0 5px 5px',
+                        borderRadius: '5px 5px 5px 5px',
                         background: 'rgba(23, 23, 23, 0.335)',
                         backdropFilter: 'blur(10px)',
                       }}
@@ -178,7 +191,6 @@ function News(props) {
 
             <Flex
               className='items'
-              gap='1.2rem'
             >
               {initialPost?.slice(4)?.map(post => {
                 const { urlToImage, url, title } = post;

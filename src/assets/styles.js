@@ -11,8 +11,14 @@ export const Nav = styled('nav')(() => ({
     position: 'fixed',
     width: '100%',
     zIndex: '999',
-    height: '8vh',
-    padding: '0 2rem'
+    padding: '.5rem 2rem',
+    overflowX: 'auto',
+    whiteSpace: 'nowrap',
+    '@media (max-width: 767px)': {
+        padding: '.5rem 1rem',
+        gap: '2%',
+        fontSize: '14px'
+    }
 }))
 
 export const Ul = styled('ul')(() => ({
@@ -35,7 +41,10 @@ export const Ul = styled('ul')(() => ({
 export const ButtonBox = styled(Box)(() => ({
     display: 'flex',
     justifyContent: 'space-between',
-    padding: '0 8rem 2rem'
+    padding: '0 8rem 2rem',
+    '@media (max-width: 767px)': {
+        padding: '0 2rem 2rem'
+    }
 }))
 
 export const PostContainer = styled(Box)`
@@ -47,11 +56,11 @@ export const PostContainer = styled(Box)`
   min-width: ${({ type }) => (type === 'latest' ? '48%' : 'auto')};
   flex: ${({ type }) => (type === 'latest' ? 1 : 'initial')};
   position: ${({ type }) => (type === 'latest' ? 'relative' : 'static')};
-  height: ${({ type }) => (type === 'latest' ? '39vh' : type === 'recent' ? '12vh' : 'auto')};
+  height: ${({ type }) => (type === 'latest' ? '37.5vh' : 'recent' ? '12vh' : '100%')};
 
-  @media (max-width: 1024px) {
-    height: ${({ type }) => (type === 'latest' && '30vh')};
-}
+  @media (max-width: 1024px){
+    height: ${({ type }) => (type === 'latest' ? '28vh' : 'recent' ? '8vh' : '100%')};
+  }
 `;
 
 
@@ -72,6 +81,7 @@ export const PreNextButton = styled(Button)(({ disabled }) => ({
 
 export const Flex = styled(Box)(({ gap }) => ({
     height: '80vh',
+    overflow: 'scroll',
     display: 'flex',
     flexWrap: 'wrap',
     gap: gap || '1rem',
@@ -83,13 +93,20 @@ export const Flex = styled(Box)(({ gap }) => ({
 
 export const SectionContainer = styled(Box)`
 width: ${({ type }) => (type === 'latest' ? '70%' : type === 'recent' ? '30%' : '100%')};
-  
+border: '1px solid red';
   @media (max-width: 1024px) {
-    /* display: ${({ type }) => (type === 'recent' ? 'none' : 'block')}; */
-    /* padding-top: ${({ type }) => (type === 'latest' ? '2rem' : '0')}; */
     width: 100%;
   }
-  @media (max-width: 1024px) and (min-width: 768px) {
-    padding-top: ${({ type }) => (type === 'latest' && '3rem')};
-  }
 `;
+
+export const StyledImage = styled('img')(({ theme }) => ({
+    borderRadius: '5px',
+    width: '100%', // Ensures responsiveness
+    height: 'auto', // Maintain aspect ratio
+    [theme.breakpoints.down('sm')]: {
+        width: '200px', // Fixed width for mobile and tablet
+    },
+    [theme.breakpoints.up('md')]: {
+        width: '150px', // Fixed width for laptop and above
+    },
+}));
