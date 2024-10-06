@@ -32,28 +32,28 @@ export const Ul = styled('ul')(() => ({
     }
 }))
 
-
-
 export const ButtonBox = styled(Box)(() => ({
     display: 'flex',
     justifyContent: 'space-between',
-    // marginBottom: '1rem',
-    // marginTop: '2rem'
     padding: '0 8rem 2rem'
 }))
 
-export const PostContainer = styled(Box)(({ latest, recent }) => ({
-    borderRadius: '5px',
-    cursor: 'pointer',
-    display: 'flex',
-    flexDirection: latest ? 'column' : 'row',
-    gap: latest ? '' : '.8rem',
-    minWidth: latest ? '48%' : '',
-    flex: latest ? 1 : '',
-    position: latest ? 'relative' : '',
-    height: latest ? '39vh' : recent ? '12vh' : '',
-    // border: '1px solid green',
-}))
+export const PostContainer = styled(Box)`
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: ${({ type }) => (type === 'latest' ? 'column' : 'row')};
+  gap: ${({ type }) => (type === 'latest' ? '0' : '.8rem')};
+  min-width: ${({ type }) => (type === 'latest' ? '48%' : 'auto')};
+  flex: ${({ type }) => (type === 'latest' ? 1 : 'initial')};
+  position: ${({ type }) => (type === 'latest' ? 'relative' : 'static')};
+  height: ${({ type }) => (type === 'latest' ? '39vh' : type === 'recent' ? '12vh' : 'auto')};
+
+  @media (max-width: 1024px) {
+    height: ${({ type }) => (type === 'latest' && '30vh')};
+}
+`;
+
 
 export const PreNextButton = styled(Button)(({ disabled }) => ({
     border: '0',
@@ -76,10 +76,20 @@ export const Flex = styled(Box)(({ gap }) => ({
     flexWrap: 'wrap',
     gap: gap || '1rem',
     justifyContent: 'space-between',
-    // border: '1px solid red'
+    '@media (max-width: 1024px)': {
+        height: '62vh'
+    },
 }))
 
-
-export const SectionContainer = styled(Box)(({ recent, latest }) => ({
-    width: recent ? '30%' : latest ? '70%' : '100%'
-}))
+export const SectionContainer = styled(Box)`
+width: ${({ type }) => (type === 'latest' ? '70%' : type === 'recent' ? '30%' : '100%')};
+  
+  @media (max-width: 1024px) {
+    /* display: ${({ type }) => (type === 'recent' ? 'none' : 'block')}; */
+    /* padding-top: ${({ type }) => (type === 'latest' ? '2rem' : '0')}; */
+    width: 100%;
+  }
+  @media (max-width: 1024px) and (min-width: 768px) {
+    padding-top: ${({ type }) => (type === 'latest' && '3rem')};
+  }
+`;

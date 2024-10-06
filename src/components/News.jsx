@@ -40,29 +40,25 @@ function News(props) {
 
     initialFetchData();
   }, []);
-  console.log('res', initialPost)
 
   useEffect(() => {
-
-
     fetchData();
   }, [page]);
 
   const fetchData = async () => {
+    props.setProgress(0);
+    setLoading(true);
     try {
-      props.setProgress(0);
-      setLoading(true);
-
       const initialRes = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${props?.category}&apiKey=${apiKey}&page=1`);
       const res = await Axios.get(`/api/v2/top-headlines?country=${country}&category=${props?.category}&apiKey=${apiKey}&page=${page}`);
       setPost(res?.data?.articles);
       setInitialPost(initialRes?.data?.articles);
       setTotal(Math.ceil(res?.data?.totalResults / limit));
-      props.setProgress(100);
     } catch (error) {
       console.log('An error occurs while fetching', error);
     } finally {
       setLoading(false);
+      props.setProgress(100);
     }
   };
 
@@ -86,11 +82,20 @@ function News(props) {
         <Box
           sx={{
             display: 'flex',
-            gap: '2rem',
             padding: '2rem',
+            gap: {
+              xs: '4rem',
+              sm: '4rem',
+              md: '2rem'
+            },
+            flexDirection: {
+              xs: 'column',
+              sm: 'column',
+              md: 'row',
+            },
           }}
         >
-          <SectionContainer latest>
+          <SectionContainer type='latest'>
             <Typography
               variant='h5'
               px={1}
@@ -109,7 +114,7 @@ function News(props) {
 
                 return (
                   <PostContainer
-                    latest
+                    type='latest'
                     onClick={() => window.open(url, 'noreferrer')}
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                   >
@@ -161,7 +166,7 @@ function News(props) {
             </Flex>
           </SectionContainer>
 
-          <SectionContainer recent>
+          <SectionContainer type='recent'>
             <Typography
               variant='h5'
               px={1}
@@ -182,7 +187,7 @@ function News(props) {
                   : DefaultImage
                 return (
                   <PostContainer
-                    recent
+                    type='recent'
                     onClick={() => window.open(url, 'noreferrer')}
                     key={post.id == null ? post.id = Math.random(1, 100) : post.id}
                   >
