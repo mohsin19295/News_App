@@ -248,7 +248,7 @@ function News(props) {
                     sx={{
                       flex: '1 1 calc(25% - 1rem)',
                       minWidth: '250px',
-                      maxWidth: '100%',
+                      maxWidth: { xs: '100%', sm: '50%', md: '25%' },
                       cursor: 'pointer',
                       marginBottom: '1rem',
                     }}
