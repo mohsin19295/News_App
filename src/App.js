@@ -4,7 +4,7 @@ import News from "./components/News";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 import "./App.css"
-import { ProgressColor } from './utitls';
+import { ProgressColor } from './utils';
 
 function App() {
   const [progress, setProgress] = useState(0);

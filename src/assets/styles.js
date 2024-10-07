@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { PrimaryColor, PrimaryDark, PrimaryLight, ProgressColor } from '../utitls'
+import { PrimaryColor, PrimaryDark, PrimaryLight, ProgressColor } from '../utils'
 import { Box, Button } from '@mui/material'
 
 export const Nav = styled('nav')(() => ({
