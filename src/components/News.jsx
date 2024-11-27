@@ -8,6 +8,7 @@ import PaginatedButtonBox from './PaginatedButtonBox';
 import MoreStories from './moreStories';
 import LatestNews from './latestNews';
 import RecentUpdates from './recentUpdates';
+import staticData from "../staticData.json";
 
 function News(props) {
   const [post, setPost] = useState([]);
@@ -27,9 +28,9 @@ function News(props) {
     const initialFetchData = async () => {
       try {
         setLoading(true);
-        const res = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=1`);
-        // setInitialPost(staticData.articles);
-        setInitialPost(res?.data?.articles);
+        // const res = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=1`);
+        setInitialPost(staticData.articles);
+        // setInitialPost(res?.data?.articles);
       } catch (error) {
         console.log('An error occurs while fetching', error);
       } finally {
@@ -48,14 +49,14 @@ function News(props) {
     props.setProgress(0);
     setLoading(true);
     try {
-      const initialRes = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=1`);
-      const res = await Axios.get(`/api/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=${page}`);
-      // setPost(staticData.articles);
-      // setInitialPost(staticData.articles);
-      setPost(res?.data?.articles);
-      setInitialPost(initialRes?.data?.articles);
-      // setTotal(Math.ceil(staticData.totalResults / LIMIT));
-      setTotal(Math.ceil(res?.data?.totalResults / LIMIT));
+      // const initialRes = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=1`);
+      // const res = await Axios.get(`/api/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=${page}`);
+      setPost(staticData.articles);
+      setInitialPost(staticData.articles);
+      // setPost(res?.data?.articles);
+      // setInitialPost(initialRes?.data?.articles);
+      setTotal(Math.ceil(staticData.totalResults / LIMIT));
+      // setTotal(Math.ceil(res?.data?.totalResults / LIMIT));
     } catch (error) {
       console.log('An error occurs while fetching', error);
     } finally {
