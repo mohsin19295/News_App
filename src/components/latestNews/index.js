@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex, SectionContainer } from '../../assets/styles';
 import { Typography } from '@mui/material';
-import { DefaultImage } from '../../utils';
+import { DefaultImage, ThemeColorDark } from '../../utils';
 import LatestPostContainer from './LatestPostContainer';
 
 const LatestNews = ({ initialPost }) => {
@@ -11,7 +11,7 @@ const LatestNews = ({ initialPost }) => {
         variant='h5'
         px={1}
         borderLeft={3}
-        borderColor='red'
+        borderColor={ThemeColorDark}
         mb={2}
       >
         Latest News</Typography>

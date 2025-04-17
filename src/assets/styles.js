@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { PrimaryColor, PrimaryDark, PrimaryLight, ProgressColor } from '../utils'
+import { PrimaryColor, PrimaryDark, PrimaryLight, ProgressColor, ThemeColorLight } from '../utils'
 import { Box, Button } from '@mui/material'
 
 export const Nav = styled('nav')(() => ({
@@ -25,18 +25,36 @@ export const Ul = styled('ul')(() => ({
     display: 'flex',
     listStyleType: 'none',
     gap: '0.5rem',
-    '&>*': {
-        color: PrimaryLight,
-        textDecoration: 'none',
-        padding: '5px 10px',
-        borderRadius: '10px',
-        '&:hover': {
-            boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.55) 0px 2px 16px 0px',
-            // boxShadow: 'rgba(255, 255, 255, 0.4) 0px 2px 4px 0px, rgba(255, 255, 255, 0.55) 0px 2px 16px 0px',
-            transition: 'box-shadow 0.2s ease-in-out',
-        },
-    }
-}))
+    '& > *': {
+      position: 'relative',
+      color: PrimaryLight,
+      textDecoration: 'none',
+      padding: '5px',
+      transition: 'all 0.2s ease-in-out',
+  
+      '&::after': {
+        content: '""',
+        position: 'absolute',
+        left: '50%',
+        bottom: '0',
+        transform: 'translateX(-50%)',
+        width: '2.5em',
+        height: '2px',
+        backgroundColor: 'transparent',
+        borderRadius: '1px',
+        transition: 'background-color 0.3s ease',
+      },
+  
+      '&:hover::after': {
+        backgroundColor: ThemeColorLight,
+      },
+  
+      '&.active::after': {
+        backgroundColor: ThemeColorLight,
+      },
+    },
+  }));
+  
 
 export const ButtonBox = styled(Box)(() => ({
     display: 'flex',

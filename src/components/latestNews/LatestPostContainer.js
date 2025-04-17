@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typography } from '@mui/material'
-import { SecondaryColor } from '../../utils'
+import { OffWhite } from '../../utils'
 import { PostContainer } from '../../assets/styles'
 
 const LatestPostContainer = ({ post, imageUrl, urlToImage, title, source, url }) => {
@@ -28,8 +28,8 @@ const LatestPostContainer = ({ post, imageUrl, urlToImage, title, source, url })
                     padding: '5px 10px',
                     color: 'white',
                     borderRadius: '5px 5px 5px 5px',
-                    background: 'rgba(23, 23, 23, 0.335)',
-                    backdropFilter: 'blur(10px)',
+                    background: 'rgba(148, 16, 16, 0.6)',
+                    backdropFilter: 'blur(8px)',
                 }}
             >
                 <Typography
@@ -48,7 +48,7 @@ const LatestPostContainer = ({ post, imageUrl, urlToImage, title, source, url })
                     fontWeight='bold'
                     fontSize={15}
                     mt={1}
-                    color={SecondaryColor}
+                    color={OffWhite}
                 >
                     {source.name == null ? source.name = "Unknown" : source.name}
                 </Typography>

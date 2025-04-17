@@ -17,6 +17,24 @@ function News(props) {
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(false);
 
+  const passedData = (data) => {
+    return (
+      props.category === 'business' ? 
+      data?.data?.business :
+      props.category === 'entertainment' ? 
+      data?.data?.entertainment :
+      props.category === 'health' ? 
+      data?.data?.health :
+      props.category === 'science' ? 
+      data?.data?.science :
+      props.category === 'sports' ? 
+      data?.data?.sports :
+      props.category === 'technology' ? 
+      data?.data?.technology :
+      data?.data?.general
+    )
+  }
+
   const override = {
     display: 'flex',
     justifyContent: 'center',
@@ -28,9 +46,53 @@ function News(props) {
     const initialFetchData = async () => {
       try {
         setLoading(true);
+        const staticRes = await Axios.get('/news.json');
+        setInitialPost(passedData(staticRes))
+      } catch (error) {
+        console.log('An error occurs while fetching', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    initialFetchData();
+  }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [page]);
+
+  const fetchData = async () => {
+    props.setProgress(0);
+    setLoading(true);
+    try {
+      const staticRes = await Axios.get('/news.json');
+      setInitialPost(passedData(staticRes))
+      setPost(passedData(staticRes));
+    } catch (error) {
+      console.log('An error occurs while fetching', error);
+    } finally {
+      setLoading(false);
+      props.setProgress(100);
+    }
+  };
+
+  const handlePrevious = () => setPage(page - 1);
+  const handleNext = () => setPage(page + 1);
+
+  /*
+  
+    useEffect(() => {
+    const initialFetchData = async () => {
+      try {
+        setLoading(true);
         // const res = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=1`);
-        setInitialPost(staticData.articles);
+        // setInitialPost(staticData.articles);
+        const staticRes = await Axios.get('/news.json');
+        setInitialPost(staticRes?.data?.Business)
+        console.log(staticRes?.data?.Business)
         // setInitialPost(res?.data?.articles);
+        // console.log(res?.data?.articles)
       } catch (error) {
         console.log('An error occurs while fetching', error);
       } finally {
@@ -51,11 +113,14 @@ function News(props) {
     try {
       // const initialRes = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=1`);
       // const res = await Axios.get(`/api/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=${page}`);
-      setPost(staticData.articles);
-      setInitialPost(staticData.articles);
-      // setPost(res?.data?.articles);
+      // setPost(staticData.articles);
+      // setInitialPost(staticData.articles);
+      const staticRes = await Axios.get('/news.json');
+      setInitialPost(staticRes?.data?.Business)
+      console.log(staticRes?.data?.Business)
+      setPost(staticRes?.data?.Business);
       // setInitialPost(initialRes?.data?.articles);
-      setTotal(Math.ceil(staticData.totalResults / LIMIT));
+      // setTotal(Math.ceil(staticData.totalResults / LIMIT));
       // setTotal(Math.ceil(res?.data?.totalResults / LIMIT));
     } catch (error) {
       console.log('An error occurs while fetching', error);
@@ -65,8 +130,7 @@ function News(props) {
     }
   };
 
-  const handlePrevious = () => setPage(page - 1);
-  const handleNext = () => setPage(page + 1);
+  */
 
   return (
     loading ? <ScaleLoader
