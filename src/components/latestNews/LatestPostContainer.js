@@ -19,7 +19,8 @@ const LatestPostContainer = ({ post, imageUrl, urlToImage, title, source, url })
                     borderRadius: '5px',
                     objectFit: 'cover'
                 }}
-            />
+                loading="lazy"
+                />
             <div
                 style={{
                     position: 'absolute',

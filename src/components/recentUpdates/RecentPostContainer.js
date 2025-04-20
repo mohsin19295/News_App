@@ -17,6 +17,7 @@ const RecentPostContainer = ({post, imageUrl, urlToImage, title, url}) => {
                     width: '150px',
                     minWidth: '150px',
                 }}
+                loading="lazy"
             />
             <Typography
                 fontSize={16}

@@ -19,7 +19,7 @@ const RecentUpdates = ({initialPost}) => {
             <Flex
               className='items'
             >
-              {initialPost?.slice(4)?.map(post => {
+              {initialPost?.slice(4, 16)?.map(post => {
                 const { urlToImage, url, title } = post;
                 const imageUrl = post?.urlToImage && !post?.urlToImage?.includes('cdn.videocardz.com')
                   ? post?.urlToImage

@@ -24,6 +24,7 @@ const StoryContainer = ({ post, imageUrl, urlToImage, title, url, description })
                     height: '200px',
                     objectFit: 'cover'
                 }}
+                loading="lazy"
             />
             <Typography
                 fontSize={18}

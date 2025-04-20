@@ -2,20 +2,6 @@
     "general": [
         {
             "source": {
-                "id": "politico",
-                "name": "Politico"
-            },
-            "author": "Jeremy B. White",
-            "title": "Oakland mayor’s race too close to call - Politico",
-            "description": "The former representative is in a tight special election contest against a former City Council member.",
-            "url": "https://www.politico.com/news/2025/04/16/oakland-mayor-election-results-too-close-to-call-00292540",
-            "urlToImage": "https://static.politico.com/65/48/8a403bc84425ade8278077e670de/oakland-mayors-race-17691.jpg",
-            "publishedAt": "2025-04-16T05:27:16Z",
-            "content": "Lee had hoped to win outright in the special election by securing a majority of first-place votes. Instead, the vote tally moved through various rounds in which the last-place candidate was eliminate… [+1121 chars]",
-            "id": 0.35688663353311234
-        },
-        {
-            "source": {
                 "id": null,
                 "name": "Investor's Business Daily"
             },
@@ -237,7 +223,270 @@
             "publishedAt": "2025-04-15T20:59:20Z",
             "content": "Googles mobile operating system Android will now automatically reboot if the phone is locked for three days in a row. \r\nOn Monday, the tech giant pushed updates to Google Play services, a core part o… [+1134 chars]",
             "id": 0.9454426665413419
-        }
+        },
+            {
+                "source": {
+                    "id": null,
+                    "name": "BBC News"
+                },
+                "author": "https://www.facebook.com/bbcnews",
+                "title": "Ukraine-Russia latest: Vladimir Putin announces 'Easter truce' until end of Sunday - BBC",
+                "description": "The Kremlin says Russia will pause the conflict until 22:00 BST on Easter Sunday.",
+                "url": "https://www.bbc.com/news/live/c934nprkqz3t",
+                "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8bac/live/bea45230-1d29-11f0-b1b3-7358f8d35a35.png",
+                "publishedAt": "2025-04-19T14:15:59Z",
+                "content": "Russian President Vladimir Putin has announced a temporary truce in Ukraine, according to Russian media reports. \r\nThis comes after Trump said the US will take a pass on brokering further Russia-Ukra… [+592 chars]",
+                "id": 0.07489118889443347
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Cageside Seats"
+                },
+                "author": "Geno Mrosko",
+                "title": "WrestleMania 41 start time, match card: Night one - Cageside Seats",
+                "description": "Get the skinny on when the show goes live and the full card for night one of WWE’s biggest show of the year.",
+                "url": "https://www.cagesideseats.com/wwe/2025/4/19/24410067/wrestlemania-41-start-time-match-card-night-one",
+                "urlToImage": "https://cdn.vox-cdn.com/thumbor/9T8GsCSvSk71IyvSIRbWCSbd_ks=/0x443:6192x3685/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25956548/2207381583.jpg",
+                "publishedAt": "2025-04-19T13:30:00Z",
+                "content": "WWE will return to pay-per-view (PPV) and Peacock later on this evening (Sat., April 19, 2025) with night one of its WrestleMania 41 event from Allegiant Stadium in Las Vegas, Nevada.\r\nNight one of t… [+771 chars]",
+                "id": 0.17263943646777735
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "CBS Sports"
+                },
+                "author": null,
+                "title": "2025 NBA playoff bracket: First-round matchups, schedule, game times as Heat and Grizzlies get final spots - CBS Sports",
+                "description": null,
+                "url": "https://www.cbssports.com/nba/news/2025-nba-playoff-bracket-first-round-matchups-schedule-game-times-as-heat-and-grizzlies-get-final-spots/",
+                "urlToImage": null,
+                "publishedAt": "2025-04-19T13:21:42Z",
+                "content": null,
+                "id": 0.49262109445861124
+            },
+            {
+                "source": {
+                    "id": "the-hill",
+                    "name": "The Hill"
+                },
+                "author": "Andrew Dorn",
+                "title": "Ford halts shipments of F-150s and other models to China: Report - The Hill",
+                "description": "“We have adjusted exports from the U.S. to China in light of the current tariffs,” a Ford spokesperson told NewsNation.",
+                "url": "https://thehill.com/business/5256762-ford-truck-shipments-paused-china-wsj/",
+                "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2023/11/655d1148cc16c2.01233166-e1745067776413.jpeg?w=1280",
+                "publishedAt": "2025-04-19T13:03:00Z",
+                "content": "Skip to content\r\n<ul><li>WSJ: Ford has stopped shipping F-150 Raptors and other models to China</li><li>The decision comes in response to retaliatory measures by China</li><li>Ford confirmed to NewsN… [+2549 chars]",
+                "id": 0.5859344936063102
+            },
+            {
+                "source": {
+                    "id": "nbc-news",
+                    "name": "NBC News"
+                },
+                "author": "Denise Chow",
+                "title": "Annual Lyrid meteor shower peaks overnight Monday - NBC News",
+                "description": "It’s spring skywatching at its best: The annual Lyrid meteor shower is back, offering people across the Northern Hemisphere a chance to catch shooting stars in the night sky.",
+                "url": "https://www.nbcnews.com/science/space/annual-lyrid-meteor-shower-peaks-overnight-monday-rcna201439",
+                "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2024-08/240809-perseids-radiant-credit-preston-dyches-ch-1458-4998be.jpg",
+                "publishedAt": "2025-04-19T12:00:00Z",
+                "content": "Its spring skywatching at its best: The annual Lyrid meteor shower is back, offering people across the Northern Hemisphere a chance to catch shooting stars in the night sky.\r\nThe meteor shower began … [+2379 chars]",
+                "id": 0.17054316415196058
+            },
+            {
+                "source": {
+                    "id": "cbs-news",
+                    "name": "CBS News"
+                },
+                "author": "Kerry  Breen",
+                "title": "Her sore throat turned into a long ICU stay. The cause stumped doctors for months. - CBS News",
+                "description": "Vanessa Abraham thought her symptoms were a bad flu — until she collapsed to the floor struggling to breathe.",
+                "url": "https://www.cbsnews.com/news/rare-disease-vanessa-abraham-guillain-barre-california/",
+                "urlToImage": "https://assets3.cbsnewsstatic.com/hub/i/r/2025/04/18/785c3448-ecbd-4935-9882-ecbf10c90792/thumbnail/1200x630/f30c4ab7a69dac923178b46d88e537be/vanessa-rehab-1.png?v=04a4ba26f526ed8207f014fe1018c4aa",
+                "publishedAt": "2025-04-19T12:00:00Z",
+                "content": "When speech pathologist Vanessa Abraham began to feel ill in 2019, she thought she had a bad case of the flu. She was exhausted and her body ached. Her voice was raspy. She was prescribed antibiotics… [+5662 chars]",
+                "id": 0.720070484097385
+            },
+            {
+                "source": {
+                    "id": "cnn",
+                    "name": "CNN"
+                },
+                "author": "Christopher Lamb",
+                "title": "Vance, Vatican officials engage in ‘exchange of opinions’ over migrants - CNN",
+                "description": "US Vice President JD Vance met senior Vatican officials on Saturday for talks that follow sharp criticism by Pope Francis of the Trump administration’s immigration policy.",
+                "url": "https://www.cnn.com/2025/04/19/europe/vance-vatican-officials-meeting-migrants-intl/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2025-04-19t095841z-1020205977-rc2w0eajx6ye-rtrmadp-3-usa-vance-vatican.JPG?c=16x9&q=w_800,c_fill",
+                "publishedAt": "2025-04-19T11:49:00Z",
+                "content": "US Vice President JD Vance met senior Vatican officials on Saturday for talks that follow sharp criticism by Pope Francis of the Trump administrations immigration policy.\r\nThe Vatican said that durin… [+3259 chars]",
+                "id": 0.5911364577092139
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Financial Times"
+                },
+                "author": "Andrew England, Najmeh Bozorgmehr",
+                "title": "US and Iran begin second round of talks to end nuclear stand-off - Financial Times",
+                "description": "Tehran’s foreign minister says Washington has issued contradictory signals about reaching a deal",
+                "url": "https://www.ft.com/content/f87f289c-cb50-4be4-898b-241bfade8f06",
+                "urlToImage": "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F4300721e-87e2-4951-9eb2-e80ce45acd8d.jpg?source=next-barrier-page",
+                "publishedAt": "2025-04-19T11:44:13Z",
+                "content": "White House Watch newsletter\r\nSign up for your free, indispensable guide to what Trumps second term means for Washington, business and the world.",
+                "id": 0.9615512905477037
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Prideofdetroit.com"
+                },
+                "author": "Jeremy Reisman",
+                "title": "Discussion: Which NFL Draft prospect did you completely whiff on? - Pride Of Detroit",
+                "description": "Time to admit your biggest NFL Draft mistakes.",
+                "url": "https://www.prideofdetroit.com/2025/4/19/24411830/nfl-draft-biggest-mistakes-whiffs-scouting-conversation",
+                "urlToImage": "https://cdn.vox-cdn.com/thumbor/uN8D7hIuFWACtXxGKmaT7cT1jzM=/0x210:1951x1231/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25960056/1235533726.jpg",
+                "publishedAt": "2025-04-19T11:15:00Z",
+                "content": "The start of the 2025 NFL Draft is less than a week away. Its one of the most exciting weeks in the offseason, as the dreams of hundreds of young men become a reality, and fans of NFL teams rally beh… [+3064 chars]",
+                "id": 0.3740754419702147
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "NPR"
+                },
+                "author": "",
+                "title": "Anti-Trump protests this weekend turn focus to community action - NPR",
+                "description": "A grassroots-led campaign has hundreds of protests and events scheduled across the U.S. on Saturday. Organizers say the momentum built on resistance against the Trump administration has not slowed.",
+                "url": "https://www.npr.org/2025/04/19/nx-s1-5369483/anti-trump-protests-50501-tesla-takedown",
+                "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F01%2Fa4%2F3e6173d84aecadd70a82dea13e6d%2Fap25048698734060.jpg",
+                "publishedAt": "2025-04-19T11:01:00Z",
+                "content": "More large-scale protests, rallies and other actions against the Trump administration are set to take place in cities across the U.S. this weekend, with organizers hoping to seize on what they say is… [+2622 chars]",
+                "id": 0.7211326442032021
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "NPR"
+                },
+                "author": "Andrea Muraskin",
+                "title": "Here's how to use nasal spray right and more tips for managing spring allergies - NPR",
+                "description": "Here's the lowdown from allergy doctors on how to get relief, from which medicines to use — and how to best use them — to tips for keeping pollen out of your home.",
+                "url": "https://www.npr.org/2025/04/19/nx-s1-5369607/allergies-pollen-spring-symptoms-treatment",
+                "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8a%2Fcc%2F270b990a4132939371d6b58e068c%2Fgettyimages-913756896.jpg",
+                "publishedAt": "2025-04-19T11:00:00Z",
+                "content": "If you feel like your seasonal allergies are getting worse every year, it's not just you. Warming from climate change is making the pollen season longer, and more people are going to the doctor each … [+7433 chars]",
+                "id": 0.5406830819357041
+            },
+            {
+                "source": {
+                    "id": "the-washington-post",
+                    "name": "The Washington Post"
+                },
+                "author": "Erin Blakemore",
+                "title": "Study links heavy drinking to brain injuries, Alzheimer’s - The Washington Post",
+                "description": "The researchers found that heavy drinkers had 133 percent higher odds of developing vascular brain lesions than those who never drank.",
+                "url": "https://www.washingtonpost.com/health/2025/04/19/alcohol-drinking-brain-injury-alzheimers/",
+                "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/JD7V2DQLCXEGWSLKDUFLHQN6HQ.jpg&w=1440",
+                "publishedAt": "2025-04-19T10:33:36Z",
+                "content": "Consuming more than eight alcoholic drinks a week is associated with brain injuries linked to Alzheimers disease and cognitive decline, a recent study in the journal Neurology suggests.\r\nThe analysis… [+2508 chars]",
+                "id": 0.5362367311914001
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Forbes"
+                },
+                "author": "Alexandra York",
+                "title": "Why The Diary Of A CEO Founder Turned Down A $100M Deal To Build A Podcast Empire - Forbes",
+                "description": "How 30 Under 30 Europe alumni and The Diary of A CEO host Steven Bartlett is growing his independent podcast empire.",
+                "url": "https://www.forbes.com/sites/alexyork/2025/04/19/why-the-diary-of-a-ceo-founder-turned-down-a-100m-deal-to-build-a-podcast-empire/",
+                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/680131bfca57ada0fd7553f8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+                "publishedAt": "2025-04-19T10:30:00Z",
+                "content": "Its a Monday morning in March, and Steven Bartlett sits in his studio in Londons hip Shoreditch neighborhood to record the latest episode of his hit podcast The Diary of a CEO. With more than 10 mill… [+9079 chars]",
+                "id": 0.20778896944343084
+            },
+            {
+                "source": {
+                    "id": "the-washington-post",
+                    "name": "The Washington Post"
+                },
+                "author": "Marlene Cimons",
+                "title": "It started with a whistling sound in his nose. Then things got much worse. - The Washington Post",
+                "description": "It took nearly six years and visits to 17 doctors to figure out what was going on.",
+                "url": "https://www.washingtonpost.com/health/2025/04/19/empty-nose-whistling-breathing-surgery/",
+                "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/6HCPHNFTMZA5PDXC6NNAKJEBNE.jpg&w=1440",
+                "publishedAt": "2025-04-19T10:02:04Z",
+                "content": "In October 2017, Bradley Rhoton and his wife were carving pumpkins for Halloween when he noticed a strange whistling sound each time he inhaled through his nose. Did you hear that? he asked his wife.… [+10471 chars]",
+                "id": 0.29969512709050716
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "NPR"
+                },
+                "author": "Fatima Al-Kassab",
+                "title": "One city prides itself as the cradle of the working class. Here's why - NPR",
+                "description": "As politicians worldwide scramble to appeal to working people, this city in northern England has a claim to be the birthplace of the very concept of the working class.",
+                "url": "https://www.npr.org/2025/04/19/nx-s1-5288827/manchester-working-class-history",
+                "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3770x2121+0+332/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F7a%2Fff%2Ff95affdc4ae2a99a1a0c4de3375f%2Fgettyimages-3070001.jpg",
+                "publishedAt": "2025-04-19T10:00:00Z",
+                "content": "MANCHESTER, England In the center of this industrial city in northern England, a memorial commemorates protesters killed here at a demonstration for workers' rights in 1819, in what became known as t… [+6670 chars]",
+                "id": 0.825152595855727
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "SciTechDaily"
+                },
+                "author": null,
+                "title": "Mars Kept a Secret for 3.5 Billion Years – NASA’s Curiosity Rover Finally Dug It Up - SciTechDaily",
+                "description": "Scientists using NASA’s Curiosity rover have discovered siderite—an iron carbonate—in the sulfate-rich rocks of Gale Crater, solving a long-standing mystery about Mars’ missing carbonates. This find provides powerful new clues about the planet’s ancient atmos…",
+                "url": "https://scitechdaily.com/?p=470933",
+                "urlToImage": "https://scitechdaily.com/images/NASA-Curiosity-Mars-Rover-Mount-Sharp-Selfie.jpg",
+                "publishedAt": "2025-04-19T08:41:41Z",
+                "content": "This selfie (stitched together from multiple exposures) of NASA’s Curiosity Mars rover shows the vehicle as it explores the slopes of Mount Sharp. Credit: NASA/JPL-Caltech/MSSS\r\nScientists using NASA… [+5166 chars]",
+                "id": 0.2180903741707998
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Variety"
+                },
+                "author": "Thania Garcia",
+                "title": "Lady Gaga Apologizes for Mic Malfunctions During Coachella Weekend 2 Set: ‘At Least You Know I Sing Live’ - Variety",
+                "description": "Lady Gaga apologized for having faulty mic issues throughout the beginning of her Coachella Weekend 2 set, saying 'at least you know I sing live'",
+                "url": "https://variety.com/2025/music/news/lady-gaga-apologizes-broken-mic-coachella-weekend-2-i-sing-live-1236373171/",
+                "urlToImage": "https://variety.com/wp-content/uploads/2025/04/Screen-Shot-2025-04-19-at-1.33.54-AM.png?w=1000&h=563&crop=1",
+                "publishedAt": "2025-04-19T08:35:00Z",
+                "content": "Lady Gaga had no problem maneuvering through mic issues that plagued the beginning of her “Mayhem” in the desert showcase for Coachella weekend two. The singer’s head mic started glitching and cut of… [+1698 chars]"
+            },
+            {
+                "source": {
+                    "id": "business-insider",
+                    "name": "Business Insider"
+                },
+                "author": "Brent D. Griffiths",
+                "title": "Zuckerberg's old emails reveal the CEO's rivals lived in his head rent-free - Business Insider",
+                "description": "Meta CEO Mark Zuckerberg was grilled over dozens of messages he wrote decades ago before his company bought Instagram and WhatsApp.",
+                "url": "https://www.businessinsider.com/zuckerberg-meta-antitrust-trial-emails-ftc-2025-4",
+                "urlToImage": "https://i.insider.com/6800146dc6ad288d147e5bf6?width=1200&format=jpeg",
+                "publishedAt": "2025-04-19T08:11:00Z",
+                "content": "Mark Zuckerberg's own emails, some of them more than 10 years old, revealed he had antitrust concerns long before the FTC brought its case against Meta.\r\nDuring 10 hours of testimony, a lawyer for th… [+5564 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Bloody Elbow"
+                },
+                "author": "https://www.facebook.com/JordanEllisSports",
+                "title": "Leon Edwards mounts the cage to celebrate brother’s KO win over former world champion - Bloody Elbow",
+                "description": "A massive win for Fabian Edwards!",
+                "url": "https://bloodyelbow.com/2025/04/19/leon-edwards-mounts-the-cage-to-celebrate-brothers-ko-win-over-former-world-champion/",
+                "urlToImage": "https://bloodyelbow.com/wp-content/uploads/1/2025/04/PFL_20250418_C1N09362-scaled.jpg",
+                "publishedAt": "2025-04-19T07:59:59Z",
+                "content": "Leon Edwards is back smiling after his brothers sensational knockout win at PFL 3. \r\nThe former UFC welterweight champion has understandably been down in the dumps since suffering the first stoppage … [+2338 chars]"
+            }
     ],
     "business" : [
         {
@@ -463,7 +712,231 @@
             "publishedAt": "2025-04-15T19:47:00Z",
             "content": "DETROIT (AP) President Donald Trump hinted that he might temporarily relieve the auto industry from permanent tariffs he previously imposed on the business. The president didnt specify how long the p… [+6731 chars]",
             "id": 0.7985758720309921
-        }
+        },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Ambcrypto.com"
+                },
+                "author": "Evans Boto",
+                "title": "Bitcoin coils below $87K – But can THIS ignite a run to $100K? - AMBCrypto",
+                "description": "Bitcoin coils below $87.5K as whales stack billions—next stop $100K, or will momentum fade again?",
+                "url": "https://ambcrypto.com/bitcoin-coils-below-87k-but-can-this-ignite-a-run-to-100k/",
+                "urlToImage": "https://ambcrypto.com/wp-content/uploads/2025/04/Evans-21-min-1000x600.png",
+                "publishedAt": "2025-04-19T14:04:27Z",
+                "content": "<ul><li>Whales withdrew $250 million Bitcoin from exchanges, confirming institutional accumulation and reduced sell pressure.</li><li>Exchange inflows dominate, but BTC price stability implies strate… [+3186 chars]",
+                "id": 0.9354531418791824
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Dpradhanbjp.com"
+                },
+                "author": "Soniya Sahota",
+                "title": "$1400/M For Low-Income In April 2025 – Know Eligibility For SSI, SSDI - dpradhanbjp.com",
+                "description": "The US Citizens are provided several payments to help uplift their standards and maintain dignity amidst global change of events. The beneficiaries are",
+                "url": "https://dpradhanbjp.com/1400-m-for-low-income-eligibility-for-ssi-ssdi/",
+                "urlToImage": "https://dpradhanbjp.com/wp-content/uploads/2025/04/1400M-For-Low-Income-In-April-2025-1.jpg",
+                "publishedAt": "2025-04-19T13:10:00Z",
+                "content": "The US Citizens are provided several payments to help uplift their standards and maintain dignity amidst global change of events. The beneficiaries are credited the Social Security Payments, distribu… [+5171 chars]",
+                "id": 0.8903434214829712
+            },
+            {
+                "source": {
+                    "id": "the-hill",
+                    "name": "The Hill"
+                },
+                "author": "Andrew Dorn",
+                "title": "Ford halts shipments of F-150s and other models to China: Report - The Hill",
+                "description": "“We have adjusted exports from the U.S. to China in light of the current tariffs,” a Ford spokesperson told NewsNation.",
+                "url": "https://thehill.com/business/5256762-ford-truck-shipments-paused-china-wsj/",
+                "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2023/11/655d1148cc16c2.01233166-e1745067776413.jpeg?w=1280",
+                "publishedAt": "2025-04-19T13:03:00Z",
+                "content": "Skip to content\r\n<ul><li>WSJ: Ford has stopped shipping F-150 Raptors and other models to China</li><li>The decision comes in response to retaliatory measures by China</li><li>Ford confirmed to NewsN… [+2549 chars]",
+                "id": 0.12967743615238192
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "MarketWatch"
+                },
+                "author": "MarketWatch",
+                "title": "99% of the ‘biggest winning stocks’ share this criteria, says investing legend Mark Minervini - MarketWatch",
+                "description": null,
+                "url": "https://www.marketwatch.com/story/99-of-the-biggest-winning-stocks-share-this-criteria-says-investing-legend-mark-minervini-cdc1181c",
+                "urlToImage": null,
+                "publishedAt": "2025-04-19T12:00:00Z",
+                "content": null,
+                "id": 0.15549336609735365
+            },
+            {
+                "source": {
+                    "id": "bloomberg",
+                    "name": "Bloomberg"
+                },
+                "author": null,
+                "title": "Exporters at China’s Largest Trade Fair Told Not to Leave Early - Bloomberg.com",
+                "description": "Exporters at China’s largest trade fair have been discouraged from closing or leaving their stations early as organizers push them to maximize opportunities to attract sales amid an escalating trade conflict with the US.",
+                "url": "https://www.bloomberg.com/news/articles/2025-04-19/exporters-at-china-s-largest-trade-fair-told-not-to-leave-early",
+                "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/isYwJLZyUS0c/v1/1200x800.jpg",
+                "publishedAt": "2025-04-19T10:40:02Z",
+                "content": "Exporters at Chinas largest trade fair have been discouraged from closing or leaving their stations early as organizers push them to maximize opportunities to attract sales amid an escalating trade c… [+157 chars]",
+                "id": 0.9316407332605735
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Forbes"
+                },
+                "author": "Alexandra York",
+                "title": "Why The Diary Of A CEO Founder Turned Down A $100M Deal To Build A Podcast Empire - Forbes",
+                "description": "How 30 Under 30 Europe alumni and The Diary of A CEO host Steven Bartlett is growing his independent podcast empire.",
+                "url": "https://www.forbes.com/sites/alexyork/2025/04/19/why-the-diary-of-a-ceo-founder-turned-down-a-100m-deal-to-build-a-podcast-empire/",
+                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/680131bfca57ada0fd7553f8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+                "publishedAt": "2025-04-19T10:30:00Z",
+                "content": "Its a Monday morning in March, and Steven Bartlett sits in his studio in Londons hip Shoreditch neighborhood to record the latest episode of his hit podcast The Diary of a CEO. With more than 10 mill… [+9079 chars]",
+                "id": 0.2898448125875568
+            },
+            {
+                "source": {
+                    "id": "business-insider",
+                    "name": "Business Insider"
+                },
+                "author": "Brent D. Griffiths",
+                "title": "Zuckerberg's old emails reveal the CEO's rivals lived in his head rent-free - Business Insider",
+                "description": "Meta CEO Mark Zuckerberg was grilled over dozens of messages he wrote decades ago before his company bought Instagram and WhatsApp.",
+                "url": "https://www.businessinsider.com/zuckerberg-meta-antitrust-trial-emails-ftc-2025-4",
+                "urlToImage": "https://i.insider.com/6800146dc6ad288d147e5bf6?width=1200&format=jpeg",
+                "publishedAt": "2025-04-19T08:11:00Z",
+                "content": "Mark Zuckerberg's own emails, some of them more than 10 years old, revealed he had antitrust concerns long before the FTC brought its case against Meta.\r\nDuring 10 hours of testimony, a lawyer for th… [+5564 chars]",
+                "id": 0.2560797805152172
+            },
+            {
+                "source": {
+                    "id": "the-wall-street-journal",
+                    "name": "The Wall Street Journal"
+                },
+                "author": "WSJ",
+                "title": "Inside Home Depot’s $20 Billion Secret Garden - WSJ",
+                "description": null,
+                "url": "https://www.wsj.com/business/home-depot-gardens-plants-flowers-hot-peppers-1792df6b",
+                "urlToImage": null,
+                "publishedAt": "2025-04-19T01:00:00Z",
+                "content": null,
+                "id": 0.6980524924849791
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "The Conversation Africa"
+                },
+                "author": "Rob Nicholls",
+                "title": "Google loses online ad monopoly case. But it’s just one of many antitrust battles against big tech - The Conversation",
+                "description": "The cases against Google, Meta, Apple and Amazon could profoundly shape the future of global technology.",
+                "url": "https://theconversation.com/google-loses-online-ad-monopoly-case-but-its-just-one-of-many-antitrust-battles-against-big-tech-254602",
+                "urlToImage": "https://images.theconversation.com/files/662673/original/file-20250418-56-ojadv9.jpg?ixlib=rb-4.1.0&rect=0%2C214%2C5300%2C2650&q=45&auto=format&w=1356&h=668&fit=crop",
+                "publishedAt": "2025-04-18T23:09:18Z",
+                "content": "Tech giant Google has just suffered another legal blow in the United States, losing a landmark antitrust case. This follows on from the companys loss in a similar case last year. \r\nSocial media giant… [+6888 chars]",
+                "id": 0.6969975537285189
+            },
+            {
+                "source": {
+                    "id": "the-wall-street-journal",
+                    "name": "The Wall Street Journal"
+                },
+                "author": "WSJ",
+                "title": "The Score: UnitedHealth, Netflix, Eli Lilly and More Stocks That Defined the Week - WSJ",
+                "description": null,
+                "url": "https://www.wsj.com/finance/stocks/the-score-unitedhealth-netflix-eli-lilly-and-more-stocks-that-defined-the-week-8e551f4d",
+                "urlToImage": null,
+                "publishedAt": "2025-04-18T21:02:00Z",
+                "content": null,
+                "id": 0.5865216958258558
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "PBS"
+                },
+                "author": null,
+                "title": "Unusual sell-off in the dollar raises specter of investors losing trust in the U.S. under Trump - PBS",
+                "description": "Economists worry that the recent drop in the dollar is so dramatic that it reflects something more ominous as President Donald Trump tries to reshape global trade: a loss of confidence in the United States.",
+                "url": "https://www.pbs.org/newshour/economy/unusual-sell-off-in-the-dollar-raises-specter-of-investors-losing-trust-in-the-u-s-under-trump",
+                "urlToImage": "https://d3i6fh83elv35t.cloudfront.net/static/2025/04/2025-03-19T172553Z_1122792431_RC2HGDAE1H1O_RTRMADP_3_GLOBAL-MARKETS-1024x683.jpg",
+                "publishedAt": "2025-04-18T20:47:32Z",
+                "content": "NEW YORK (AP) Among the threats tariffs pose to the U.S. economy, none may be as strange as the sell-off in the dollar.\r\nCurrencies rise and fall all the time because of inflation fears, central bank… [+6597 chars]",
+                "id": 0.19645060133668935
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Barron's"
+                },
+                "author": "Barron's",
+                "title": "UnitedHealth Is Struggling. How Trump’s Medicare Advantage Plan Will Help. - Barron's",
+                "description": null,
+                "url": "https://www.barrons.com/articles/unitedhealth-stock-unh-dow-trump-medicare-advantage-60b244fd",
+                "urlToImage": null,
+                "publishedAt": "2025-04-18T20:29:00Z",
+                "content": null,
+                "id": 0.6915590862746019
+            },
+            {
+                "source": {
+                    "id": "fortune",
+                    "name": "Fortune"
+                },
+                "author": "David Welch, Bloomberg",
+                "title": "Bill Ackman makes big bet on Hertz becoming tariff winner - Fortune",
+                "description": "Bill Ackman’s Pershing Square Capital Management has amassed a nearly 20% stake in Hertz.",
+                "url": "https://fortune.com/article/ackman-hertz-pershing-trump-tariff-winner-rental-cars-autos/",
+                "urlToImage": "https://fortune.com/img-assets/wp-content/uploads/2025/04/GettyImages-862490824.jpg?resize=1200,600",
+                "publishedAt": "2025-04-18T20:16:00Z",
+                "content": null,
+                "id": 0.06801385533168991
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Barron's"
+                },
+                "author": "Barron's",
+                "title": "Netflix Has Made Several Risky Bets. Earnings Show They’ve Paid Off. - Barron's",
+                "description": null,
+                "url": "https://www.barrons.com/articles/netflix-stock-nflx-166b2e17",
+                "urlToImage": null,
+                "publishedAt": "2025-04-18T18:51:00Z",
+                "content": null,
+                "id": 0.22002286845307162
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Slate Magazine"
+                },
+                "author": "Luke Winkie",
+                "title": "There Might Be a Sinister Reason Egg Prices Got So High. It’s Happened Before. - Slate",
+                "description": "If you think it's all bird flu, think again.",
+                "url": "https://slate.com/business/2025/04/egg-prices-justice-department-investigation.html",
+                "urlToImage": "https://compote.slate.com/images/6b551018-5230-461f-b20c-65ced996c4cb.jpeg?crop=1560%2C1040%2Cx0%2Cy0&width=1560",
+                "publishedAt": "2025-04-18T18:50:00Z",
+                "content": "This is part of Egg, an attempt to explain why Americans have absolutely lost their minds over egg prices.\r\nYou are probably familiar with the story going around about the egg shortage: The United St… [+6272 chars]",
+                "id": 0.42881801956741616
+            },
+            {
+                "source": {
+                    "id": "wired",
+                    "name": "Wired"
+                },
+                "author": "Paresh Dave",
+                "title": "Judge Blocks DOGE From Laying Off 90 Percent of CFPB - WIRED",
+                "description": "The Trump administration and DOGE tried to cut more than 1,400 employees at the Consumer Financial Protection Bureau. An employee union and other groups are fighting to keep the regulator intact.",
+                "url": "https://www.wired.com/story/cfpb-terminations-paused-trump/",
+                "urlToImage": "https://media.wired.com/photos/680290b93de19aa1189a9e31/191:100/w_1280,c_limit/cfpb-pol-2198196175.jpg",
+                "publishedAt": "2025-04-18T18:41:50Z",
+                "content": "Over 1,400 employees who were about to be laid off from the Consumer Financial Protection Bureau (CFPB) will be able to keep working for at least another week after a federal judge intervened in the … [+3060 chars]",
+                "id": 0.6978566531088194
+            }
     ],
     "entertainment" : [
         {
@@ -717,7 +1190,283 @@
             "publishedAt": "2025-04-15T14:00:00Z",
             "content": "Jesse Eisenberg‘s follow-up to the Oscar-winning “A Real Pain” has added a few more cast members.\r\nHalle Bailey, Havana Rose Liu and Bernadette Peters have joined the untitled musical comedy, which s… [+1427 chars]",
             "id": 0.1705140282251043
-        }
+        },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Cageside Seats"
+                },
+                "author": "Geno Mrosko",
+                "title": "WrestleMania 41 start time, match card: Night one - Cageside Seats",
+                "description": "Get the skinny on when the show goes live and the full card for night one of WWE’s biggest show of the year.",
+                "url": "https://www.cagesideseats.com/wwe/2025/4/19/24410067/wrestlemania-41-start-time-match-card-night-one",
+                "urlToImage": "https://cdn.vox-cdn.com/thumbor/9T8GsCSvSk71IyvSIRbWCSbd_ks=/0x443:6192x3685/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25956548/2207381583.jpg",
+                "publishedAt": "2025-04-19T13:30:00Z",
+                "content": "WWE will return to pay-per-view (PPV) and Peacock later on this evening (Sat., April 19, 2025) with night one of its WrestleMania 41 event from Allegiant Stadium in Las Vegas, Nevada.\r\nNight one of t… [+771 chars]",
+                "id": 0.9860474340516736
+            },
+            {
+                "source": {
+                    "id": "politico",
+                    "name": "Politico"
+                },
+                "author": "Zach Montellaro",
+                "title": "The WrestleMania Presidency - Yahoo Home",
+                "description": "Donald Trump has a deep connection with the world of professional wrestling. Look no further than this weekend's WrestleMania.",
+                "url": "https://www.politico.com/news/magazine/2025/04/19/donald-trump-pro-wrestling-wwe-00298303",
+                "urlToImage": "https://s.yimg.com/ny/api/res/1.2/bdBbvBnFrmfwxU64QcGDDQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04NDI-/https://s.yimg.com/os/creatr-uploaded-images/2025-04/ce9d1620-1d17-11f0-bd3e-8bdd714f2a74",
+                "publishedAt": "2025-04-19T11:00:00Z",
+                "content": "This weekend, tens of thousands of people will make their way to Las Vegas and millions more around the globe will tune in on TV for the two-day spectacle that is WrestleMania: WWEs marquee, decades-… [+5537 chars]",
+                "id": 0.9779346792589122
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Variety"
+                },
+                "author": "Thania Garcia",
+                "title": "Lady Gaga Apologizes for Mic Malfunctions During Coachella Weekend 2 Set: ‘At Least You Know I Sing Live’ - Variety",
+                "description": "Lady Gaga apologized for having faulty mic issues throughout the beginning of her Coachella Weekend 2 set, saying 'at least you know I sing live'",
+                "url": "https://variety.com/2025/music/news/lady-gaga-apologizes-broken-mic-coachella-weekend-2-i-sing-live-1236373171/",
+                "urlToImage": "https://variety.com/wp-content/uploads/2025/04/Screen-Shot-2025-04-19-at-1.33.54-AM.png?w=1000&h=563&crop=1",
+                "publishedAt": "2025-04-19T08:35:00Z",
+                "content": "Lady Gaga had no problem maneuvering through mic issues that plagued the beginning of her “Mayhem” in the desert showcase for Coachella weekend two. The singer’s head mic started glitching and cut of… [+1698 chars]",
+                "id": 0.47966271499052693
+            },
+            {
+                "source": {
+                    "id": "associated-press",
+                    "name": "Associated Press"
+                },
+                "author": "Mike Schneider",
+                "title": "Universal Epic Universe is the theme park resort’s biggest bang yet in Florida - AP News",
+                "description": "From Harry Potter to Super Mario Bros. to Frankenstein, Universal Orlando Resort is pulling out all the pop culture stops at its newest theme park. There are five separate worlds within Epic Universe. The park is set to open in mid-May, just as the Orlando ar…",
+                "url": "https://apnews.com/article/universal-epic-universe-florida-tourism-theme-park-666ce27bfca95cfa4d682f826cc327b5",
+                "urlToImage": "https://dims.apnews.com/dims4/default/8ed4c45/2147483647/strip/true/crop/5682x3196+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F51%2F8e%2F5cf29809073f95ac5882a698bc81%2Fb14f1801cfb4493386aa795e0ed3a027",
+                "publishedAt": "2025-04-19T04:07:00Z",
+                "content": "ORLANDO, Fla. (AP) From Harry Potter to Super Mario Bros. to Frankensteins monster, Universal Orlando Resort is pulling out all the pop culture stops at its newest and largest theme park in Florida.\r… [+4724 chars]",
+                "id": 0.2245870502302446
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "The A.V. Club"
+                },
+                "author": null,
+                "title": "Mrs. Doubtfire's Matthew Lawrence expresses bad hope for an AI Robin Williams - AV Club",
+                "description": "Mrs. Doubtfire's Matthew Lawrence expresses bad hope for an AI Robin Williams",
+                "url": "https://www.avclub.com/matthew-laurence-robin-williams-artificial-intelligence-voice",
+                "urlToImage": "https://img.pastemagazine.com/wp-content/avuploads/2025/04/18223011/williams-bicentennial-man.jpg",
+                "publishedAt": "2025-04-19T03:48:00Z",
+                "content": "Have you ever been reading an interviewsay, with Mrs. Doubtfire and Boy Meets World star Matthew Lawrenceand it all seems to be going okay? Like, standard Entertainment Weekly stuff: Lawrence talks a… [+2783 chars]",
+                "id": 0.28204834997056794
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Cageside Seats"
+                },
+                "author": "Cain A. Knight",
+                "title": "Cody Rhodes lays out Cena again after getting booed on SmackDown - Cageside Seats",
+                "description": "Cody takes out John Cena again, this time with more boos from WWE’s loser fans.",
+                "url": "https://www.cagesideseats.com/wwe/2025/4/18/24411637/wwe-wrestlemania-smackdown-2025-cody-rhodes-booed-stands-tall-over-john-cena-final-promo-go-home",
+                "urlToImage": "https://cdn.vox-cdn.com/thumbor/zWQ-8-aurzyC0uJ0g1XMVn0zNGI=/0x0:452x237/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25959817/codycena.jpg",
+                "publishedAt": "2025-04-19T03:15:00Z",
+                "content": "Tonights (Apr. 18) episode of WrestleMania SmackDown ended with the final face-to-face confrontation between heel John Cena and WWE Champion Cody Rhodes before they fight over the belt on Sunday nigh… [+1723 chars]",
+                "id": 0.670685035629279
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "SheKnows"
+                },
+                "author": "Richard Simms",
+                "title": "Adios, Liam? Plus, We Have Big Questions About Next Week’s Forrester Fashion Show! - Soaps.com",
+                "description": "Bold & Beautiful's Liam has been handed a death sentence. But will he really die? If not, who will save him?",
+                "url": "https://soaps.sheknows.com/the-bold-and-the-beautiful/soapbox/778014/who-will-save-liam/",
+                "urlToImage": "https://soaps.sheknows.com/wp-content/uploads/2025/04/bb-soapbox-cbs-screenshot-5-hw.jpg",
+                "publishedAt": "2025-04-19T02:36:12Z",
+                "content": "Credit: CBS screenshot (5); Howard Wise/JPI\r\nThis week’s episodes of Bold &amp; Beautiful came dangerously close to being a parody of a soap opera thanks to Brooke’s hypocrisy, Sheila and Luna’s wild… [+4578 chars]",
+                "id": 0.5446818363678048
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Cageside Seats"
+                },
+                "author": "Cain A. Knight",
+                "title": "Randy Orton issues a bold challenge for WrestleMania 41 - Cageside Seats",
+                "description": "This could be your chance to put on a pair of wrestling boots and get RKO’d by The Viper at WrestleMania 41 in his open challenge for a surprise opponent.",
+                "url": "https://www.cagesideseats.com/wwe/2025/4/18/24411639/randy-orton-issues-open-challenge-wrestlemania-41-sunday-anybody-rko-surprise-mystery-opponent-vegas",
+                "urlToImage": "https://cdn.vox-cdn.com/thumbor/COjksTBF2FhqnNCLziwu7pmfJzc=/0x19:472x266/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25959725/randyorton.jpg",
+                "publishedAt": "2025-04-19T02:00:00Z",
+                "content": "Randy Orton has been desperate to get booked on the card at WrestleMania 41 ever since his originally scheduled match against Kevin Owens was canceled due to injury.\r\nOn tonights (Apr. 18) episode of… [+796 chars]",
+                "id": 0.48881260951843053
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Rolling Stone"
+                },
+                "author": "Tomás Mier, Nancy Dillon",
+                "title": "Post Malone’s Ex-Fiancée Files for Custody of Their Daughter - Rolling Stone",
+                "description": "Hee Sung \"Jamie\" Park requested primary physical custody of her daughter with Post Malone, referred to by her initials, DDP.",
+                "url": "http://www.rollingstone.com/music/music-news/post-malone-ex-fiancee-custody-daughter-1235321261/",
+                "urlToImage": "https://www.rollingstone.com/wp-content/uploads/2025/04/GettyImages-2209627009-1.jpg?w=1600&h=900&crop=1",
+                "publishedAt": "2025-04-19T00:45:15Z",
+                "content": "Post Malone‘s ex-fiancée, whose name had been kept private for years, filed for custody of their two-year-old daughter on Wednesday, according to a document obtained by Rolling Stone Friday.\r\nIn the … [+1578 chars]",
+                "id": 0.44910818555612997
+            },
+            {
+                "source": {
+                    "id": "entertainment-weekly",
+                    "name": "Entertainment Weekly"
+                },
+                "author": "https://www.facebook.com/entertainmentweekly",
+                "title": "Wendy's clarifies that it has 'a ton of respect' for Katy Perry, but doesn't apologize after social media beef - ew.com",
+                "description": "Wendy's is clarifying that it has 'a ton of respect' for Katy Perry after mocking her Blue Origin space mission — but the fast-food chain didn't apologize for the viral beef.",
+                "url": "https://ew.com/wendy-s-says-it-has-a-ton-of-respect-for-katy-perry-after-viral-beef-11718341",
+                "urlToImage": "https://ew.com/thmb/hiyBjuNMot2q8H6r8hBtdrry3xs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/katy-perry-wendys-9_11252019-bcc9681d6141477a9a9eff2de2381511.jpg",
+                "publishedAt": "2025-04-18T23:50:53Z",
+                "content": "Wendy's insists that it has no beef with Katy Perry.\r\nFollowing a string of viral social media posts ribbing the \"Firework\" singer and her presence on Blue Origin's latest space mission, the fast-foo… [+2638 chars]",
+                "id": 0.7431901328302581
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Vulture"
+                },
+                "author": "Fran Hoepfner",
+                "title": "Sinners’ Post-Credits Scene and Ending, Explained - Vulture",
+                "description": "The first of Sinners’ two post-credits sequences recontextualizes the film’s ending, along with much of what we saw in the two hours prior.",
+                "url": "http://www.vulture.com/article/sinners-post-credits-scenes-explained.html",
+                "urlToImage": "https://pyxis.nymag.com/v1/imgs/21f/cba/5e4f13a9a9744e2def26c9798c8cf3b21d-sinners-postcredits-scene.1x.rsocial.w1200.jpg",
+                "publishedAt": "2025-04-18T23:06:01Z",
+                "content": "Spoilers ahead for the plot and ending of Sinners.\r\nRyan Cooglers Sinners ends at its beginning: in the films first scene, we witness a young man named Sammie (Miles Caton) driving up to a small chur… [+3803 chars]",
+                "id": 0.01490686061513824
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "TODAY"
+                },
+                "author": "Alex Portée",
+                "title": "Is Katy Perry An Astronaut? No, Says The Secretary Of Transportation - TODAY.com",
+                "description": "Blue Origin's all-female crew, which included Katy Perry, Gayle King, Lauren Sanchez and others, are not astronauts, said Secretary of Transportation Sean Duffy.",
+                "url": "https://www.today.com/news/are-katy-perry-gayle-king-real-astronauts-rcna201936",
+                "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/rockcms/2025-04/katy-perry-reax-mc-250414-dd837e.png",
+                "publishedAt": "2025-04-18T22:36:51Z",
+                "content": "Blue Origin's all-female crew successfully made it to space, but when it comes to whether they are considered astronauts, former federal guidelines are bringing them back down to Earth.\r\nEarlier this… [+3054 chars]",
+                "id": 0.7469716084461608
+            },
+            {
+                "source": {
+                    "id": "polygon",
+                    "name": "Polygon"
+                },
+                "author": "Toussaint Egan, Petrana Radulovic",
+                "title": "New Captain America, Companion on Max, and every movie new to streaming - Polygon",
+                "description": "This week’s new movies on streaming include Companion on Max, Wolf Man on Peacock, Captain America: Brave New World on VOD, and more.",
+                "url": "https://www.polygon.com/entertainment/558549/new-movies-watch-streaming-captain-america-brave-new-world-companion-room-next-door-netflix",
+                "urlToImage": "https://platform.polygon.com/wp-content/uploads/sites/2/2025/02/ROC_TLR4_Still_UHD_1.1.34.jpg?quality=90&strip=all&crop=10.208333333333%2C0%2C79.583333333333%2C100&w=1200",
+                "publishedAt": "2025-04-18T22:15:00Z",
+                "content": "Each week on Polygon, we round up the most notable new releases to streaming and VOD, highlighting the biggest and best new movies for you to watch at home.\r\nThis week, Captain America: Brave New Wor… [+9484 chars]",
+                "id": 0.11494501005688917
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Variety"
+                },
+                "author": "Abigail Lee",
+                "title": "‘Pride and Prejudice’ at 20: Director Joe Wright on Robert Altman’s Influence and How His Anarchist Punk Sister Inspired Keira Knightley’s Elizabeth Bennet - Variety",
+                "description": "As \"Pride and Prejudice\" celebrates 20 years, director Joe Wright and production designer Sarah Greenwood discuss their experiences shooting the film.",
+                "url": "https://variety.com/2025/film/features/pride-and-prejudice-20-years-joe-wright-production-1236372277/",
+                "urlToImage": "https://variety.com/wp-content/uploads/2025/04/308526_00767_R.jpg?crop=0px%2C156px%2C3399px%2C1912px&resize=1000%2C563",
+                "publishedAt": "2025-04-18T21:56:00Z",
+                "content": "In the 2005 film adaptation of “Pride and Prejudice,” the central love story between Elizabeth and Darcy is set in motion during a ball. It’s a rowdy, exuberant scene full of carefree dancing and whi… [+15686 chars]",
+                "id": 0.21529145039954223
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Programminginsider.com"
+                },
+                "author": "Douglas Pucci",
+                "title": "Thursday Ratings: 'Matlock' on CBS Hits Series-High in Adults 18-49 with Inaugural Season Finale and Tops All Prime Time Telecasts - Programming Insider",
+                "description": "What follows are the Live + Same Day rating results for the night's network telecasts on Thursday, April 17, 2025:     — Total Viewers (in millions):  CBS: 5.904, NBC: 3.678, Fox News: 3.039, ABC: 2.733, Fox: 1.699,",
+                "url": "https://programminginsider.com/thursday-ratings-matlock-on-cbs-hits-series-high-in-adults-18-49-with-inaugural-season-finale-and-tops-all-prime-time-telecasts/",
+                "urlToImage": "https://programminginsider.com/wp-content/uploads/2025/04/CBS_Matlock-season1-finale-SkyeMarshall-KathyBates.jpeg",
+                "publishedAt": "2025-04-18T21:44:59Z",
+                "content": "CABLEGutfeld! (Fox News, 10:00 PM-11:00 PM, 60 min.)3.117 million viewers1.81 HH rating (Range: 2.271-2.283 million households)0.18 A18-49 rating (Range: 0.235-0.248 million adults 18-49; 0.15 F18-49… [+10740 chars]",
+                "id": 0.5967942116399898
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Cageside Seats"
+                },
+                "author": "Sean Rueter",
+                "title": "WWE announces the opening matches for both nights of WrestleMania 41 - Cageside Seats",
+                "description": "We knew the main events, now here are the matches that will set the tone for the rest of Saturday and Sunday night’s action in Las Vegas.",
+                "url": "https://www.cagesideseats.com/wwe/2025/4/18/24411529/wwe-wrestlemania-41-opening-matches-both-nights-world-titles-iyo-rhea-bianca-jey-gunther",
+                "urlToImage": "https://cdn.vox-cdn.com/thumbor/fjbjKP8k2lfZOcb6Zews_-pK5Wg=/0x299:4176x2485/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25959479/2207384227.jpg",
+                "publishedAt": "2025-04-18T21:30:00Z",
+                "content": "The on-screen story of CM Punk, Seth Rollins, and Roman Reigns revealed that their Triple Threat match would close its night of WrestleMania 41. That essentially confirmed that John Cena and Undisput… [+831 chars]",
+                "id": 0.3360918731498007
+            },
+            {
+                "source": {
+                    "id": "usa-today",
+                    "name": "USA Today"
+                },
+                "author": "Amaris Encinas",
+                "title": "Only 8 US theaters are showing 'Sinners' as director Ryan Coogler intended. Here's where. - USA Today",
+                "description": "While \"Sinners\" has been adapted to work for all screens, director Ryan Coogler recently called the IMAX 70mm format an \"experience.\"",
+                "url": "https://www.usatoday.com/story/entertainment/movies/2025/04/18/sinners-imax-70mm-movie-theater-locations/83161185007/",
+                "urlToImage": "https://www.usatoday.com/gcdn/authoring/authoring-images/2025/04/18/USAT/83162160007-2207885641.jpg?crop=3999,2250,x0,y208&width=3200&height=1801&format=pjpg&auto=webp",
+                "publishedAt": "2025-04-18T21:11:57Z",
+                "content": "Only a select number of movie theaters have the capacity to display Ryan Coogler's newest film \"Sinners\" as the director intended.\r\nThe period action horror film starring Michael B. Jordan was shot w… [+2428 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Who What Wear"
+                },
+                "author": "Kristen Nichols",
+                "title": "Ralph Lauren's Fall 2025 Show Solidifies the Return to Modern Romance - Who What Wear",
+                "description": "Inside the runway collection.",
+                "url": "https://www.whowhatwear.com/fashion/runway/ralph-lauren-fall-winter-2025",
+                "urlToImage": "https://cdn.mos.cms.futurecdn.net/aWPMiV3FasNWLssh5buLsb.jpg",
+                "publishedAt": "2025-04-18T21:03:10Z",
+                "content": "Ralph Lauren unveiled the fall/winter 2025 collection in New York for an off-calendar runway show that brought the fashion community and celebrity set to Tribeca. The event was set inside the new Jac… [+2906 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Ringside News"
+                },
+                "author": "Steve Carrier",
+                "title": "Spoiler: Opening Revealed for April 18 WWE SmackDown - Ringside News",
+                "description": "WrestleMania 41 weekend is nearly here, and WWE isn’t wasting any time getting things started on tonight’s live episode of Friday Night SmackDown—because",
+                "url": "https://www.ringsidenews.com/2025/04/18/spoiler-opening-revealed-for-april-18-wwe-smackdown/",
+                "urlToImage": "https://www.ringsidenews.com/wp-content/uploads/2025/04/spoiler-opening-revealed-for-april-18-wwe-smackdown-39.jpg",
+                "publishedAt": "2025-04-18T20:10:34Z",
+                "content": "WrestleMania 41 weekend is nearly here, and WWE isnt wasting any time getting things started on tonights live episode of Friday Night SmackDownbecause Seth Rollins is kicking off the show.\r\nAccording… [+1453 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Space.com"
+                },
+                "author": "Fran Ruiz",
+                "title": "Star Wars Celebration reveals new footage about Sigourney Weaver's 'The Mandalorian & Grogu' character - Space",
+                "description": "The Mandalorian's next chapter will blast into theaters in 2026, and we're learning more about its characters and story.",
+                "url": "https://www.space.com/entertainment/space-movies-shows/star-wars-celebration-reveals-new-footage-about-sigourney-weavers-the-mandalorian-and-grogu-character",
+                "urlToImage": "https://cdn.mos.cms.futurecdn.net/SP85EQ9BKdMWouWW3W6nw3.jpg",
+                "publishedAt": "2025-04-18T20:00:10Z",
+                "content": "Despite some stumbles along the way, most fans agree The Mandalorian season 3 ended strong with a season finale that felt conclusive (mostly). With The Mandalorian &amp; Grogu set to take over cinema… [+2578 chars]"
+            }
     ],
     "health": [
         {
@@ -971,7 +1720,283 @@
             "publishedAt": "2025-04-15T16:56:45Z",
             "content": "Health officials on Monday confirmed the state's fifth measles case of the year in a one-year-old girl from Ingham County, who may have exposed others to it at multiple locations during a four-day pe… [+3088 chars]",
             "id": 0.9604622402447133
-        }
+        },
+            {
+                "source": {
+                    "id": null,
+                    "name": "ScienceAlert"
+                },
+                "author": "David Nield",
+                "title": "Vagus Nerve Stimulation Has Lasting Effects in People With Severe Depression - ScienceAlert",
+                "description": "Stimulating either of a pair of crucial nerves that carry messages from the brain to several major organs could be an effective way to treat people with severe depression.",
+                "url": "https://www.sciencealert.com/vagus-nerve-stimulation-has-lasting-effects-in-people-with-severe-depression",
+                "urlToImage": "https://www.sciencealert.com/images/2024/12/DepressedFace.jpg",
+                "publishedAt": "2025-04-19T13:03:09Z",
+                "content": "Stimulating either of a pair of crucial nerves that carry messages from the brain to several major organs could be an effective way to treat people with severe depression.\r\nAn international team of r… [+3164 chars]",
+                "id": 0.9712099998007688
+            },
+            {
+                "source": {
+                    "id": "cbs-news",
+                    "name": "CBS News"
+                },
+                "author": "Kerry  Breen",
+                "title": "Her sore throat turned into a long ICU stay. The cause stumped doctors for months. - CBS News",
+                "description": "Vanessa Abraham thought her symptoms were a bad flu — until she collapsed to the floor struggling to breathe.",
+                "url": "https://www.cbsnews.com/news/rare-disease-vanessa-abraham-guillain-barre-california/",
+                "urlToImage": "https://assets3.cbsnewsstatic.com/hub/i/r/2025/04/18/785c3448-ecbd-4935-9882-ecbf10c90792/thumbnail/1200x630/f30c4ab7a69dac923178b46d88e537be/vanessa-rehab-1.png?v=04a4ba26f526ed8207f014fe1018c4aa",
+                "publishedAt": "2025-04-19T12:00:00Z",
+                "content": "When speech pathologist Vanessa Abraham began to feel ill in 2019, she thought she had a bad case of the flu. She was exhausted and her body ached. Her voice was raspy. She was prescribed antibiotics… [+5662 chars]",
+                "id": 0.2512274860689234
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "NPR"
+                },
+                "author": "Andrea Muraskin",
+                "title": "Here's how to use nasal spray right and more tips for managing spring allergies - NPR",
+                "description": "Here's the lowdown from allergy doctors on how to get relief, from which medicines to use — and how to best use them — to tips for keeping pollen out of your home.",
+                "url": "https://www.npr.org/2025/04/19/nx-s1-5369607/allergies-pollen-spring-symptoms-treatment",
+                "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8a%2Fcc%2F270b990a4132939371d6b58e068c%2Fgettyimages-913756896.jpg",
+                "publishedAt": "2025-04-19T11:00:00Z",
+                "content": "If you feel like your seasonal allergies are getting worse every year, it's not just you. Warming from climate change is making the pollen season longer, and more people are going to the doctor each … [+7433 chars]",
+                "id": 0.5394282578033809
+            },
+            {
+                "source": {
+                    "id": "the-washington-post",
+                    "name": "The Washington Post"
+                },
+                "author": "Erin Blakemore",
+                "title": "Study links heavy drinking to brain injuries, Alzheimer’s - The Washington Post",
+                "description": "The researchers found that heavy drinkers had 133 percent higher odds of developing vascular brain lesions than those who never drank.",
+                "url": "https://www.washingtonpost.com/health/2025/04/19/alcohol-drinking-brain-injury-alzheimers/",
+                "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/JD7V2DQLCXEGWSLKDUFLHQN6HQ.jpg&w=1440",
+                "publishedAt": "2025-04-19T10:33:36Z",
+                "content": "Consuming more than eight alcoholic drinks a week is associated with brain injuries linked to Alzheimers disease and cognitive decline, a recent study in the journal Neurology suggests.\r\nThe analysis… [+2508 chars]",
+                "id": 0.743190819408797
+            },
+            {
+                "source": {
+                    "id": "the-washington-post",
+                    "name": "The Washington Post"
+                },
+                "author": "Marlene Cimons",
+                "title": "It started with a whistling sound in his nose. Then things got much worse. - The Washington Post",
+                "description": "It took nearly six years and visits to 17 doctors to figure out what was going on.",
+                "url": "https://www.washingtonpost.com/health/2025/04/19/empty-nose-whistling-breathing-surgery/",
+                "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/6HCPHNFTMZA5PDXC6NNAKJEBNE.jpg&w=1440",
+                "publishedAt": "2025-04-19T10:02:04Z",
+                "content": "In October 2017, Bradley Rhoton and his wife were carving pumpkins for Halloween when he noticed a strange whistling sound each time he inhaled through his nose. Did you hear that? he asked his wife.… [+10471 chars]",
+                "id": 0.4366525838237595
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "mlive.com"
+                },
+                "author": "Annie Lane",
+                "title": "Dear Annie: Husband who turned controlling and suspicious should be tested for dementia - MLive.com",
+                "description": "Dementia can sometimes present in such a fashion, with increasing hostility, suspicion and misplaced blame often toward a spouse.",
+                "url": "https://www.mlive.com/advice/2025/04/dear-annie-husband-should-be-assessed-for-dementia-or-another-medical-disorder.html",
+                "urlToImage": "https://www.mlive.com/resizer/v2/6PWAWGTKTFHOZF4VJALHFHE3VU.png?auth=90912d1a3bfc5998cf6cfab1ce6f47e617eb137d87e48fae0600341aca4fda0b&width=1280&quality=90",
+                "publishedAt": "2025-04-19T07:00:00Z",
+                "content": "Dear Annie: It might be worthwhile for Help Me, whose husband has become increasingly controlling and preoccupied with her whereabouts, to have him assessed for dementia or another medical disorder.\r… [+1562 chars]",
+                "id": 0.7519002044379492
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "BBC News"
+                },
+                "author": null,
+                "title": "Obesity: Should children be weighed at school? - BBC",
+                "description": "Mum-of-two Natasha was \"disheartened, angry and upset\" when her five-year-old was labelled overweight.",
+                "url": "https://www.bbc.com/news/articles/ce8gvr1pn2go",
+                "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/38a7/live/d780e8a0-0fcc-11f0-ac9f-c37d6fd89579.png",
+                "publishedAt": "2025-04-19T06:04:41Z",
+                "content": "Willow, five, was categorised as being overweight following a health check at primary school\r\nA mum was left shocked and upset after her five-year-old daughter came home from school with a letter des… [+5290 chars]",
+                "id": 0.06119377916692936
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "KSL.com"
+                },
+                "author": "Gabriela Fletcher, KSL.com",
+                "title": "Intermountain Health breaks ground on new clinic, cancer center in Saratoga Springs - KSL News",
+                "description": "Intermountain Health officially began construction on its new multispeciality clinic and cancer center building at a groundbreaking ceremony in Saratoga Springs on Friday.",
+                "url": "https://www.ksl.com/article/51297465/intermountain-health-breaks-ground-on-new-clinic-cancer-center-in-saratoga-springs",
+                "urlToImage": "https://img.ksl.com/slc/3081/308152/30815223.jpeg?filter=kslv2/responsive_story_lg",
+                "publishedAt": "2025-04-19T03:02:24Z",
+                "content": "SARATOGA SPRINGS Intermountain Health on Friday broke ground on the site of its new multi-specialty clinic, which will include a dedicated cancer center, for residents of northern Utah County.\r\nThe I… [+3802 chars]",
+                "id": 0.9991415962889854
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "mlive.com"
+                },
+                "author": "Melissa Frick | mfrick@mlive.com",
+                "title": "Possible measles exposure reported at 2 Michigan restaurants - MLive.com",
+                "description": "Health officials are investigating a potential case of measles in Eaton County. Here's where people could have been exposed.",
+                "url": "https://www.mlive.com/news/2025/04/possible-measles-exposure-reported-at-2-michigan-restaurants.html",
+                "urlToImage": "https://www.mlive.com/resizer/v2/VCKZBR3TYFHAJNWGU66NCDBEWI.jpg?auth=af02efe05728378edf13227cea1eba3edbe2a85544be8312d96b4379d2e971d1&width=1280&quality=90",
+                "publishedAt": "2025-04-19T01:06:00Z",
+                "content": "EATON COUNTY, MI Health officials are investigating a potential case of measles in Eaton County.\r\nTest results are still pending, but the Barry-Eaton District Health Department is still alerting the … [+1649 chars]",
+                "id": 0.8124450741193338
+            },
+            {
+                "source": {
+                    "id": "buzzfeed",
+                    "name": "Buzzfeed"
+                },
+                "author": "Leigh Weingus",
+                "title": "Experts Are Sharing The Five Foods That Can Actually Have A Negative Impact On Your Mental Health - BuzzFeed",
+                "description": "Just remember that, as with everything, moderation is key.",
+                "url": "https://www.buzzfeed.com/leighweingus/foods-for-mental-health-7513221-sc",
+                "urlToImage": "https://img.buzzfeed.com/buzzfeed-static/static/2023-08/8/19/enhanced/67e14f84c569/original-2357-1691523952-3.jpg?crop=800:533;0,0&resize=1250:830",
+                "publishedAt": "2025-04-19T00:31:02Z",
+                "content": "We rarely think about food in relation to our mental health. We worry about it leading to health issues, such as cardiovascular or gastrointestinal problems, but did you know that different foods and… [+2446 chars]",
+                "id": 0.6961928019344527
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "SFGate"
+                },
+                "author": "Olivia Hebert",
+                "title": "Rare mad cow-like brain disease kills 2 in Oregon - SFGATE",
+                "description": "Creutzfeldt-Jakob disease, which is related to mad cow disease, has resulted in two deaths in Oregon, according to the Hood River County Health Department.",
+                "url": "https://www.sfgate.com/national-parks/article/rare-mad-cow-brain-disease-oregon-20283578.php",
+                "urlToImage": "https://s.hdnux.com/photos/01/50/05/27/27284941/5/rawImage.jpg",
+                "publishedAt": "2025-04-18T23:09:46Z",
+                "content": "Mount Hood viewed from the Hood River Valley in Oregon.\r\nDave Alan/Getty Images/iStockphoto\r\nThree cases of a rare and fatal brain disorder have been identified in Hood River County, Oregon, local he… [+2183 chars]",
+                "id": 0.17607919165754338
+            },
+            {
+                "source": {
+                    "id": "cnn",
+                    "name": "CNN"
+                },
+                "author": null,
+                "title": "Colombian government declares health emergency due to increase in yellow fever cases - CNN",
+                "description": "Many people do not experience symptoms from the disease, while others experience fever, muscle pain, headache, loss of appetite, nausea or vomiting, according to the WHO. In most cases, symptoms disappear after three to four days.",
+                "url": "https://www.cnn.com/2025/04/18/americas/colombia-yellow-fever-health-emergency-intl-latam/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2025-04-17t201814z-325691158-rc2vzdardrwd-rtrmadp-3-colombia-health-yellowfever.JPG?c=16x9&q=w_800,c_fill",
+                "publishedAt": "2025-04-18T22:16:00Z",
+                "content": "Colombias health ministry declared a nationwide health emergency on Thursday due to the active circulation of yellow fever.\r\nSince September 2024, there have been 75 recorded cases of yellow fever an… [+2865 chars]",
+                "id": 0.5086264745898461
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Eatingwell.com"
+                },
+                "author": "https://www.facebook.com/EatingWell/",
+                "title": "The #1 Reason You Shouldn’t Try a Low-Carb Diet, According to a New Study - EatingWell",
+                "description": "Discover how low-carb diets impact nutrient intake and the risk of deficiencies. Learn strategies for maintaining balanced nutrition effectively.",
+                "url": "https://www.eatingwell.com/low-carb-diet-deficiencies-study-11718235",
+                "urlToImage": "https://www.eatingwell.com/thmb/WjTT7c7_H4xvnn1sHiHZYal7X6E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Reason-You-Should-not-Try-a-Low-Carb-Diet-c283300a18724586b0639694162fbb9c.jpg",
+                "publishedAt": "2025-04-18T21:46:18Z",
+                "content": "Key Takeaways\r\n<ul><li>Low-carb diets may lead to deficiencies of micronutrients like vitamin C, iron and magnesium.</li><li>While supplements may help, you should consult a doctor or dietitian befor… [+8578 chars]",
+                "id": 0.22382588238211565
+            },
+            {
+                "source": {
+                    "id": "the-washington-post",
+                    "name": "The Washington Post"
+                },
+                "author": "Lena H. Sun",
+                "title": "RFK Jr.’s cuts to CDC eliminate labs tracking STIs, hepatitis outbreaks - The Washington Post",
+                "description": "The only lab in the U.S. capable of testing for and tracking antibiotic-resistant gonorrhea, or “super gonorrhea,” was effectively shut down by layoffs.",
+                "url": "https://www.washingtonpost.com/health/2025/04/18/cdc-layoffs-rfk-jr-sexually-transmitted-diseases/",
+                "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HPKZ6WX6L52HRC4K7RCRPXR434.jpg&w=1440",
+                "publishedAt": "2025-04-18T21:00:00Z",
+                "content": "Lab scientists at the Centers for Disease Control and Prevention had been analyzing blood samples for weeks to determine how dozens ofpatients across six states had become infected with viral hepatit… [+6085 chars]",
+                "id": 0.07905300672692284
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Slate Magazine"
+                },
+                "author": "Jamilah Lemieux",
+                "title": "My Kids Believe I Divorced Their Dad for a “Bad” Reason. If They Only Knew the Half of It. - Slate",
+                "description": "He left me with no other choice.",
+                "url": "https://slate.com/advice/2025/04/bad-divorce-care-and-feeding.html",
+                "urlToImage": "https://compote.slate.com/images/3cbb2077-cc2d-4295-abb7-63740ba9e105.jpeg?crop=1560%2C1040%2Cx0%2Cy0&width=1560",
+                "publishedAt": "2025-04-18T20:45:00Z",
+                "content": "Slate Plus members get more Care and Feeding every week. Have a question about kids, parenting, or family life? Submit it here!\r\nDear Care and Feeding, \r\nI divorced my childrens dad for a bad reason … [+3558 chars]",
+                "id": 0.2974217391232802
+            },
+            {
+                "source": {
+                    "id": "associated-press",
+                    "name": "Associated Press"
+                },
+                "author": "Michelle R. Smith",
+                "title": "Video shows doctor with measles treating kids. RFK Jr later praised him as an ‘extraordinary’ healer - AP News",
+                "description": "A video shows a Texas doctor, who has been treating children in a measles outbreak, with a measles rash on his face in a clinic while caring for patients a week before he met with Health Secretary Robert F. Kennedy Jr.. Dr. Ben Edwards appeared in the video p…",
+                "url": "https://apnews.com/article/texas-measles-outbreak-rfk-jr-ben-edwards-2dd7c79d47c64ad2e6d4a4ac3c87ec1f",
+                "urlToImage": "https://dims.apnews.com/dims4/default/11e26e7/2147483647/strip/true/crop/1230x692+0+64/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F19%2F8f%2F52904726ce21a5ba9611d35bda5d%2F0669d5c888e14630a9e93abae08ac72b",
+                "publishedAt": "2025-04-18T19:09:00Z",
+                "content": "PROVIDENCE, R.I. (AP) A Texas doctor who has been treating children in a measles outbreak was shown on video with a measles rash on his face in a clinic a week before Health Secretary Robert F. Kenne… [+4630 chars]",
+                "id": 0.22572259690762486
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "KSDK.com"
+                },
+                "author": "Sam Clancy",
+                "title": "Measles case confirmed in Missouri child, first in 2025 - KSDK",
+                "description": "The health department said the best way to avoid getting sick is to get the two-dose vaccination, which it says prevents more than 97% of cases.",
+                "url": "https://www.ksdk.com/article/news/health/missouri-child-measles-traveling-internationally-1st-case-of-year/63-05716490-1c90-4982-a12c-9ef3be33673d",
+                "urlToImage": "https://media.ksdk.com/assets/KSDK/images/cfbe27ab-808e-47ef-92e8-018879f4f0cc/cfbe27ab-808e-47ef-92e8-018879f4f0cc_1140x641.jpg",
+                "publishedAt": "2025-04-18T19:00:00Z",
+                "content": "TANEY COUNTY, Mo. A child in Taney County, Missouri, tested positive for measles this week, the first case of the illness in the state this year.\r\nAccording to a news release from the Missouri Depart… [+1756 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Umn.edu"
+                },
+                "author": null,
+                "title": "US measles total climbs to 800 cases, 10 outbreaks - CIDRAP",
+                "description": null,
+                "url": "https://www.cidrap.umn.edu/measles/us-measles-total-climbs-800-cases-10-outbreaks",
+                "urlToImage": "https://www.cidrap.umn.edu/sites/default/files/styles/layout_large/public/article/young%20boy%20measles%20fever.jpg?itok=U9xzCNS2",
+                "publishedAt": "2025-04-18T18:25:52Z",
+                "content": null
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "The Boston Globe"
+                },
+                "author": null,
+                "title": "Brain tumors in Newton-Wellesley hospital workers being investigated - The Boston Globe",
+                "description": "Disease trackers say it's unlikely the cases are connected, although definitive answers may be elusive.",
+                "url": "https://www.bostonglobe.com/2025/04/18/metro/newton-wellesley-hospital-nurses-cancer/",
+                "urlToImage": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/XERWY4D7WZCHXJME4R4UHCPF7A.jpg?auth=87f1aeaf4deec444a00ae2290101df464edb0a2d5f0534356c681b1bbb9ff35c&width=1440",
+                "publishedAt": "2025-04-18T18:05:00Z",
+                "content": "On Friday , the state health departments Division of Radiation Control Program planned to return to Newton-Wellesley to review information previously provided by the hospital and to perform some conf… [+5899 chars]"
+            },
+            {
+                "source": {
+                    "id": "ars-technica",
+                    "name": "Ars Technica"
+                },
+                "author": "Jennifer Ouellette",
+                "title": "Women rely partly on smell when choosing friends - Ars Technica",
+                "description": "College women smelled each other’s T-shirts in new study to evaluate “friendship potential.”…",
+                "url": "https://arstechnica.com/science/2025/04/smells-like-teen-friendship-how-scent-influences-social-choices/",
+                "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2025/04/friends1-1152x648-1744986520.jpg",
+                "publishedAt": "2025-04-18T17:16:47Z",
+                "content": null
+            }
     ],
     "science": [
         {
@@ -1253,7 +2278,283 @@
             "publishedAt": "2025-04-15T12:00:54Z",
             "content": "Researchers using NASAs Hubble Space Telescope have discovered the magnetar called SGR 0501+4516 is traversing our galaxy from an unknown place of origin. Researchers say that this runaway magnetar i… [+6376 chars]",
             "id": 0.2644801236164339
-        }
+        },
+            {
+                "source": {
+                    "id": "nbc-news",
+                    "name": "NBC News"
+                },
+                "author": "Denise Chow",
+                "title": "Annual Lyrid meteor shower peaks overnight Monday - NBC News",
+                "description": "It’s spring skywatching at its best: The annual Lyrid meteor shower is back, offering people across the Northern Hemisphere a chance to catch shooting stars in the night sky.",
+                "url": "https://www.nbcnews.com/science/space/annual-lyrid-meteor-shower-peaks-overnight-monday-rcna201439",
+                "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2024-08/240809-perseids-radiant-credit-preston-dyches-ch-1458-4998be.jpg",
+                "publishedAt": "2025-04-19T12:00:00Z",
+                "content": "Its spring skywatching at its best: The annual Lyrid meteor shower is back, offering people across the Northern Hemisphere a chance to catch shooting stars in the night sky.\r\nThe meteor shower began … [+2379 chars]",
+                "id": 0.8682425190236707
+            },
+            {
+                "source": {
+                    "id": "cnn",
+                    "name": "CNN"
+                },
+                "author": "Ashley Strickland",
+                "title": "An astronaut’s awe-inspiring views from life in space - CNN",
+                "description": "Longtime NASA astronaut Don Pettit is set to return from his fourth trip to space on Saturday night. Here are some of his most stunning photos of the cosmos.",
+                "url": "https://www.cnn.com/2025/04/19/science/nasa-astronaut-don-pettit-astrophotography/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/iss072e097446-large.jpg?c=16x9&q=w_800,c_fill",
+                "publishedAt": "2025-04-19T12:00:00Z",
+                "content": "Longtime NASA astronaut Don Pettit, who has ventured to space four times, is due to return to Earth on Saturday night from the International Space Station. Pettit will turn 70 on Sunday.\r\nThe scienti… [+1570 chars]",
+                "id": 0.6037400346119693
+            },
+            {
+                "source": {
+                    "id": "ars-technica",
+                    "name": "Ars Technica"
+                },
+                "author": "Elizabeth Rayne",
+                "title": "Lichens can survive almost anything, and some might survive Mars - Ars Technica",
+                "description": "The symbiotic organisms appear to be able to avoid some radiation damage.",
+                "url": "https://arstechnica.com/science/2025/04/lichens-can-survive-almost-anything-and-some-might-survive-mars/",
+                "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2025/04/GettyImages-128123777-1152x648.jpg",
+                "publishedAt": "2025-04-19T11:07:46Z",
+                "content": null,
+                "id": 0.05452362133462729
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "The Daily Galaxy --Great Discoveries Channel"
+                },
+                "author": null,
+                "title": "Oldest Living Fish Discovered In Pacific Ocean Depths - The Daily Galaxy",
+                "description": "Scientists exploring the Pacific depths have uncovered a marine mystery that defies belief. Could this ancient creature be the longest-living fish ever recorded?",
+                "url": "https://dailygalaxy.com/2025/04/oldest-living-fish-pacific-ocean/",
+                "urlToImage": "https://dailygalaxy.com/wp-content/uploads/2025/04/Oldest-Living-Fish-Discovered-In-Pacific-Ocean-Depths.jpg",
+                "publishedAt": "2025-04-19T10:30:00Z",
+                "content": "In a recent deep-sea research expedition reported by Animals Around The Globe, scientists have identified what may be the oldest living fish ever recorded in the Pacific Ocean. \r\nThe discovery, cente… [+3718 chars]",
+                "id": 0.6840675139768682
+            },
+            {
+                "source": {
+                    "id": "mashable",
+                    "name": "Mashable"
+                },
+                "author": "Mark Kaufman",
+                "title": "Space camera spots mysterious symbols in the remote desert - Mashable",
+                "description": "\"This caught our attention.\"",
+                "url": "https://mashable.com/article/space-station-camera-view-earth-desert-mystery",
+                "urlToImage": "https://helios-i.mashable.com/imagery/articles/06y18BgchhgjNML9eXiedJG/hero-image.fill.size_1200x675.v1744928825.png",
+                "publishedAt": "2025-04-19T09:00:00Z",
+                "content": null,
+                "id": 0.8392496650104656
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "SciTechDaily"
+                },
+                "author": null,
+                "title": "Mars Kept a Secret for 3.5 Billion Years – NASA’s Curiosity Rover Finally Dug It Up - SciTechDaily",
+                "description": "Scientists using NASA’s Curiosity rover have discovered siderite—an iron carbonate—in the sulfate-rich rocks of Gale Crater, solving a long-standing mystery about Mars’ missing carbonates. This find provides powerful new clues about the planet’s ancient atmos…",
+                "url": "https://scitechdaily.com/?p=470933",
+                "urlToImage": "https://scitechdaily.com/images/NASA-Curiosity-Mars-Rover-Mount-Sharp-Selfie.jpg",
+                "publishedAt": "2025-04-19T08:41:41Z",
+                "content": "This selfie (stitched together from multiple exposures) of NASA’s Curiosity Mars rover shows the vehicle as it explores the slopes of Mount Sharp. Credit: NASA/JPL-Caltech/MSSS\r\nScientists using NASA… [+5166 chars]",
+                "id": 0.9320249070279898
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Farmingdale-observer.com"
+                },
+                "author": null,
+                "title": "Scientists discovered fungi capable of metabolizing gold, some now see them as the key to mining in space. - Farmingdale Observer",
+                "description": "4 years ago, Australian researchers at the CSIRO discovered that certain strains of the fungus Fusarium oxysporum were capable of extracting gold from their environment and incorporating it into their structure, thereby promoting their propagation. This disco…",
+                "url": "https://farmingdale-observer.com/2025/04/18/scientists-discovered-fungi-capable-of-metabolizing-gold-some-now-see-them-as-the-key-to-mining-in-space/",
+                "urlToImage": null,
+                "publishedAt": "2025-04-19T02:31:00Z",
+                "content": "4 years ago, Australian researchers at the CSIRO discovered that certain strains of the fungus Fusarium oxysporum were capable of extracting gold from their environment and incorporating it into thei… [+1905 chars]",
+                "id": 0.5771246757327797
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "SciTechDaily"
+                },
+                "author": null,
+                "title": "Is Yellowstone Going To Erupt? New Research Reveals That the Volcano Is Venting - SciTechDaily",
+                "description": "Researchers have identified a stable, gas-venting magma cap beneath Yellowstone, reducing eruption risk and advancing subsurface imaging techniques for broader geological applications. Beneath the steaming geysers and bubbling mud pots of Yellowstone National…",
+                "url": "https://scitechdaily.com/is-yellowstone-going-to-erupt-new-research-reveals-that-the-volcano-is-venting/",
+                "urlToImage": "https://scitechdaily.com/images/Massive-Volcanic-Eruption-Art-Concept.jpg",
+                "publishedAt": "2025-04-19T02:15:47Z",
+                "content": "Scientists have discovered a volatile-rich magma cap just 3.8 km beneath Yellowstone that acts like a lid, releasing gas and reducing eruption risk. Using advanced seismic imaging, researchers reveal… [+6947 chars]",
+                "id": 0.2262573562536564
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Hackaday"
+                },
+                "author": "Maya Posch",
+                "title": "Haircuts In Space: How To Keep Your Astronauts Looking Fresh - Hackaday",
+                "description": "Although we tend to see mostly the glorious and fun parts of hanging out in a space station, the human body will not cease to do its usual things, whether it involves the digestive system, or even …",
+                "url": "https://hackaday.com/2025/04/18/haircuts-in-space-how-to-keep-your-astronauts-looking-fresh/",
+                "urlToImage": "https://hackaday.com/wp-content/uploads/2025/04/nichole_ayers_haircut_takuya_onishi_credit_jaxa_takuya_onishi.jpg",
+                "publishedAt": "2025-04-19T02:00:00Z",
+                "content": "NASA astronaut Catherine Coleman gives ESA astronaut Paolo Nespoli a haircut in the Kibo laboratory on the ISS in 2011. (Credit: NASA)\r\nAlthough we tend to see mostly the glorious and fun parts of ha… [+1701 chars]",
+                "id": 0.5962777375089886
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Live Science"
+                },
+                "author": "Elana Spivack",
+                "title": "Universe may revolve once every 500 billion years — and that could solve a problem that threatened to break cosmology - Yahoo Home",
+                "description": "A slowly spinning universe could resolve a puzzle in physics known as the Hubble tension, a new model suggests.",
+                "url": "https://www.livescience.com/space/cosmology/universe-may-revolve-once-every-500-billion-years-and-that-could-solve-a-problem-that-threatened-to-break-cosmology",
+                "urlToImage": "https://s.yimg.com/ny/api/res/1.2/EWPPY06crU1EtuQ07E80Ow--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/live_science_953/5ced71902759d3df6bc591c28e3252da",
+                "publishedAt": "2025-04-19T01:07:00Z",
+                "content": "When you buy through links on our articles, Future and its syndication partners may earn a commission.\r\nThe expansion rate of the universe seems to differ depending on what objects you use to measure… [+3248 chars]",
+                "id": 0.657748822668072
+            },
+            {
+                "source": {
+                    "id": "the-times-of-india",
+                    "name": "The Times of India"
+                },
+                "author": "TOI Trending Desk",
+                "title": "New continent in Greenland discovered by Geologists: Here's how it was formed - Times of India",
+                "description": "A hidden continent existed under Greenland's ice. Scientists found this lost continental fragment. It is called the Davis Strait proto-microcontinent.",
+                "url": "https://timesofindia.indiatimes.com/etimes/trending/new-continent-in-greenland-discovered-by-geologists-heres-how-it-was-formed/articleshow/120416973.cms",
+                "urlToImage": "https://static.toiimg.com/thumb/msid-120416977,width-1070,height-580,imgsize-33676,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+                "publishedAt": "2025-04-18T23:30:00Z",
+                "content": "On a leopard trail: 8 national parks to spot big cat in the wild",
+                "id": 0.19717860349514793
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "The Conversation Africa"
+                },
+                "author": "Daniel Apai",
+                "title": "Scientists found a potential sign of life on a distant planet – an astronomer explains why many are still skeptical - The Conversation",
+                "description": "The exoplanet K2-18b could harbor a massive ocean, but scientists will need to study the planet more to see if it’s really likely to host life.",
+                "url": "https://theconversation.com/scientists-found-a-potential-sign-of-life-on-a-distant-planet-an-astronomer-explains-why-many-are-still-skeptical-254900",
+                "urlToImage": "https://images.theconversation.com/files/662692/original/file-20250418-56-at0887.jpg?ixlib=rb-4.1.0&rect=0%2C78%2C1280%2C640&q=45&auto=format&w=1356&h=668&fit=crop",
+                "publishedAt": "2025-04-18T22:44:39Z",
+                "content": "A team of astronomers announced on April 16, 2025, that in the process of studying a planet around another star, they had found evidence for an unexpected atmospheric gas. On Earth, that gas called d… [+7175 chars]",
+                "id": 0.029433443008714533
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Farmingdale-observer.com"
+                },
+                "author": null,
+                "title": "Glaciers are “bleeding” due to a troubling phenomenon, and experts are warning about its global impact. - Farmingdale Observer",
+                "description": "The phenomenon of \"bleeding glaciers\" has recently captured scientific attention, revealing a disturbing ecological warning sign. These massive ice formations, once pristine white monuments of nature, now display alarming red patches that researchers compare …",
+                "url": "https://farmingdale-observer.com/2025/04/18/glaciers-are-bleeding-due-to-a-troubling-phenomenon-and-experts-are-warning-about-its-global-impact/",
+                "urlToImage": null,
+                "publishedAt": "2025-04-18T21:21:00Z",
+                "content": "The phenomenon of “bleeding glaciers” has recently captured scientific attention, revealing a disturbing ecological warning sign. These massive ice formations, once pristine white monuments of nature… [+4516 chars]",
+                "id": 0.20174432096088268
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Thebrighterside.news"
+                },
+                "author": "Joseph Shavit",
+                "title": "Archeologists discover ancient fossil from the oldest known saber-toothed predator - The Brighter Side of News",
+                "description": "Therapsids, the ancient relatives of mammals, once roamed Earth in great numbers during the middle to late Permian period.",
+                "url": "https://www.thebrighterside.news/post/archeologists-discover-ancient-fossil-from-the-oldest-known-saber-toothed-predator/",
+                "urlToImage": "https://www.thebrighterside.news/uploads/2025/04/therapsid.jpg?auto=webp",
+                "publishedAt": "2025-04-18T21:07:00Z",
+                "content": "Therapsids, the ancient relatives of mammals, once roamed Earth in great numbers during the middle to late Permian period. These land-dwelling creatures would later evolve into mammals, but their ear… [+5926 chars]",
+                "id": 0.6696509864474511
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Space.com"
+                },
+                "author": "Mike Wall",
+                "title": "'Take care of our station. It's our everything.' Russian cosmonaut hands control of ISS over to Japanese astronaut (video) - Space",
+                "description": "The change of command ceremony sets the stage for an epic return to Earth for three space travelers.",
+                "url": "https://www.space.com/space-exploration/international-space-station/take-care-of-our-station-its-our-everything-russian-cosmonaut-hands-control-of-iss-over-to-japanese-astronaut-video",
+                "urlToImage": "https://cdn.mos.cms.futurecdn.net/R84XN9bUK3reGikjzsLhyG.jpg",
+                "publishedAt": "2025-04-18T20:34:07Z",
+                "content": "The keys to the International Space Station just changed hands.\r\nCosmonaut Alexey Ovchinin of the Russian space agency Roscosmos passed control of the orbiting lab over to Takuya Onishi of the Japan … [+1840 chars]",
+                "id": 0.5945451264268192
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Thebrighterside.news"
+                },
+                "author": "Joshua Shavit",
+                "title": "Earth’s magnetic field failed 41,000 years ago – forever changing human evolution - The Brighter Side of News",
+                "description": "Earth’s magnetic field nearly collapsed 41,000 years ago, lighting up ancient skies and reshaping human survival in several ways",
+                "url": "https://www.thebrighterside.news/post/earths-magnetic-field-failed-41000-years-ago-forever-changing-human-evolution/",
+                "urlToImage": "https://www.thebrighterside.news/uploads/2025/04/homo-sapien-main.webp?auto=webp",
+                "publishedAt": "2025-04-18T20:07:00Z",
+                "content": "During a brief but dramatic chapter in Earth's history about 41,000 years ago, the planets magnetic field nearly collapsed. What followed was a cascade of environmental and biological changes that ma… [+8186 chars]",
+                "id": 0.5762394223681323
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Space.com"
+                },
+                "author": "Monisha Ravisetti",
+                "title": "NASA's sun-studying PUNCH mission captures its 1st-light images. Everything looks great so far - Space",
+                "description": "\"All four instruments are functioning as designed.\"",
+                "url": "https://www.space.com/the-universe/sun/nasas-sun-studying-punch-mission-captures-its-1st-light-images-everything-looks-great-so-far",
+                "urlToImage": "https://cdn.mos.cms.futurecdn.net/GwsDm9gCeAraJQbseWBSp3.png",
+                "publishedAt": "2025-04-18T20:05:37Z",
+                "content": "Scientists announced on Friday (April 18) that the newest solar investigator in town has captured its first-light images — or should I say the newest solar investigators. That is, this NASA sun-study… [+5610 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Universe Today"
+                },
+                "author": null,
+                "title": "A Nuclear-Powered Spacecraft Could Send Humans to Titan to Look for Signs of Life - Universe Today",
+                "description": "According to a recent study by the non-profit Explore Titan, a nuclear-fission propulsion spacecraft could enable the first crewed mission to Titan, Saturn's largest moon.",
+                "url": "https://www.universetoday.com/articles/a-nuclear-powered-spacecraft-could-explore-titan-for-signs-of-life",
+                "urlToImage": "https://www.universetoday.com/assets/titan_multi.jpg",
+                "publishedAt": "2025-04-18T19:34:24Z",
+                "content": "Saturn's largest moon, Titan, has been a source of mystery ever since scientists got their first up-close look at it in 1979 with the Pioneer 11 probe. The mystery has only deepened as additional spa… [+5360 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "A-z-animals.com"
+                },
+                "author": "Sammi Caramela",
+                "title": "This Insect Has Been Around for More Than 100 Million Years. Here’s the Secret to Its Longevity. - AOL.com",
+                "description": "Countless species of insects have been around for hundreds of millions of years, including pests like cockroaches and beetles. More specifically, the rove be...",
+                "url": "https://a-z-animals.com/articles/this-insect-has-been-around-for-more-than-100-million-years-heres-the-secret-to-its-longevity/",
+                "urlToImage": "https://s.yimg.com/ny/api/res/1.2/baWHD0L7Ri_kiTv2P4k5kQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://media.zenfs.com/en/a_z_animals_articles_974/7b584cc4df9408fbdc6b0a247bce9f8c",
+                "publishedAt": "2025-04-18T19:30:00Z",
+                "content": "Rove beetle© Henri Koskinen/Shutterstock.com\r\nCountless species of insects have been around for hundreds of millions of years, including pests like cockroaches and beetles. More specifically, the rov… [+5341 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Nasawatch.com"
+                },
+                "author": "Keith Cowing",
+                "title": "Janet Petro NASA Update – NASA Update – April 18, 2025 - NASA Watch",
+                "description": "Janet Petro NASA Update – NASA Update - April 18, 2025",
+                "url": "https://nasawatch.com/ask-the-administrator/janet-petro-nasa-update-nasa-update-april-18-2025/",
+                "urlToImage": "https://nasawatch.com/wp-content/uploads/2025/02/Janet-Petro-1.png",
+                "publishedAt": "2025-04-18T18:58:08Z",
+                "content": "This week brought steady progress across the agency, as teams tackled key milestones in flight testing, propulsion, Artemis prep, and more. It’s a snapshot of how your work continues to push the miss… [+3574 chars]"
+            }
     ],
     "sports": [
         {
@@ -1507,7 +2808,244 @@
             "publishedAt": "2025-04-15T20:06:10Z",
             "content": "Do-it-all superstar Travis Hunter knows hes at the mercy of the NFLs sorting hat. But hes not completely powerless when it comes to the question of whether hell get his wish to be the NFLs first true… [+2782 chars]",
             "id": 0.9117454162684515
-        }
+        },
+            {
+                "source": {
+                    "id": null,
+                    "name": "CBS Sports"
+                },
+                "author": null,
+                "title": "2025 NBA playoff bracket: First-round matchups, schedule, game times as Heat and Grizzlies get final spots - CBS Sports",
+                "description": null,
+                "url": "https://www.cbssports.com/nba/news/2025-nba-playoff-bracket-first-round-matchups-schedule-game-times-as-heat-and-grizzlies-get-final-spots/",
+                "urlToImage": null,
+                "publishedAt": "2025-04-19T13:21:42Z",
+                "content": null,
+                "id": 0.7789296054694546
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "NBCSports.com"
+                },
+                "author": "Michael David Smith",
+                "title": "Howie Roseman’s aggressive approach to draft-day trades stems from being an outsider - NBC Sports",
+                "description": "The Eagles' General Manager took a different approach to building his Super Bowl-winning roster.",
+                "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/howie-rosemans-aggressive-approach-to-draft-day-trades-stems-from-being-an-outsider",
+                "urlToImage": "https://nbcsports.brightspotcdn.com/dims4/default/6a672c7/2147483647/strip/true/crop/5333x3000+0+278/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fc4%2Fc6%2F41535a5b4cd388774f5bdcbe9141%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2201955973",
+                "publishedAt": "2025-04-19T13:16:20Z",
+                "content": "Eagles General Manager Howie Roseman never played football, and got his start as a front office intern with the team. And he says that makes him look at his job differently.\r\nAsked why hes so eager t… [+1064 chars]",
+                "id": 0.10975112250122265
+            },
+            {
+                "source": {
+                    "id": "nbc-news",
+                    "name": "NBC News"
+                },
+                "author": "Andrew Greif",
+                "title": "'Change and chaos' could be next for college sports after NIL contract holdout - NBC News",
+                "description": "Nico Iamaleava was Tennessee's star QB last season. He's already left in search of a better NIL deal in what some believe could become a trend in college football.",
+                "url": "https://www.nbcnews.com/sports/college-football/change-chaos-college-sports-nil-contract-holdout-rcna201787",
+                "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-04/250417-Nico-Iamaleava-ew-241p-c0f2b8.jpg",
+                "publishedAt": "2025-04-19T11:08:40Z",
+                "content": "The University of Tennessees annual spring football game last week was supposed to be a preview of what to expect on the field.\r\nThe Volunteers were coming off a berth in last seasons College Footbal… [+7537 chars]",
+                "id": 0.06995556251739532
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Mavs Moneyball"
+                },
+                "author": "Josh Bowe",
+                "title": "Mavericks vs Grizzlies Recap: 1 thing as Dallas gets drilled by Memphis 120-106, season is over - Mavs Moneyball",
+                "description": "We can all go to bed now",
+                "url": "https://www.mavsmoneyball.com/2025/4/18/24411740/mavericks-vs-grizzlies-recap-1-thing-as-dallas-gets-drilled-by-memphis-120-106-season-is-over",
+                "urlToImage": "https://cdn.vox-cdn.com/thumbor/ZJgHDYItG4Jg8uNPFFQh8MkJYuk=/0x0:4161x2179/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25959843/usa_today_25965393.jpg",
+                "publishedAt": "2025-04-19T04:29:27Z",
+                "content": "The Dallas Mavericks season is over after the Memphis Grizzlies dominated them in the final Play-In game, beating the Mavericks 120-106 Friday night in Memphis. \r\nThe Grizzlies will be the Wests eigh… [+3880 chars]",
+                "id": 0.10619104973634597
+            },
+            {
+                "source": {
+                    "id": "bleacher-report",
+                    "name": "Bleacher Report"
+                },
+                "author": "Joe Tansey",
+                "title": "NBA Playoff Bracket Picture 2025 After Heat, Grizzlies Clinch Final Spots - Bleacher Report",
+                "description": null,
+                "url": "https://bleacherreport.com/articles/25188106-nba-playoff-bracket-picture-2025-after-heat-grizzlies-clinch-final-spots",
+                "urlToImage": "https://gsp-image-cdn.wmsports.io/cms/prod/bleacher-report/2025-04/national_nba_play-in-tourney_24_bracket_3x2_720_0.png?w=3800&h=2000",
+                "publishedAt": "2025-04-19T04:15:46Z",
+                "content": "1 of 2The Heat outscored the Hawks 17-8 in overtime to book their ticket to the NBA postseason.\r\nTyler Herro led the Heat with 30 points, but Davion Mitchell was the star in overtime with nine of his… [+654 chars]",
+                "id": 0.10580480928512503
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "profootballrumors.com"
+                },
+                "author": null,
+                "title": "Raiders Expected To Select RB Ashton Jeanty At No. 6 - ProFootballRumors.com",
+                "description": "Further signs are pointing to the Raiders selecting Ashton Jeanty sixth overall in next week's draft. More at Pro Football Rumors.",
+                "url": "https://www.profootballrumors.com/2025/04/raiders-expected-to-select-rb-ashton-jeanty-at-no-6",
+                "urlToImage": "https://cdn.profootballrumors.com/files/2024/11/USATSI_24782395-1024x683.jpg",
+                "publishedAt": "2025-04-19T04:14:00Z",
+                "content": "Ashton Jeanty has long been connected to the Raiders, and that remains the case as the countdown to the draft continues. It would come as no surprise if the Boise State back wound up beginning his ca… [+2086 chars]",
+                "id": 0.12397326506815998
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "profootballrumors.com"
+                },
+                "author": null,
+                "title": "Giants Preparing For QB Move After No. 3; Brian Daboll High On Jaxson Dart - ProFootballRumors.com",
+                "description": "The Giants remain unlikely to add a QB third overall, but Jaxson Dart is among the passers who could be on the team's radar. More at PFR.",
+                "url": "https://www.profootballrumors.com/2025/04/giants-preparing-for-qb-move-after-no-3-brian-daboll-high-on-jaxson-dart",
+                "urlToImage": "https://cdn.profootballrumors.com/files/2025/03/USATSI_25104199-1024x683.jpg",
+                "publishedAt": "2025-04-19T04:07:00Z",
+                "content": "Since the signings of Jameis Winston and Russell Wilson in free agency, the possibility of the Giants waiting until after the No. 3 pick to add a quarterback has gained steam. Signs continue to point… [+2355 chars]",
+                "id": 0.9108447942556778
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "NESN"
+                },
+                "author": "Tim Crowley",
+                "title": "Red Sox Notes: Trevor Story Leads Slugfest To Start Homestand - NESN",
+                "description": "Trevor Story took advantage with runners in scoring position and set the tone for the Red Sox to cash in all night at Fenway Park.",
+                "url": "https://nesn.com/2025/04/red-sox-notes-trevor-story-leads-slugfest-to-start-homestand/",
+                "urlToImage": "https://s47719.pcdn.co/wp-content/uploads/sites/5/2025/04/trevor-story-5.jpg",
+                "publishedAt": "2025-04-19T04:05:36Z",
+                "content": null,
+                "id": 0.2952289269411347
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Griffinshockey.com"
+                },
+                "author": "",
+                "title": "Ruffled Feathers - Grand Rapids Griffins",
+                "description": "The official website of the Grand Rapids Griffins. See the latest news, scores, stats and get tickets to every Griffins home game.",
+                "url": "https://griffinshockey.com/news/april-18-2025-griffins-1-at-icehogs-4",
+                "urlToImage": "https://d1lc7v1gi40h54.cloudfront.net/v2/_1200x630_crop_center-center_82_none/54460118007_73e4b51aab_k_2025-04-19-032103_futh.jpg?mtime=1745032864",
+                "publishedAt": "2025-04-19T03:50:00Z",
+                "content": "At 8:12 of the opening period, a pair of Griffins penalties within 14 seconds of one another granted the IceHogs 1:36 of a 5-on-3. However, Grand Rapids penalty kill stood tall, keeping Rockford off … [+3439 chars]",
+                "id": 0.46590099762414827
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "247Sports"
+                },
+                "author": "Alex Jones",
+                "title": "Beamer updates injury report following spring game - 247Sports",
+                "description": "South Carolina head coach Shane Beamer updated the injury report following the Garnet  Black Spring Game",
+                "url": "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-football-shane-beamer-injury-report-april-18-2025-248975516/",
+                "urlToImage": "https://s3media.247sports.com/Uploads/Assets/538/755/12755538.jpg?width=1200&height=628&crop=1.91:1&fit=cover",
+                "publishedAt": "2025-04-19T02:59:50Z",
+                "content": "South Carolina wrapped up spring practice on Friday evening in Williams-Brice Stadium. Following the spring game, head coach Shane Beamer said the Gamecocks came out on Friday night \"injury free\" fro… [+1799 chars]",
+                "id": 0.6912668403958103
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Batterypower.com"
+                },
+                "author": "Demetrius Bell",
+                "title": "Braves battle back with a five-run eighth inning to take down the Twins - Battery Power",
+                "description": "The Braves looked dead in the water — until they weren’t. That’s baseball for you!",
+                "url": "https://www.batterypower.com/2025/4/18/24411625/atlanta-braves-minnesota-twins-final-score-game-recap-drake-baldwin",
+                "urlToImage": "https://cdn.vox-cdn.com/thumbor/gIlNH1o3sk3sLtvU2XlMElXwTTo=/0x0:5958x3119/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25959742/2210262252.jpg",
+                "publishedAt": "2025-04-19T02:16:16Z",
+                "content": "The Atlanta Braves looked down in the doldrums for the vast majority of this contest. That was until the lineup came alive with five runs in the eighth inning to pull off a major comeback in a 6-4 wi… [+6858 chars]",
+                "id": 0.5276212993226733
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "MLB.com"
+                },
+                "author": "Anthony DiComo",
+                "title": "With stage set, stoic Lindor walks it off with stone-cold reaction - MLB.com",
+                "description": "NEW YORK -- Francisco Lindor’s reaction, if it can be called that, was one of pure stoicism. Lindor swung his bat and dropped it in an eyeblink, giving the ball a token glance as it soared upward. He didn’t bother watching it land in the second deck in right.…",
+                "url": "https://www.mlb.com/news/francisco-lindor-hits-first-walk-off-homer-with-mets",
+                "urlToImage": "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/dqqfdnuen0zanlqgclne.jpg",
+                "publishedAt": "2025-04-19T02:13:46Z",
+                "content": "NEW YORK -- Francisco Lindors reaction, if it can be called that, was one of pure stoicism. Lindor swung his bat and dropped it in an eyeblink, giving the ball a token glance as it soared upward. He … [+3591 chars]",
+                "id": 0.4422216745179438
+            },
+            {
+                "source": {
+                    "id": "associated-press",
+                    "name": "Associated Press"
+                },
+                "author": null,
+                "title": "Yankees' Jazz Chisholm Jr. suspended 1 game following ejection, violation of social media policy - AP News",
+                "description": "New York Yankees second baseman Jazz Chisholm Jr. was suspended for one game and fined by Major League Baseball on Friday following his ejection during a game at the Tampa Bay Rays and violation of MLB’s social media policy. Chisholm appealed, delaying any pe…",
+                "url": "https://apnews.com/article/chisholm-suspended-yankees-7f18f04f9c3716337c3694a4472b6af5",
+                "urlToImage": "https://dims.apnews.com/dims4/default/a3a6da0/2147483647/strip/true/crop/3318x1866+0+173/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fc7%2F80%2F3725044a74735a26ef2874301947%2Fe67c84f0cde447ea801da35914dcb5fc",
+                "publishedAt": "2025-04-19T02:09:00Z",
+                "content": "TAMPA, Fla. (AP) New York Yankees second baseman Jazz Chisholm Jr. was suspended for one game and fined by Major League Baseball on Friday following his ejection during a game at the Tampa Bay Rays a… [+1360 chars]",
+                "id": 0.5996029895480878
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "MMA Fighting"
+                },
+                "author": "Damon Martin",
+                "title": "PFL 3 results: Fabian Edwards slices open Impa Kasanganay, delivers blistering knockout in main event - MMA Fighting",
+                "description": "Fabian Edwards capped off the PFL 3 card on Friday with a blistering knockout over Impa Kasanganay while Gadzhi Rabadanov added another highlight to his resume with a stunning 32-second finish",
+                "url": "https://www.mmafighting.com/2025/4/18/24411634/pfl-3-results-fabian-edwards-slices-open-impa-kasanganay-delivers-blistering-knockout-in-main-event",
+                "urlToImage": "https://cdn.vox-cdn.com/thumbor/rn5PSraziO4L_G2qPHkpJem2jOk=/0x0:3216x1684/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25959721/PFL_20250418_C1N08752.jpg",
+                "publishedAt": "2025-04-19T01:43:08Z",
+                "content": "Fabian Edwards didnt celebrate for very long despite delivering an emphatic finish over former PFL champion Impa Kasanganay in the PFL 3 main event on Friday from Orlando. \r\nIn a battle between two n… [+4223 chars]",
+                "id": 0.0013446696440233552
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "MLB Trade Rumors"
+                },
+                "author": "Darragh McDonald",
+                "title": "Angels Designate Nicky Lopez For Assignment - MLB Trade Rumors",
+                "description": "Infielder Nicky Lopez ain't no Angel. Read more at MLB Trade Rumors.",
+                "url": "https://www.mlbtraderumors.com/2025/04/angels-designate-nicky-lopez-for-assignment.html",
+                "urlToImage": "https://cdn.mlbtraderumors.com/files/2025/04/Nicky_Lopez_Angels-1024x683.jpg",
+                "publishedAt": "2025-04-19T01:24:04Z",
+                "content": "The Angels announced that shortstop Zach Neto has been reinstated from the injured list. It was reported yesterday that Neto was likely to be reinstated for this weekend. In a corresponding move, inf… [+2054 chars]",
+                "id": 0.15802785070858494
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Clemsontigers.com"
+                },
+                "author": null,
+                "title": "Titsworth Pitches No. 2 Clemson To 2-1 Win Over No. 17 Cardinals - Clemson Tigers",
+                "description": "CLEMSON, S.C. - Sophomore righthander Drew Titsworth pitched 6.0 scoreless innings in his first career start to lead No. 2 Clemson to a 2-1 victory over No. 17 Louisville at Doug Kingsmore Stadium on Friday. The Tigers, who took a 2-0 lead in the series, impr…",
+                "url": "https://clemsontigers.com/cu254181/",
+                "urlToImage": "https://clemsontigers.com/amt-media/768911",
+                "publishedAt": "2025-04-19T01:07:30Z",
+                "content": "Box Score (HTML)  |  Box Score (PDF)\r\nCLEMSON, S.C. – Sophomore righthander Drew Titsworth pitched 6.0 scoreless innings in his first career start to lead No. 2 Clemson to a 2-1 victory over No. 17 L… [+1141 chars]",
+                "id": 0.17877912796564488
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Rivals.com"
+                },
+                "author": "Dub Jellison",
+                "title": "Quarterback Ryan Browne transferring back to Purdue - Rivals.com",
+                "description": "A familiar face will be back in West Lafayette next fall at the quarterback position, Ryan Browne.",
+                "url": "https://purdue.rivals.com/news/quarterback-ryan-browne-transferring-back-to-purdue",
+                "urlToImage": "https://images.rivals.com/image/upload/f_auto,q_auto,t_headline_primary/ktxhpozcr6nz8v5xxuxd",
+                "publishedAt": "2025-04-19T00:39:42Z",
+                "content": "A familiar face will be back in West Lafayette next fall at the quarterback position. Redshirt sophomore Ryan Browne will transfer back to Purdue from North Carolina, a source told Boiler Upload.\r\nBr… [+1879 chars]"
+            }
     ],
     "technology": [
         {
@@ -1775,6 +3313,256 @@
             "publishedAt": "2025-04-15T14:58:00Z",
             "content": "According to Bloomberg’s Mark Gurman, Apple is set to launch a new trade-in promotion at its stores this week. Gurman says Apple will offer a 10% discount (up to $20 off) on the purchase of new Apple… [+1362 chars]",
             "id": 0.11151272224703912
-        }
+        },
+            {
+                "source": {
+                    "id": "fortune",
+                    "name": "Fortune"
+                },
+                "author": "Sharon Goldman",
+                "title": "A customer support AI went rogue—and it’s a warning for every company considering replacing workers with automation - Fortune",
+                "description": "A hallucinating customer support bot—and a viral backlash—shows how fast things can go wrong in the age of AI automation.",
+                "url": "https://fortune.com/article/customer-support-ai-cursor-went-rogue/",
+                "urlToImage": "https://fortune.com/img-assets/wp-content/uploads/2025/04/GettyImages-748338005.jpg?resize=1200,600",
+                "publishedAt": "2025-04-19T12:00:00Z",
+                "content": null,
+                "id": 0.10535437984575358
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Softonic"
+                },
+                "author": "Agencias",
+                "title": "If you have to pay for only one AI subscription, this is the best one - Softonic",
+                "description": "\" In a market flooded with AI tools offering free and paid options, choosing the right subscription can be a challenge. If you’re going to invest in one, ChatGPT Plus stands out as the most comprehensive and value-packed choice. For $",
+                "url": "https://en.softonic.com/articles/if-you-have-to-pay-for-only-one-ai-subscription-this-is-the-best-one",
+                "urlToImage": "https://articles-img.sftcdn.net/t_article_cover_xl/auto-mapping-folder/sites/3/2025/04/IA-2.jpeg",
+                "publishedAt": "2025-04-19T11:21:19Z",
+                "content": "In a market flooded with AI tools offering free and paid options, choosing the right subscription can be a challenge. If youre going to invest in one, ChatGPT Plus stands out as the most comprehensiv… [+1323 chars]",
+                "id": 0.11605922364313159
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Forbes"
+                },
+                "author": "Davey Winder",
+                "title": "New Gmail Warning — Do Not Open This Email From Google - Forbes",
+                "description": "This Gmail attack bypasses Google’s own security checks.",
+                "url": "https://www.forbes.com/sites/daveywinder/2025/04/19/new-gmail-warning---do-not-open-this-email-from-google/",
+                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/66f3d1193dc5e648eb57743b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+                "publishedAt": "2025-04-19T11:18:39Z",
+                "content": "Google security alerts used in new Gmail hack.\r\ndpa/picture alliance via Getty Images\r\nProtecting your accounts and data is getting harder and more complex, despite the best efforts of security defen… [+3854 chars]",
+                "id": 0.6794645389307976
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Gizmodo.com"
+                },
+                "author": "Brent Rose",
+                "title": "Luminary Beam Review: The Handheld Laser Vaporizer You Didn’t Know You Wanted - Gizmodo",
+                "description": "It's a laser vape, because lasers make everything more fun.",
+                "url": "https://gizmodo.com/luminary-beam-review-the-handheld-laser-vaporizer-you-didnt-know-you-wanted-2000590896",
+                "urlToImage": "https://gizmodo.com/app/uploads/2025/04/20250329_LuminaryBeam_7.jpg",
+                "publishedAt": "2025-04-19T11:01:08Z",
+                "content": "Anybody who has ever been to a rock concert can tell you: Lasers and weed go together like peanut butter and jelly. If only, many a stoner has undoubtedly mused. There were some way I could use a las… [+10992 chars]",
+                "id": 0.5955605694063993
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Sammyfans.com"
+                },
+                "author": "Yash",
+                "title": "Samsung One UI 7 Stable update still on hold for US users - Sammy Fans",
+                "description": "It's been two days since Samsung resumed the One UI 7 rollout, but US users are still waiting for the update. The company first released the Hotfix build for the Galaxy S24 series and later expanded it to the Z Flip 6, Z Fold 6, and Fold SE. We understand the…",
+                "url": "https://www.sammyfans.com/2025/04/19/samsung-one-ui-7-stable-update-still-on-hold-for-us-users/",
+                "urlToImage": "https://www.sammyfans.com/wp-content/uploads/2025/04/one-ui-7-img10-1000x576.jpg",
+                "publishedAt": "2025-04-19T05:55:40Z",
+                "content": "Samsung has shared an updated roadmap for its One UI 7 update in India. The company has revised the update roadmap on the Members app, which has replaced the mention of “25” with “2025” to end the co… [+1569 chars]",
+                "id": 0.21244895639551864
+            },
+            {
+                "source": {
+                    "id": "the-verge",
+                    "name": "The Verge"
+                },
+                "author": "Jay Peters",
+                "title": "GameStop, Target, and Walmart announce when their Switch 2 preorders start - The Verge",
+                "description": "GameStop, Target, and Walmart have shared exactly when you can try to snag a Nintendo Switch 2 preorder on April 24th. Best Buy has also said some details about its plans.",
+                "url": "https://www.theverge.com/news/651971/nintendo-switch-2-target-preorders-time",
+                "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/STKR001_NINTENDO_SWITCH_4_E.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+                "publishedAt": "2025-04-18T22:00:24Z",
+                "content": "You might want to set some alarms.\r\nYou might want to set some alarms.\r\nNintendo said today that Switch 2 preorders in the US will begin on April 24th ahead of the consoles June 5th launch day, and n… [+1972 chars]",
+                "id": 0.8702053356977877
+            },
+            {
+                "source": {
+                    "id": "polygon",
+                    "name": "Polygon"
+                },
+                "author": "Alice Jovanée",
+                "title": "Baldur’s Gate 3 is 20% off to celebrate its last major update - Polygon",
+                "description": "The latest update for Baldur’s Gate 3 delivers photo mode, cross-play, and new subclasses, and is currently 20% off for PC and Xbox.",
+                "url": "https://www.polygon.com/good-deals/561625/baldurs-gate-3-final-patch-steam-gog-xbox-sale",
+                "urlToImage": "https://platform.polygon.com/wp-content/uploads/sites/2/2025/04/20250418170045-copy.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+                "publishedAt": "2025-04-18T21:45:11Z",
+                "content": "Baldurs Gate 3 recently received its final major patch, adding features like cross-play, photo mode, and new subclasses in addition to myriad bug fixes. While there may be future updates to address u… [+773 chars]",
+                "id": 0.7344749367915722
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Lauren Forristal",
+                "title": "A new kids' show will come with a crypto wallet when it debuts this fall - Yahoo Finance",
+                "description": "A new animated kids’ series expected to premiere this year won’t be headed for a TV network. Or a streaming service. Instead, the founders of production...",
+                "url": "https://techcrunch.com/2025/04/18/a-new-kids-show-will-come-with-a-crypto-wallet-when-it-debuts-this-fall/",
+                "urlToImage": "https://media.zenfs.com/en/techcrunch_for_finance_733/300c6aa42dd7d595607c5b8cfc55e3c1",
+                "publishedAt": "2025-04-18T21:43:13Z",
+                "content": "A new animated kids series expected to premiere this year wont be headed for a TV network. Or a streaming service. Instead, the founders of production studio We Ghosted Media plan to launch on a dece… [+5592 chars]",
+                "id": 0.17838553311929384
+            },
+            {
+                "source": {
+                    "id": "ign",
+                    "name": "IGN"
+                },
+                "author": "Eric Song",
+                "title": "The Gigabyte GeForce RTX 5070 Graphics Card Is in Stock at MSRP for Amazon Prime Members - IGN",
+                "description": "But not for long.",
+                "url": "https://www.ign.com/articles/nvidia-geforce-rtx-5070-graphics-card-is-in-stock-at-msrp-on-amazon",
+                "urlToImage": "https://assets-prd.ignimgs.com/2025/04/18/gigabyte5070-1745011236133.jpg?width=1280",
+                "publishedAt": "2025-04-18T21:28:44Z",
+                "content": "If you've been waiting for one of the more affordable Blackwell cards to come back in stock at a reputable retailer, here's your chance to pick one up at list price. Amazon currently has the Gigabyte… [+1910 chars]",
+                "id": 0.6762905402811765
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Boing Boing"
+                },
+                "author": "Ellsworth Toohey",
+                "title": "Teen's new bionic hands can literally go on solo missions - Boing Boing",
+                "description": "You know that dream where your hand detaches and raids your fridge for you? Just me? Well anyway, 19-year-old Tilly Lockey just made that a reality. As reported by Reuters,…",
+                "url": "https://boingboing.net/2025/04/18/teens-new-bionic-hands-can-literally-go-on-solo-missions.html",
+                "urlToImage": null,
+                "publishedAt": "2025-04-18T21:05:13Z",
+                "content": "You know that dream where your hand detaches and raids your fridge for you? Just me? Well anyway, 19-year-old Tilly Lockey just made that a reality.\r\nAs reported by Reuters, UK-based Open Bionics jus… [+1237 chars]",
+                "id": 0.4331339515816902
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Gear Patrol"
+                },
+                "author": "Jack Seemer",
+                "title": "Science Just Crowned This the World's Fastest Running Shoe. You Probably Won't Guess the Brand - Gear Patrol",
+                "description": "A competitor to Nike's throne claims to have built the fastest shoe on the planet. Hard to believe? It brought receipts.",
+                "url": "https://www.gearpatrol.com/fitness/puma-fast-r-nitro-elite-3/",
+                "urlToImage": "https://www.gearpatrol.com/wp-content/uploads/sites/2/2025/04/puma-fast-r-nitro-elite-3-gear-patrol-lead-jpg.webp",
+                "publishedAt": "2025-04-18T20:49:42Z",
+                "content": "To back it up, the brand teamed up with the University of Massachusetts Amherst for a study comparing a prototype of the Fast-R Nitro Elite 3 against the Nike Alphafly 3, Adidas Adios Pro Evo 1 and t… [+1096 chars]",
+                "id": 0.06736240675392913
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "9to5Mac"
+                },
+                "author": "Ryan Christoffel",
+                "title": "With iPhone 17 Pro Max, Apple may finally grant this years-old wish - 9to5Mac",
+                "description": "With the iPhone 17 Pro Max this fall, Apple could give users one important feature they’ve long asked for: ultra-levels of battery life.",
+                "url": "https://9to5mac.com/2025/04/18/iphone-17-pro-max-will-give-users-one-upgrade-theyve-always-wanted/",
+                "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2024/05/iphone-17.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+                "publishedAt": "2025-04-18T20:17:00Z",
+                "content": "This fall Apple will launch four new iPhones, including the ultra-thin iPhone 17 Air. But with the iPhone 17 Pro Max, the company is leaning hard in the opposite direction, and thus fulfilling the wi… [+1750 chars]",
+                "id": 0.13915054325495047
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Forbes"
+                },
+                "author": "Paul Tassi",
+                "title": "Bungie Lifts NDA On ‘Marathon’ Closed Alpha Before Release Date - Forbes",
+                "description": "Bungie has decided the Marathon Closed Alpha does not need an NDA after all, as they want players to talk openly about the game.",
+                "url": "https://www.forbes.com/sites/paultassi/2025/04/18/bungie-lifts-nda-on-marathon-closed-alpha-before-release-date/",
+                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6802aeb47ef425432d1489d2/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+                "publishedAt": "2025-04-18T20:00:27Z",
+                "content": "Marathon\r\nBungie\r\nBungie would like you to know that Marathon is good, and would like you to tell other people its good as well.\r\nAfter a somewhat middling gameplay reveal this past weekend that skew… [+2152 chars]",
+                "id": 0.24527669531308305
+            },
+            {
+                "source": {
+                    "id": "ars-technica",
+                    "name": "Ars Technica"
+                },
+                "author": "Kyle Orland",
+                "title": "Microsoft researchers create super‑efficient AI that uses up to 96% less energy - Ars Technica",
+                "description": "Future AI might not need supercomputers thanks to models like BitNet b1.58 2B4T.",
+                "url": "https://arstechnica.com/ai/2025/04/microsoft-researchers-create-super%e2%80%91efficient-ai-that-uses-up-to-96-less-energy/",
+                "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2025/04/GettyImages-2204783467-1152x648.jpg",
+                "publishedAt": "2025-04-18T19:46:06Z",
+                "content": null,
+                "id": 0.29466466150552617
+            },
+            {
+                "source": {
+                    "id": "mashable",
+                    "name": "Mashable"
+                },
+                "author": "Tim Marcin",
+                "title": "We tried the ChatGPT 'reverse location search' trend, and it's scary - Mashable",
+                "description": "ChatGPT is getting remarkably good at identifying locations in photos, even suggesting specific addresses in our test.",
+                "url": "https://mashable.com/article/chatgpt-reverse-location-search-privacy-concerns",
+                "urlToImage": "https://helios-i.mashable.com/imagery/articles/06Iu4dEuEEo0K81XpPtKWQv/hero-image.fill.size_1200x675.v1744993089.jpg",
+                "publishedAt": "2025-04-18T19:12:50Z",
+                "content": null,
+                "id": 0.9018598288623942
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "PetaPixel"
+                },
+                "author": "Jeremy Gray",
+                "title": "Synology to Restrict Its New NAS Devices to Using Synology-Branded Drives - PetaPixel",
+                "description": "No third-party drives here.",
+                "url": "https://petapixel.com/2025/04/18/synology-to-restrict-its-new-nas-devices-to-using-synology-branded-drives/",
+                "urlToImage": "https://petapixel.com/assets/uploads/2025/04/synology-nas-story-apr25-featured.jpg",
+                "publishedAt": "2025-04-18T19:12:17Z",
+                "content": "Storage and technology company Synology will require self-branded, verified drives for consumer NAS systems starting with the new 25 Plus series lineup. \r\nInitially reported by Hardwareluxx in German… [+3763 chars]",
+                "id": 0.8880241284400079
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Kotaku"
+                },
+                "author": "Zack Zwiezen",
+                "title": "MicroSD Express Cards Are Selling Out Because Of The Switch 2 - Kotaku",
+                "description": "Sites like Amazon are struggling to keep the faster storage cards in stock",
+                "url": "https://kotaku.com/switch-2-microsd-express-cards-sell-out-amazon-best-buy-1851776846",
+                "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/38d22c3601609518038d082a1f640c5f.jpg",
+                "publishedAt": "2025-04-18T18:35:00Z",
+                "content": "The Nintendo Switch 2 uses MicroSD Express cardsa faster and better version of the old MicroSD cards used on the Switch and other devicesto store downloaded games. But it might be tricky to buy one o… [+2220 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Windows Central"
+                },
+                "author": "Jennifer Young",
+                "title": "Palworld developers challenge Nintendo's patents using examples from Zelda, ARK: Survival, Tomb Raider, Titanfall 2 and many more huge titles - Windows Central",
+                "description": "More info unfolds directly from the Tokyo District Court, and many games are named in the patent infringement suit",
+                "url": "https://www.windowscentral.com/gaming/palworld-developers-challenge-nintendos-patents-using-examples-from-zelda-ark-survival-tomb-raider-titanfall-2-and-many-more-huge-titles",
+                "urlToImage": "https://cdn.mos.cms.futurecdn.net/uQwZMdVvP3oFCZ3fNkrwvH.jpg",
+                "publishedAt": "2025-04-18T18:29:18Z",
+                "content": "Hot news in the defense of Pocketpair just emerged in regards to the ongoing patent infringement dispute between the developer and Nintendo over popular Xbox Game Pass game, Palworld. \r\nThanks to the… [+6938 chars]"
+            }
     ]
 }

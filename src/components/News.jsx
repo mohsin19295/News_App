@@ -8,7 +8,6 @@ import PaginatedButtonBox from './PaginatedButtonBox';
 import MoreStories from './moreStories';
 import LatestNews from './latestNews';
 import RecentUpdates from './recentUpdates';
-import staticData from "../staticData.json";
 
 function News(props) {
   const [post, setPost] = useState([]);
@@ -58,79 +57,68 @@ function News(props) {
     initialFetchData();
   }, []);
 
-  useEffect(() => {
-    fetchData();
-  }, [page]);
-
   const fetchData = async () => {
     props.setProgress(0);
     setLoading(true);
     try {
       const staticRes = await Axios.get('/news.json');
-      setInitialPost(passedData(staticRes))
-      setPost(passedData(staticRes));
+      const data = passedData(staticRes);
+      setInitialPost(data);
+  
+      const startIndex = (page - 1) * LIMIT;
+      const endIndex = startIndex + LIMIT;
+      const paginatedData = data?.slice(startIndex, endIndex);
+  
+      setPost(paginatedData);
+      setTotal(Math.ceil(data?.length / LIMIT));
     } catch (error) {
       console.log('An error occurs while fetching', error);
     } finally {
       setLoading(false);
       props.setProgress(100);
     }
-  };
+  };  
+
+  useEffect(() => {
+    fetchData();
+  }, [page]);
 
   const handlePrevious = () => setPage(page - 1);
   const handleNext = () => setPage(page + 1);
 
-  /*
-  
-    useEffect(() => {
-    const initialFetchData = async () => {
-      try {
-        setLoading(true);
-        // const res = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=1`);
-        // setInitialPost(staticData.articles);
-        const staticRes = await Axios.get('/news.json');
-        setInitialPost(staticRes?.data?.Business)
-        console.log(staticRes?.data?.Business)
-        // setInitialPost(res?.data?.articles);
-        // console.log(res?.data?.articles)
-      } catch (error) {
-        console.log('An error occurs while fetching', error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  //   useEffect(() => {
+  //   const initialFetchData = async () => {
+  //     try {
+  //       setLoading(true);
+  //       const res = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=1`);
+  //       setInitialPost(res?.data?.articles);
+  //       console.log(res?.data?.articles)
+  //     } catch (error) {
+  //       console.log('An error occurs while fetching', error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    initialFetchData();
-  }, []);
+  //   initialFetchData();
+  // }, []);
 
-  useEffect(() => {
-    fetchData();
-  }, [page]);
-
-  const fetchData = async () => {
-    props.setProgress(0);
-    setLoading(true);
-    try {
-      // const initialRes = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=1`);
-      // const res = await Axios.get(`/api/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=${page}`);
-      // setPost(staticData.articles);
-      // setInitialPost(staticData.articles);
-      const staticRes = await Axios.get('/news.json');
-      setInitialPost(staticRes?.data?.Business)
-      console.log(staticRes?.data?.Business)
-      setPost(staticRes?.data?.Business);
-      // setInitialPost(initialRes?.data?.articles);
-      // setTotal(Math.ceil(staticData.totalResults / LIMIT));
-      // setTotal(Math.ceil(res?.data?.totalResults / LIMIT));
-    } catch (error) {
-      console.log('An error occurs while fetching', error);
-    } finally {
-      setLoading(false);
-      props.setProgress(100);
-    }
-  };
-
-  */
+  // const fetchData = async () => {
+  //   props.setProgress(0);
+  //   setLoading(true);
+  //   try {
+  //     const initialRes = await Axios.get(`https://newsapi.org/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=1`);
+  //     const res = await Axios.get(`/api/v2/top-headlines?country=${COUNTRY}&category=${props?.category}&apiKey=${API_KEY}&page=${page}`);
+  //     setPost(res?.data.articles);
+  //     setInitialPost(initialRes?.data?.articles);
+  //     setTotal(Math.ceil(res?.data?.totalResults / LIMIT));
+  //   } catch (error) {
+  //     console.log('An error occurs while fetching', error);
+  //   } finally {
+  //     setLoading(false);
+  //     props.setProgress(100);
+  //   }
+  // };
 
   return (
     loading ? <ScaleLoader
