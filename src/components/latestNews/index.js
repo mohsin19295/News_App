@@ -25,7 +25,6 @@ const LatestNews = ({ initialPost }) => {
 
           return (
             <LatestPostContainer
-              post={post}
               imageUrl={imageUrl}
               urlToImage={urlToImage}
               title={title}

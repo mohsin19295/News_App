@@ -31,7 +31,6 @@ const MoreStories = ({ post }) => {
               : DefaultImage
             return (
               <StoryContainer
-                post={post}
                 imageUrl={imageUrl}
                 urlToImage={urlToImage}
                 title={title}

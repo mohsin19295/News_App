@@ -26,7 +26,6 @@ const RecentUpdates = ({initialPost}) => {
                   : DefaultImage
                 return (
                   <RecentPostContainer
-                    post={post}
                     imageUrl={imageUrl}
                     urlToImage={urlToImage}
                     title={title}
