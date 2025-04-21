@@ -1,5 +1,6 @@
 import React from 'react'
 import { Typography } from '@mui/material'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { OffWhite } from '../../utils'
 import { PostContainer } from '../../assets/styles'
 
@@ -8,19 +9,22 @@ const LatestPostContainer = ({ post, imageUrl, urlToImage, title, source, url })
         <PostContainer
             type='latest'
             onClick={() => window.open(url, 'noreferrer')}
-            key={post.id == null ? post.id = Math.random(1, 100) : post.id}
+            key={title}
         >
-            <img
+          <div style={{ position: 'relative', width: '100%', height: '100%', padding: 0 }}>
+            <LazyLoadImage
                 src={imageUrl}
-                alt={urlToImage ? "urlToImage" : "No Image Available"}
+                alt={urlToImage || "No Image Available"}
+                effect='blur'
+                wrapperClassName='lazy-image-wrapper'
                 style={{
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: '5px',
-                    objectFit: 'cover'
+                width: '100%',
+                height: '100%',
+                borderRadius: '5px',
+                objectFit: 'cover',
                 }}
-                loading="lazy"
-                />
+            />
+            </div>
             <div
                 style={{
                     position: 'absolute',
@@ -51,7 +55,7 @@ const LatestPostContainer = ({ post, imageUrl, urlToImage, title, source, url })
                     mt={1}
                     color={OffWhite}
                 >
-                    {source.name == null ? source.name = "Unknown" : source.name}
+                    {source.name || "Unknown" }
                 </Typography>
             </div>
         </PostContainer>

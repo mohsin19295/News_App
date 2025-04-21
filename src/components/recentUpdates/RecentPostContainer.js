@@ -1,24 +1,30 @@
 import React from 'react'
 import { PostContainer } from '../../assets/styles'
 import { Typography } from '@mui/material'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const RecentPostContainer = ({post, imageUrl, urlToImage, title, url}) => {
     return (
         <PostContainer
             type='recent'
             onClick={() => window.open(url, 'noreferrer')}
-            key={post.id == null ? post.id = Math.random(1, 100) : post.id}
+            key={title}
         >
-            <img
-                src={imageUrl}
-                alt={urlToImage ? "urlToImage" : "No Image Available"}
-                style={{
+             <div style={{ position: 'relative', height: '100%', padding: 0 }}>
+                <LazyLoadImage
+                    src={imageUrl}
+                    alt={urlToImage || "No Image Available"}
+                    effect='blur'
+                    wrapperClassName='lazy-image-wrapper'
+                    style={{
+                        width: '150px',
+                        minWidth: '150px',
+                    height: '100%',
                     borderRadius: '5px',
-                    width: '150px',
-                    minWidth: '150px',
-                }}
-                loading="lazy"
-            />
+                    objectFit: 'cover',
+                    }}
+                />
+            </div>
             <Typography
                 fontSize={16}
                 sx={{

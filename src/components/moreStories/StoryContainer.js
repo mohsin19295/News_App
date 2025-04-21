@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import React from 'react'
 import { PrimaryColor } from '../../utils'
 
@@ -15,17 +16,20 @@ const StoryContainer = ({ post, imageUrl, urlToImage, title, url, description })
                 marginBottom: '1rem',
             }}
         >
-            <img
-                src={imageUrl}
-                alt={urlToImage ? "urlToImage" : "No Image Available"}
-                style={{
-                    borderRadius: '5px',
+            <div style={{ position: 'relative', height: '200px', padding: 0 }}>
+                <LazyLoadImage
+                    src={imageUrl}
+                    alt={urlToImage || "No Image Available"}
+                    effect='blur'
+                    wrapperClassName='lazy-image-wrapper'
+                    style={{
                     width: '100%',
                     height: '200px',
-                    objectFit: 'cover'
-                }}
-                loading="lazy"
-            />
+                    borderRadius: '5px',
+                    objectFit: 'cover',
+                    }}
+                />
+            </div>
             <Typography
                 fontSize={18}
                 sx={{

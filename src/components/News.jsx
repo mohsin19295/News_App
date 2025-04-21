@@ -141,6 +141,7 @@ function News(props) {
         <Box
           sx={{
             display: 'flex',
+            height: '100%',
             padding: {
               xs: '1rem',
               sm: '2rem',
@@ -157,6 +158,7 @@ function News(props) {
               md: 'row',
             },
           }}
+          // style={{border: '1px solid red'}}
         >
           <LatestNews initialPost={initialPost} />
           <RecentUpdates initialPost={initialPost} />

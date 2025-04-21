@@ -74,7 +74,7 @@ export const PostContainer = styled(Box)`
   min-width: ${({ type }) => (type === 'latest' ? '48%' : '70%')};
   flex: ${({ type }) => (type === 'latest' ? 1 : 'initial')};
   position: ${({ type }) => (type === 'latest' ? 'relative' : 'static')};
-  height: ${({ type }) => (type === 'latest' ? '37.5vh' : 'recent' ? '12vh' : '100%')};
+  height: ${({ type }) => (type === 'latest' ? '38vh' : 'recent' ? '12vh' : '100%')};
 
   @media (max-width: 1024px){
     height: ${({ type }) => (type === 'latest' ? '28vh' : 'recent' ? '10vh' : '100%')};
@@ -102,7 +102,7 @@ export const PreNextButton = styled(Button)(({ disabled }) => ({
 
 export const Flex = styled(Box)(({ gap }) => ({
     height: '80vh',
-    overflow: 'scroll',
+    // overflow: 'scroll',
     display: 'flex',
     flexWrap: 'wrap',
     gap: gap || '1rem',

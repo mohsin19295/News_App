@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./App.css"
 import { ProgressColor } from './utils';
 
