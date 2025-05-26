@@ -26,7 +26,7 @@ const LatestPostContainer = ({ imageUrl, urlToImage, title, source, url }) => {
                     width: '100%',
                     padding: '5px 10px',
                     color: 'white',
-                    borderRadius: '5px 5px 5px 5px',
+                    borderRadius: '0 0 5px 5px',
                     background: 'rgba(148, 16, 16, 0.6)',
                     backdropFilter: 'blur(8px)',
                 }}

@@ -2,7 +2,7 @@ import {Skeleton} from '@mui/material'
 import {LazyLoadImage} from 'react-lazy-load-image-component'
 import { useState } from 'react'
 
-export const ImageContainer = ({imageUrl, urlToImage, widthP, heightP }) => {
+export const ImageContainer = ({imageUrl, urlToImage, widthP, heightP, radiusP = '5px' }) => {
     const [loaded, setLoaded] = useState(false);
 
     return (
@@ -15,7 +15,7 @@ export const ImageContainer = ({imageUrl, urlToImage, widthP, heightP }) => {
                     sx={{
                         width: '100%',
                         height: '100%',
-                        borderRadius: '5px',
+                        borderRadius: radiusP,
                         position: 'absolute',
                         top: 0,
                         left: 0,
@@ -33,7 +33,7 @@ export const ImageContainer = ({imageUrl, urlToImage, widthP, heightP }) => {
             style={{
             width: widthP,
             height: heightP,
-            borderRadius: '5px',
+            borderRadius: radiusP,
             objectFit: 'cover',
             opacity: loaded ? 1 : 0,
             transition: 'opacity 0.3s ease',

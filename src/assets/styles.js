@@ -11,7 +11,7 @@ export const Nav = styled('nav')(() => ({
     position: 'fixed',
     width: '100%',
     zIndex: '999',
-    padding: '.5rem 2rem',
+    padding: '.7rem 2rem',
     overflowX: 'auto',
     whiteSpace: 'nowrap',
     '@media (max-width: 767px)': {
@@ -54,19 +54,8 @@ export const Ul = styled('ul')(() => ({
       },
     },
   }));
-  
-
-export const ButtonBox = styled(Box)(() => ({
-    display: 'flex',
-    justifyContent: 'space-between',
-    padding: '0 8rem 2rem',
-    '@media (max-width: 767px)': {
-        padding: '0 2rem 2rem'
-    }
-}))
 
 export const PostContainer = styled(Box)`
-  border-radius: 5px;
   cursor: pointer;
   display: flex;
   flex-direction: ${({ type }) => (type === 'latest' ? 'column' : 'row')};
