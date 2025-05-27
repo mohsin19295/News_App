@@ -7,11 +7,11 @@ export const Nav = styled('nav')(() => ({
     gap: '5%',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: '#333',
+    backgroundColor: '#000',
     position: 'fixed',
     width: '100%',
     zIndex: '999',
-    padding: '.7rem 2rem',
+    padding: '.8rem 2rem',
     overflowX: 'auto',
     whiteSpace: 'nowrap',
     '@media (max-width: 767px)': {
@@ -108,3 +108,50 @@ border: '1px solid red';
     width: 100%;
   }
 `;
+
+export const FooterContainer = styled('footer')(() => ({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '2rem',
+  alignItems: 'center',
+  backgroundColor: 'black',
+  color: '#c5c4c4',
+  padding: '5rem 2rem',
+
+  '&>div': {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '1rem',
+
+    '& a': {
+      textDecoration: 'none',
+      color: '#f1f1f1',
+
+      '&:hover': {
+        color: '#c5c4c4'
+      }
+    },
+
+    '& p': {
+      textAlign: 'center'
+    }
+  },
+
+  '&>div:first-of-type>div': {
+    padding: '0 1rem',
+    maxWidth:' 200px',
+    height: '60px',
+
+    img: {
+      width: '100%',
+      height: '100%',
+      objectFit: 'contain',
+      cursor: 'pointer',
+
+      '&:hover': {
+        opacity: '0.7'
+      }
+    }
+  }
+}))

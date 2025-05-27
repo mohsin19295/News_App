@@ -6,6 +6,7 @@ import LoadingBar from "react-top-loading-bar";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./App.css"
 import { ProgressColor } from './utils';
+import { Footer } from "./components/Footer";
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -44,6 +45,7 @@ function App() {
             <News setProgress={setProgress} key="technology" category="technology" />
           </Route>
         </Switch>
+        <Footer/>
       </Router>
     </div>
   );

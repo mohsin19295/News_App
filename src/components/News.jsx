@@ -131,9 +131,9 @@ function News(props) {
     /> :
       <Box sx={{
         padding: {
-          xs: '4rem 0',
-          sm: '3rem 0',
-          md: '4rem 0',
+          xs: '4rem 0 2rem',
+          sm: '3rem 0 2rem',
+          md: '4rem 0 2rem',
         },
 
       }}>

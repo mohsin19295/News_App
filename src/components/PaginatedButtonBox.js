@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonBox, PreNextButton } from '../assets/styles'
+import { PreNextButton } from '../assets/styles'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Box } from '@mui/material';

@@ -10,7 +10,7 @@ const RecentPostContainer = ({ imageUrl, urlToImage, title, url}) => {
             onClick={() => window.open(url, 'noreferrer')}
             key={title}
             sx={{
-                boxShadow: 'rgba(50, 50, 93, 0.25) 1px 0px 0px -1px, rgba(0, 0, 0, 0.3) 1px 0px 3px -1px',
+                boxShadow: 'rgba(50, 50, 93, 0.25) 1px -2px 1px -1px,rgba(0, 0, 0, 0.3) 2px 1px 2px -1px',
                 width: '99%',
                 borderRadius: '5px 0 0 5px',
             }}
