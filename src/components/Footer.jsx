@@ -7,7 +7,7 @@ export const Footer = () => {
             <Box>
                 <Typography>Hosted on Netlify</Typography>
                 <Box>
-                    <a to="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">
                         <img src="netlify_logo.png" alt="Netlify Logo"/>
                     </a>
                 </Box>

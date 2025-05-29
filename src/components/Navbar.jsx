@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <Nav>
       <Ul>
-        <NavLink to="general" className="logo">Home</NavLink>
+        <NavLink to="general" className={({ isActive }) => isActive ? 'active' : ''} onClick={() => setIsOpen(false)}>Home</NavLink>
       </Ul>
 
       <Hamburger onClick={toggleMenu} className={isOpen ? 'is-active' : ''}>

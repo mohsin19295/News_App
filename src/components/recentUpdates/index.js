@@ -30,6 +30,7 @@ const RecentUpdates = ({initialPost}) => {
                     urlToImage={urlToImage}
                     title={title}
                     url={url}
+                    key={url}
                   />
                 )
               })}

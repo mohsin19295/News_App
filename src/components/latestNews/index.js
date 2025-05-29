@@ -30,6 +30,7 @@ const LatestNews = ({ initialPost }) => {
               title={title}
               source={source}
               url={url}
+              key={url}
             />
           )
         })}

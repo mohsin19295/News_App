@@ -25,14 +25,16 @@ export const Ul = styled('ul')(() => ({
     display: 'flex',
     listStyleType: 'none',
     gap: '0.5rem',
-    '& > *': {
+
+    '& > a': {
       position: 'relative',
       color: PrimaryLight,
       textDecoration: 'none',
       padding: '5px',
       transition: 'all 0.2s ease-in-out',
   
-      '&::after': {
+    '@media (min-width: 960px)': {
+       '&::after': {
         content: '""',
         position: 'absolute',
         left: '50%',
@@ -52,10 +54,40 @@ export const Ul = styled('ul')(() => ({
       '&.active::after': {
         backgroundColor: ThemeColorLight,
       },
+
+      'a.logo': {
+        border: '1px solid #ccc'
+      }
+    }
     },
   }));
 
-  export const Hamburger = styled('div')({
+export const MobileMenu = styled(Ul)(({ isOpen }) => ({
+  '@media (max-width: 960px)': {
+    position: 'fixed',
+    top: '50px',
+    right: '2rem',
+    background: '#000',
+    display: 'flex', 
+    flexDirection: 'column',
+    alignItems: 'start',
+    padding: '1rem',
+    zIndex: 999,
+    transform: isOpen ? 'translateX(0)' : 'translateX(120%)',
+    transition: 'transform 0.4s ease',
+    width: '180px',
+
+    '& > a.active': {
+        color: ThemeColorLight
+    },
+  },
+
+  '@media (max-width: 599px)': {
+    right: '1rem'
+  }
+}));
+
+export const Hamburger = styled('div')({
   display: 'none',
   cursor: 'pointer',
   '@media (max-width: 960px)': {
@@ -80,27 +112,6 @@ export const Bar = styled('div')({
   margin: '5px',
   transition: '0.3s ease-in-out',
 });
-
-export const MobileMenu = styled(Ul)(({ isOpen }) => ({
-  '@media (max-width: 960px)': {
-    position: 'fixed',
-    top: '50px',
-    right: '2rem',
-    background: '#000',
-    display: 'flex', 
-    flexDirection: 'column',
-    alignItems: 'start',
-    padding: '1rem',
-    zIndex: 999,
-    transform: isOpen ? 'translateX(0)' : 'translateX(120%)',
-    transition: 'transform 0.4s ease',
-    width: '180px'
-  },
-
-   '@media (max-width: 599px)': {
-    right: '1rem'
-  }
-}));
 
 export const PostContainer = styled(Box)`
   cursor: pointer;

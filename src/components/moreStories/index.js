@@ -36,6 +36,7 @@ const MoreStories = ({ post }) => {
                 title={title}
                 url={url}
                 description={description}
+                key={url}
               />
             )
           })}
